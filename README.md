@@ -58,7 +58,6 @@ PAIWISE used multi-omics datasets.
 1. We have provided a cleaned benchmark synergy truset. For details of reporducing, please go to trueset_generation/ to follow the instructions.
 2. CCLE dataset including exp, cnv, mut
 3. Drug-target interaction dataset from DrugComb, and structures.sdf which  enables fingerprints calculation or smiles2graph
-Link and please put into Data/ folder: https://drive.google.com/file/d/
 ****
 
 #### Models included
