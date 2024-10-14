@@ -1,0 +1,1 @@
+{"transynergy_liu": {"synergy_df": "Customized", "drug_omics": ["drug_target", "smiles_grover", "smiles"], "cell_df": "Customized", "cell_omics": ["exp"], "cell_filtered_by": "all", "model_name": "transynergy_liu", "get_cellfeature_concated": true, "get_drugfeature_concated": false, "get_drugs_summed": false}}

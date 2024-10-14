@@ -1,0 +1,1 @@
+{"RF": {"synergy_df": "Sanger2022", "drug_omics": ["drug_target"], "cell_df": "CCLE", "cell_omics": ["exp"], "cell_filtered_by": "variance", "model_name": "RF", "get_cellfeature_concated": true, "get_drugfeature_concated": true, "get_drugs_summed": true}}

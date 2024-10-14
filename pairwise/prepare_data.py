@@ -603,7 +603,7 @@ def load_drug_features():
 
 
 
-    save_path = os.path.join(ROOT_DIR, 'data', 'drug_data')
+    save_path = os.path.join(ROOT_DIR, 'data copy', 'drug_data')
     save_path = os.path.join(save_path, 'input_drug_data.npy')
     if not os.path.exists(save_path):
         data_dicts = {}
@@ -616,11 +616,16 @@ def load_drug_features():
         data_dicts['smiles2graph'] = process_smiles2graph()
         data_dicts['smiles2graph_TGSynergy'] = process_smiles2graph_TGSynergy()
         #data_dicts['dpi_network'] = process_dpi_network()
-        data_dicts['hetero_graph'] = process_hetero_network()
+        # data_dicts['hetero_graph'] = process_hetero_network()
         data_dicts['smiles_grover'] = process_smilesGrover()
-        np.save(save_path, data_dicts)
+        # np.save(save_path, data_dicts)
+        with open(save_path, 'wb') as file:
+            pickle.dump(data_dicts, file)
+
     else:
-        data_dicts = np.load(save_path,allow_pickle=True).item()
+        # data_dicts = np.load(open(os.path.join(ROOT_DIR, 'data copy', 'drug_data', 'input_drug_data.npy'), 'rb'),allow_pickle=True).item()
+        with open(save_path, 'rb') as file:
+            data_dicts = np.load(file, allow_pickle=True).item()
         # data_dicts['smiles_grover'] = process_smilesGrover()
         data_dicts['drug_target'] = process_dpi()
         # data_dicts['drug_target_rwr'] = process_dpi_RWR()

@@ -1,0 +1,1 @@
+{"XGBOOST": {"synergy_df": "DrugComb", "drug_omics": ["drug_target"], "cell_df": "CCLE", "cell_omics": ["exp"], "cell_filtered_by": "variance", "model_name": "XGBOOST", "get_cellfeature_concated": true, "get_drugfeature_concated": true, "get_drugs_summed": true}}

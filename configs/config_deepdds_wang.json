@@ -1,0 +1,1 @@
+{"deepdds_wang": {"synergy_df": "DrugComb", "drug_omics": ["smiles2graph"], "cell_df": "CCLE", "cell_omics": ["exp"], "cell_filtered_by": "variance", "model_name": "deepdds_wang", "get_cellfeature_concated": true, "get_drugfeature_concated": false, "get_drugs_summed": false}}

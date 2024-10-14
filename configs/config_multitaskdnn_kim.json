@@ -1,0 +1,1 @@
+{"multitaskdnn_kim": {"synergy_df": "Customized", "drug_omics": ["drug_target", "morgan_fingerprint"], "cell_df": "Customized", "cell_omics": ["exp"], "cell_filtered_by": "variance", "model_name": "multitaskdnn_kim", "get_cellfeature_concated": true, "get_drugfeature_concated": false, "get_drugs_summed": false}}

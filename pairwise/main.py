@@ -1,5 +1,5 @@
 import os
-os.environ["OMP_NUM_THREADS"] = "8"
+os.environ["OMP_NUM_THREADS"] = "4"
 import argparse
 from prepare_data import *
 from select_features import *
@@ -15,15 +15,15 @@ def arg_parse():
     parser.add_argument('--synergy_thres', type=int, default=0,
                         help='synergy threshold (default: loewe score)')
     parser.add_argument('--ri_thres', type=int, default=10,
-                        help='percentage inhibition')
+                        help='percentage inhibition IC50')
     parser.add_argument('--batch_size', type=int, default=256,
                         help='batch size (default: 256)')
     parser.add_argument('--epochs', type=int, default=50,
                         help='maximum number of epochs (default: 10)')
-    parser.add_argument('--train_test_mode', type=str, default='test',
+    parser.add_argument('--train_test_mode', type=str, default='train',
                         help='train or test or fine_tune')
     parser.add_argument('--SHAP_analysis', type=bool, default=False)
-    parser.add_argument('--model', type=str, default='transynergy_liu',
+    parser.add_argument('--model', type=str, default='deepsynergy_preuer',
                         help='import model')
                         #options are 'LR','XGBOOST','RF','ERT','deepsynergy_preuer','multitaskdnn_kim',
                         # 'matchmaker_brahim','deepdds_wang','TGSynergy','transynergy_liu', 'graphsynergy',"pairwise")
@@ -34,7 +34,7 @@ def arg_parse():
                         help = 'DrugComb or Sanger2022 or Customized')
     parser.add_argument('--external_validation', type=bool, default=False,
                         required=False, help = 'True for Sanger2022 or Customized')
-    parser.add_argument('--drug_omics', nargs="+", default=["drug_target","smiles_grover"],
+    parser.add_argument('--drug_omics', nargs="+", default=["morgan_fingerprint"],
                         required=False, help='drug_target/drug_target_rwr/morgan_fingerprint\
                             /smiles2graph/smiles2graph_TGSynergy/chemical_descriptor/smiles\
                             hetero_graph/ smiles_grover(3285)')    
@@ -46,9 +46,9 @@ def arg_parse():
                         required=False,help='top genes selected by variance or STRING graph or dti(for Transynergy) or dti')
     parser.add_argument('--get_cellfeature_concated', type=bool, default=True,
                         required=False)
-    parser.add_argument('--get_drugfeature_concated', type=bool, default=False,
+    parser.add_argument('--get_drugfeature_concated', type=bool, default=True,
                         required=False, help='if concat, numpy array')
-    parser.add_argument('--get_drugs_summed', type=bool, default=False,
+    parser.add_argument('--get_drugs_summed', type=bool, default=True,
                         required=False, help='drug1+drug2 if True, else return dict')
 
     return parser.parse_args()

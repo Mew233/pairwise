@@ -1,0 +1,13 @@
+*.egg-info
+*.pyc
+*.sdf
+tcga_*
+/data/
+data/synergy_data/Customized
+results/
+
+trueset_generation/
+build/
+tmp/
+/best_model_ERT.pth
+/best_model_RF.pth

@@ -1,0 +1,1 @@
+{"matchmaker_brahim": {"synergy_df": "DrugComb", "drug_omics": ["morgan_fingerprint"], "cell_df": "CCLE", "cell_omics": ["exp"], "cell_filtered_by": "variance", "model_name": "matchmaker_brahim", "get_cellfeature_concated": true, "get_drugfeature_concated": false, "get_drugs_summed": false}}

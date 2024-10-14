@@ -1,0 +1,1 @@
+{"TGSynergy": {"synergy_df": "DrugComb", "drug_omics": ["drug_target", "smiles2graph_TGSynergy"], "cell_df": "CCLE", "cell_omics": ["GNN_cell"], "cell_filtered_by": "variance", "model_name": "TGSynergy", "get_cellfeature_concated": false, "get_drugfeature_concated": false, "get_drugs_summed": false}}
