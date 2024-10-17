@@ -1,9 +1,6 @@
-"""
-
-"""
 import torch
 import torch.nn as nn
-from utilitis import EncoderLayer, DecoderLayer, OutputFeedForward, Norm
+from utilitis import Layer, DecoderLayer, OutputFeedForward, Norm
 import copy
 import numpy as np
 from torch.nn import functional as F
@@ -11,7 +8,6 @@ import os
 
 ROOT_DIR = os.path.realpath(os.path.join(os.path.dirname(__file__), '..', '..'))
 save_path = os.path.join(ROOT_DIR, 'data', 'cell_line_data', 'tcga', 'tcga_encoder.pth')
-
 
 def get_clones(module, N):
     return nn.ModuleList([copy.deepcopy(module) for _ in range(N)])
@@ -21,7 +17,7 @@ class Encoder(nn.Module):
     def __init__(self, d_model, N, heads, dropout):
         super().__init__()
         self.N = N
-        self.layers = get_clones(EncoderLayer(d_model, heads, dropout), N)
+        self.layers = get_clones(Layer(d_model, heads, dropout), N)
         self.norm = Norm(d_model)
 
     def forward(self, src, mask=None):
