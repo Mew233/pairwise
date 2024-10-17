@@ -22,11 +22,11 @@ def load_synergy(dataset,args):
         dataset: str
     '''
 
-    function_mapping = {'DrugComb':'process_drugcomb', 'Sanger2022':'process_sanger2022',\
+    function_mapping = {'p13':'process_drugcomb', 'Sanger2022':'process_sanger2022',\
         'Customized':'process_customized'}
 
     def process_drugcomb():
-        data = pd.read_csv(os.path.join(ROOT_DIR, 'data', 'synergy_data','DrugComb','drugcomb_trueset_NoDup.csv'))
+        data = pd.read_csv(os.path.join(ROOT_DIR, 'data', 'synergy_data','p13','p13_trueset.csv'))
         data = data[['drug_row', 'drug_col','cell_line_name','study_name','tissue_name',\
           'synergy_zip','synergy_loewe','synergy_hsa','synergy_bliss','DepMap_ID','RRID',\
           'pubchemID_x','compound0_x','pubchemID_y','compound0_y',\
@@ -495,7 +495,7 @@ def load_drug_features():
         ## cpi
         cpi_data = pd.read_csv(os.path.join(ROOT_DIR, 'data', 'cell_line_data','CCLE','batchcorr_CCLE_exp.csv'))
         cpi_data.columns = ['Entrezid']+[split_it_cell(_) for _ in list(cpi_data.columns)[1:]]
-        #cell的名字需要转换成一个int , 从1到?
+
         cpi_data['Entrezid'] = [split_it_cellName(_) for _ in list(cpi_data['Entrezid'])]
         # cpi_data['Entrezid'] = [(range(len(cpi_data['Entrezid'])))]
 
@@ -512,7 +512,7 @@ def load_drug_features():
             
             nodes_dict = dict(zip(range(len(cpi_df.columns)),cpi_df.columns))
             
-            #选取128 个high exp protein
+            #128 high exp protein
             for cell in cell_list:
                 cell_df = cpi_df[cpi_df.index==cell]
                 _array = abs(cell_df.values).argsort(axis=1)[:,::-1][0][:128]
@@ -603,7 +603,7 @@ def load_drug_features():
 
 
 
-    save_path = os.path.join(ROOT_DIR, 'data copy', 'drug_data')
+    save_path = os.path.join(ROOT_DIR, 'data', 'drug_data')
     save_path = os.path.join(save_path, 'input_drug_data.npy')
     if not os.path.exists(save_path):
         data_dicts = {}
@@ -635,8 +635,7 @@ def load_drug_features():
         # a = process_dpi()
         # a = a.loc[a.index.isin(list(selected_genes)), :]
         # data_dicts['drug_target'] = a
-       
-        ##hetergnn, 如果已保存data_dicts, 没有必要重新跑下面这两个
+
         # data_dicts['hetero_graph'] = process_hetero_network()
         
         np.save(save_path, data_dicts)

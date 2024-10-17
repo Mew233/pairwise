@@ -34,7 +34,7 @@ If you are using Mac M1 chip, we recommend checking out this [github issue for i
 #### Getting strarted
 
 ```bash
- python pairwise/main.py --model 'deepsynergy_preuer' --synergy_df 'DrugComb' --train_test_mode train
+ python pairwise/main.py --model 'deepsynergy_preuer' --synergy_df 'p13' --train_test_mode train
 ```
 
 #### Features explained

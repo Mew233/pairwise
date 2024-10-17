@@ -30,8 +30,8 @@ def arg_parse():
 
 # --------------- Parse configuration  --------------- #
 
-    parser.add_argument('--synergy_df', type=str, default='DrugComb',
-                        help = 'DrugComb or Sanger2022 or Customized')
+    parser.add_argument('--synergy_df', type=str, default='p13',
+                        help = 'p13 or Sanger2022 or Customized')
     parser.add_argument('--external_validation', type=bool, default=False,
                         required=False, help = 'True for Sanger2022 or Customized')
     parser.add_argument('--drug_omics', nargs="+", default=["morgan_fingerprint"],
