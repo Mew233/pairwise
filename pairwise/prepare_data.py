@@ -255,20 +255,20 @@ def load_cellline_features(dataset,args):
             data_dicts = np.load(save_path,allow_pickle=True).item()
             # load GNN_cell
             gnn_path = os.path.join(ROOT_DIR, 'data', 'cell_line_data','CCLE')
-            gnn_path = os.path.join(gnn_path, 'cell_feature_cn_std.npy')
+            gnn_path = os.path.join(gnn_path, 'cell_feature_std.npy')
             cell_dict = np.load(gnn_path,allow_pickle=True).item()
             data_dicts['GNN_cell'] = cell_dict
 
             # # load cpi_network
             # data_dicts['cpi_network'] = load_cpi_network()
             
-        edge_path = os.path.join(ROOT_DIR, 'data', 'cell_line_data','CCLE')
-        edge_path = os.path.join(edge_path, 'edge_index_PPI_0.95.npy')
-        edge_index = np.load(edge_path)
-        #for key, value in a_dict.items()
-        for key, value in data_dicts['GNN_cell'].items():
-            #value should be a data object
-            value.edge_index = torch.tensor(edge_index, dtype=torch.long)
+        # edge_path = os.path.join(ROOT_DIR, 'data', 'cell_line_data','CCLE')
+        # edge_path = os.path.join(edge_path, 'edge_PPI_0.95.npy')
+        # edge_index = np.load(edge_path)
+        # #for key, value in a_dict.items()
+        # for key, value in data_dicts['GNN_cell'].items():
+        #     #value should be a data object
+        #     value.edge_index = torch.tensor(edge_index, dtype=torch.long)
 
         return data_dicts
     
@@ -625,7 +625,8 @@ def load_drug_features():
     else:
         # data_dicts = np.load(open(os.path.join(ROOT_DIR, 'data copy', 'drug_data', 'input_drug_data.npy'), 'rb'),allow_pickle=True).item()
         with open(save_path, 'rb') as file:
-            data_dicts = np.load(file, allow_pickle=True).item()
+            data_dicts = np.load(file, allow_pickle=True)
+            data_dicts = data_dicts.item()
         # data_dicts['smiles_grover'] = process_smilesGrover()
         data_dicts['drug_target'] = process_dpi()
         # data_dicts['drug_target_rwr'] = process_dpi_RWR()
