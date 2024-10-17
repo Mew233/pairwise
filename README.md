@@ -26,7 +26,7 @@ pip install torch-spline-conv -f https://pytorch-geometric.com/whl/torch-1.10.0+
 pip install -e .
 
 #Please download data/ and put it in the same path as setup.py
-https://drive.google.com/drive/folders/1Uu0YZSxX8GQtV_4ZJmsMrbanmse-Dq6n?usp=sharing
+[data folder] https://drive.google.com/drive/folders/1Uu0YZSxX8GQtV_4ZJmsMrbanmse-Dq6n?usp=sharing/ 
 ```
 If you are using Mac M1 chip, we recommend checking out this [github issue for installation of required dependencies](https://github.com/rusty1s/pytorch_scatter/issues/241)
 ****
@@ -58,7 +58,7 @@ PAIWISE used multi-omics datasets.
 1. We have provided a cleaned benchmark synergy truset. For details of reporducing, please go to trueset_generation/ to follow the instructions.
 2. CCLE dataset including exp, cnv, mut
 3. Drug-target interaction dataset from DrugComb, and structures.sdf which  enables fingerprints calculation or smiles2graph
-Link and please put into Data/ folder: https://drive.google.com/file/d/
+Link and please put into Data/ folder
 ****
 
 #### Models included

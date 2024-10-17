@@ -9,5 +9,5 @@ results/
 trueset_generation/
 build/
 tmp/
-/best_model_ERT.pth
-/best_model_RF.pth
+best_model_ERT.pth
+best_model_RF.pth
