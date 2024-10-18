@@ -116,17 +116,20 @@ class AE(nn.Module):
 class DTI_CNN(nn.Module):
     def __init__(self):
         super(DTI_CNN, self).__init__()
-        # Defining convolutional layers to condense 4,098 input features into 500 output features
-        self.conv1 = nn.Conv1d(in_channels=1, out_channels=16, kernel_size=5, stride=2, padding=2)
+        # Defining convolutional layers to condense 3,645 input features into a smaller number of features
+        self.conv1 = nn.Conv1d(in_channels=2, out_channels=16, kernel_size=5, stride=2, padding=2)
         self.conv2 = nn.Conv1d(in_channels=16, out_channels=32, kernel_size=3, stride=2, padding=1)
         self.conv3 = nn.Conv1d(in_channels=32, out_channels=64, kernel_size=3, stride=2, padding=1)
 
-        # Fully connected layer to output the final 500 features
-        self.fc1 = nn.Linear(64 * 33, 500)  # Assuming input size is 4098, derived from the convolution layers
-        self.reduction = nn.Linear(500, 256)
+        # Calculate the output size after convolutions to correctly size the fully connected layer
+        self.flattened_size = 128 * 114 * 2  # Adjusted based on the actual number of output features after the three convolutions
+
+        # Fully connected layer to get output of size [batch_size, 2, 256]
+        self.fc1 = nn.Linear(self.flattened_size, 512)  # Reduce feature size
+        self.fc2 = nn.Linear(512, 2 * 256)  # Produce the final output in the correct format
 
     def forward(self, x):
-        # Apply convolutional layers with activation and pooling
+        # Apply convolutional layers with activation
         x = torch.relu(self.conv1(x))
         x = torch.relu(self.conv2(x))
         x = torch.relu(self.conv3(x))
@@ -134,9 +137,12 @@ class DTI_CNN(nn.Module):
         # Flatten the output for the fully connected layer
         x = x.view(x.size(0), -1)
 
-        # Apply the fully connected layer to get 500 features
-        x = self.fc1(x)
+        # Apply the fully connected layers to get the final output size [batch_size, 2, 256]
+        x = torch.relu(self.fc1(x))
+        x = self.fc2(x)
+        x = x.view(-1, 2, 256)
         return x
+
 
 class Pairwise(nn.Module):
     def __init__(self, d_input, d_model, n_feature_type, N, heads, dropout):
@@ -145,27 +151,22 @@ class Pairwise(nn.Module):
         self.ae.load_state_dict(torch.load(save_path))
 
         self.cnn = DTI_CNN()
-
         self.reduction2 = nn.Linear(3285, d_model, bias=True)
-
-        self.encoder = Encoder(d_model, N, heads, dropout)
-        # self.decoder = Decoder(d_input, d_model, N, heads, dropout)
-
+        self.atte = Encoder(d_model, N, heads, dropout)
 
         input_length = 1280 #1280 #768+244*2 #256/
         self.out = OutputFeedForward(input_length, n_feature_type, d_layers=[64, 32, 1])
 
 
-    def forward(self, src, fp=None, sm1=None, sm2=None, \
-        trg=None, src_mask=None, trg_mask=None):
+    def forward(self, src, fp, cell):
 
         _src = self.cnn(src)
         _fp = self.reduction2(fp)
-        _cell = self.ae.encode(sm1)
+        _cell = self.ae.encode(cell)
         _cell = torch.unsqueeze(_cell, dim=1)
         cat_input = cat((_src,_fp,_cell), dim=1)
         
-        e_outputs = self.encoder(cat_input, src_mask)
+        e_outputs = self.atte(cat_input)
         flat_e_output = e_outputs.view(-1, e_outputs.size(-2)*e_outputs.size(-1))
         output = self.out(flat_e_output)
 

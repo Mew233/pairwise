@@ -61,7 +61,7 @@ def load_synergy(dataset,args):
         # summary_data = summary_data[summary_data['drug1'].isin(library)]
         # summary_data = summary_data[summary_data['drug2'].isin(library)]
 
-        return summary_data
+        return summary_data.head(10000)
     
     def process_sanger2022():
         data = pd.read_csv(os.path.join(ROOT_DIR, 'data', 'synergy_data','Sanger2022','Jaaks2022_trueset_xiabo.csv'))
@@ -475,7 +475,7 @@ def load_drug_features():
         graph = nx.Graph()
         graph.add_edges_from(tuples)
 
-        targets = pd.read_csv(os.path.join(ROOT_DIR, 'data', 'drug_data','all.csv'))
+        targets = pd.read_csv(os.path.join(ROOT_DIR, 'data', 'drug_data','all_targets.csv'))
         drug_targets = explode_dpi(targets)
         #deplete proteins in dpi, which not in ppi
         selected_proteins = list(set(ppi_data['protein_a'])) + list(set(ppi_data['protein_b']))

@@ -1,1 +1,1 @@
-{"pairwise": {"synergy_df": "DrugComb", "drug_omics": ["drug_target", "smiles_grover"], "cell_df": "CCLE", "cell_omics": ["exp"], "cell_filtered_by": "dti", "model_name": "combonet", "get_cellfeature_concated": true, "get_drugfeature_concated": false, "get_drugs_summed": false}}
+{"pairwise": {"synergy_df": "p13", "drug_omics": ["drug_target", "smiles_grover"], "cell_df": "CCLE", "cell_omics": ["exp"], "cell_filtered_by": "all", "model_name": "pairwise", "get_cellfeature_concated": true, "get_drugfeature_concated": false, "get_drugs_summed": false}}

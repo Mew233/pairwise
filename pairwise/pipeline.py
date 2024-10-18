@@ -22,7 +22,7 @@ from select_features import *
 from get_model import get_model
 from dataloader import dataloader, dataloader_graph, k_fold_trainer, k_fold_trainer_graph, evaluator, evaluator_graph,\
     k_fold_trainer_graph_TGSynergy,evaluator_graph_TGSynergy, k_fold_trainer_graph_trans, evaluator_graph_trans,\
-        k_fold_trainer_graph_combonet,evaluator_graph_combonet
+        k_fold_trainer_graph_pairwise,evaluator_graph_pairwise
 from dataloader import SHAP
 import torch_geometric.data
 from utilitis import smile_to_graph
@@ -45,7 +45,7 @@ def prepare_data(args):
     cellset = synergy_df['cell'].unique().tolist()
 
     # Cleaning synergy data. Drugs not in drug–target interaction(DTI) are removed
-    selected_drugs = get_drug(drugset)
+    selected_drugs = get_drug(drugFeature_dicts, drugset)
     print("\ndrug features contructed")
 
     # Cleaning synergy data. Cells not having top variance genes are removed
@@ -60,7 +60,6 @@ def prepare_data(args):
     elif args.cell_omics[0] == 'GNN_cell':
         #这里load了更多的cell
         # cell_feats, selected_cells = cellFeatures_dicts, get_GNNCell()
-        #为了与其他模型保持一致, 这里选择的cell只有1000个基因map到的
         cell_feats, selected_cells = cellFeatures_dicts, get_GNNCell(cellFeatures_dicts, cellset)
 
     print("cell line features constructed")
@@ -324,73 +323,61 @@ def training(X_cell, X_drug, Y, Y_ic1, Y_ic2, args):
         elif args.train_test_mode == 'train':
             net_weights = k_fold_trainer(train_val_dataset,model,args)
 
-# --------------- combonet --------------- #
-    elif args.model == 'combonet':
-        X, X2, X3 = [],[],[]
+# --------------- pairwise --------------- #
+    elif args.model == 'pairwise':
+        X=[]
+        X2=[] #additional features
+        C = []
+
         for index, (d1, d2, cell, fp1, fp2) in enumerate(zip(X_drug['drug_target_1'], X_drug['drug_target_2'], X_cell,\
             X_drug['smiles_grover_1'],X_drug['smiles_grover_2'])):
-            t = torch.from_numpy(np.vstack((d1,d2))).float()
-            # t = torch.from_numpy(np.expand_dims(d1, axis=0)).float()
+            array_tuple = (d1, d2)
+            array = np.vstack(array_tuple)
+            t = torch.from_numpy(array).float()
             t2 = torch.from_numpy(np.vstack((fp1,fp2))).float()
-            # t3 = torch.from_numpy(np.vstack((d1,d2,cell))).float()
-            t3 = torch.from_numpy(np.array(cell)).float()
+            c = torch.from_numpy(cell).float()
+
             X.append(t.float())
             X2.append(t2.float())
-            X3.append(t3.float())
+            C.append(c.float())
 
         #len(max(smiles_list, key = len)) is 244
 
         X_trainval, X_test, Y_trainval, Y_test, dummy_trainval, dummy_test, X2_trainval, X2_test,  \
-            X3_trainval, X3_test\
-            = train_test_split(X, Y, dummy, X2, X3,test_size=test_size, random_state=42)
+            X_cell_trainval, X_cell_test,\
+            = train_test_split(X, Y, dummy, X2, C, test_size=test_size, random_state=42)
 
         save_path = os.path.join(ROOT_DIR, 'results','test_idx.txt')
         np.savetxt(save_path,dummy_test.astype(int), delimiter=',')
 
         # init model
         model = get_model(args.model)
+
         # train_val set for k-fold, test set for testing
         train_val_dataset, test_loader = dataloader_graph(X_trainval=X_trainval, X_test=X_test,\
             Y_trainval=Y_trainval, Y_test=Y_test, dummy_trainval = dummy_trainval, dummy_test=dummy_test, \
-                 X2_trainval=X2_trainval, X2_test=X2_test,X3_trainval=X3_trainval, X3_test=X3_test)
+                 X2_trainval=X2_trainval, X2_test=X2_test, X_cell_trainval=X_cell_trainval, X_cell_test=X_cell_test)
 
         # load the best model
         if args.train_test_mode == 'test':
             net_weights = 'best_model_%s.pth' % args.model
         elif args.train_test_mode == 'train':
-            net_weights = k_fold_trainer_graph_combonet(train_val_dataset,model,args)
+            net_weights = k_fold_trainer_graph_pairwise(train_val_dataset,model,args)
+        elif args.train_test_mode == 'fine_tune':
+            net_weights = k_fold_trainer_graph_pairwise(test_loader,model,args)
 
-# --------------- transynergy --------------- #
+        # --------------- transynergy --------------- #
     elif args.model == 'transynergy_liu':
-        X=[]
-        X2=[] #additional features
-        X_sm1, X_sm2 = [], []
-        
-        for index, (d1, d2, cell, fp1, fp2, sm1, sm2) in enumerate(zip(X_drug['drug_target_1'], X_drug['drug_target_2'], X_cell,\
-            X_drug['smiles_grover_1'],X_drug['smiles_grover_2'], \
-                X_drug['smiles_1'],X_drug['smiles_2'])):
-            array_tuple = (d1, d2)
+        X = []
+        for index, (d1, d2, cell) in enumerate(
+                zip(X_drug['drug_target_rwr_1'], X_drug['drug_target_rwr_2'], X_cell)):
+            array_tuple = (d1, d2, cell)
             array = np.vstack(array_tuple)
             t = torch.from_numpy(array).float()
-
-            t2 = torch.from_numpy(np.vstack((fp1,fp2))).float()
             X.append(t.float())
-            X2.append(t2.float())
 
-            ##
-            # padded_sm1 = np.pad(sm1, pad_width=(0, 244-len(sm1)), mode='constant', constant_values=0)
-            # padded_sm2 = np.pad(sm2, pad_width=(0, 244-len(sm2)), mode='constant', constant_values=0)
-            X_sm1.append(torch.from_numpy(np.array(cell)).float())
-            X_sm2.append(torch.from_numpy(np.array(cell)).float())
-
-        #len(max(smiles_list, key = len)) is 244
-
-        X_trainval, X_test, Y_trainval, Y_test, dummy_trainval, dummy_test, X2_trainval, X2_test,  \
-            X_sm1_trainval, X_sm1_test, X_sm2_trainval, X_sm2_test,\
-            = train_test_split(X, Y, dummy, X2, X_sm1, X_sm2, test_size=test_size, random_state=42)
-
-        save_path = os.path.join(ROOT_DIR, 'results','test_idx.txt')
-        np.savetxt(save_path,dummy_test.astype(int), delimiter=',')
+        X_trainval, X_test, Y_trainval, Y_test, _, dummy_test = train_test_split(X, Y, dummy, test_size=test_size,
+                                                                                 random_state=42)
 
         # init model
         model = get_model(args.model)
@@ -402,18 +389,14 @@ def training(X_cell, X_drug, Y, Y_ic1, Y_ic2, args):
         # ys = trg[:, 1:].contiguous().view(-1)
 
         # train_val set for k-fold, test set for testing
-        train_val_dataset, test_loader = dataloader_graph(X_trainval=X_trainval, X_test=X_test,\
-            Y_trainval=Y_trainval, Y_test=Y_test, dummy_trainval = dummy_trainval, dummy_test=dummy_test, \
-                 X2_trainval=X2_trainval, X2_test=X2_test,\
-                    X_sm1_trainval=X_sm1_trainval, X_sm1_test=X_sm1_test, X_sm2_trainval=X_sm2_trainval, X_sm2_test=X_sm2_test)
+        train_val_dataset, test_loader = dataloader_graph(X_trainval=X_trainval, X_test=X_test,
+                                                          Y_trainval=Y_trainval, Y_test=Y_test)
 
         # load the best model
         if args.train_test_mode == 'test':
             net_weights = 'best_model_%s.pth' % args.model
         elif args.train_test_mode == 'train':
-            net_weights = k_fold_trainer_graph_trans(train_val_dataset,model,args)
-        elif args.train_test_mode == 'fine_tune':
-            net_weights = k_fold_trainer_graph_trans(test_loader,model,args)
+            net_weights = k_fold_trainer_graph_trans(train_val_dataset, model, args)
 
 # --------------- matchmaker --------------- #
     elif args.model == 'matchmaker_brahim':
@@ -582,9 +565,9 @@ def evaluate(model, model_weights, test_loader, train_val_dataset, args):
         
         actuals, predictions, shap_df, features_df, expected_value = evaluator_graph_trans(model, model_weights,train_val_dataset, test_loader, args)
     
-    elif args.model in ['combonet']:
+    elif args.model in ['pairwise']:
 
-        actuals, predictions, shap_df, features_df, expected_value = evaluator_graph_combonet(model, model_weights,train_val_dataset, test_loader, args)
+        actuals, predictions, shap_df, features_df, expected_value = evaluator_graph_pairwise(model, model_weights,train_val_dataset, test_loader, args)
 
     else:
         actuals, predictions, shap_df, features_df, expected_value  = evaluator(model, model_weights,train_val_dataset, test_loader, args)

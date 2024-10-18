@@ -6,7 +6,7 @@ import pickle
 
 ROOT_DIR = os.path.realpath(os.path.join(os.path.dirname(__file__), '..'))
 
-def get_drug(original_list):
+def get_drug(drugFeature_dicts, original_list):
     targets = pd.read_csv(os.path.join(ROOT_DIR, 'data', 'drug_data','all_targets.csv'))
     enzymes = pd.read_csv(os.path.join(ROOT_DIR, 'data', 'drug_data','all_enzyme.csv'))
     carrier = pd.read_csv(os.path.join(ROOT_DIR, 'data', 'drug_data','all_carrier.csv'))
@@ -20,6 +20,10 @@ def get_drug(original_list):
 
     drug_list_with_targets = drug_targets_L['Drug IDs'].unique().tolist()
     selected_drugs = list(set(original_list) & set(drug_list_with_targets))
+
+    # remove drugs not in grover
+    grover = drugFeature_dicts['smiles_grover'].keys()
+    selected_drugs = list(set(selected_drugs) & set(grover))
 
     return selected_drugs
 
