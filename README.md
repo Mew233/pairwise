@@ -26,7 +26,7 @@ pip install torch-spline-conv -f https://pytorch-geometric.com/whl/torch-1.10.0+
 pip install -e .
 
 #Please download data/ and put it in the same path as setup.py
-[data folder] https://drive.google.com/drive/folders/1Uu0YZSxX8GQtV_4ZJmsMrbanmse-Dq6n?usp=sharing/ 
+[data folder] https://zenodo.org/records/18263823
 ```
 If you are using Mac M1 chip, we recommend checking out this [github issue for installation of required dependencies](https://github.com/rusty1s/pytorch_scatter/issues/241)
 ****
