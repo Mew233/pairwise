@@ -1,0 +1,9 @@
+include LICENSE
+include README.md
+include requirements.txt
+
+# package data
+include pairwise/configs/*.json
+
+global-exclude *.pyc
+global-exclude .DS_Store

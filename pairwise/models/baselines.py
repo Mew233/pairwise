@@ -10,7 +10,7 @@ class baseline():
         return model
 
     def XGBOOST(self):
-        model = GradientBoostingClassifier(max_features='auto')
+        model = GradientBoostingClassifier(max_features=None)
         return model
 
     def ERT(self):

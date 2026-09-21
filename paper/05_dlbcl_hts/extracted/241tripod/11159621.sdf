@@ -1,0 +1,163 @@
+11159621
+  -OEChem-06142321272D
+
+ 21 23  0     0  0  0  0  0  0999 V2000
+    4.4809   -1.8264    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+    5.0687   -1.0174    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+    5.7410    1.0517    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+    4.2021    1.5517    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+    5.7410    2.0517    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+    4.7899    2.3607    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+    2.5836   -0.2127    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.0000   -1.0174    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    3.5298   -0.5174    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.5836   -1.8222    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    3.5298   -1.5174    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.4809   -0.2084    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.7899    0.7427    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.8346    0.3542    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    2.0462    0.0965    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.5391   -0.6027    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.5391   -1.4322    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    2.0462   -2.1314    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    2.8346   -2.3891    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    4.6725   -2.4161    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    6.2425    2.4161    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+  1  2  1  0  0  0  0
+  1 11  1  0  0  0  0
+  1 20  1  0  0  0  0
+  2 12  2  0  0  0  0
+  3  5  1  0  0  0  0
+  3 13  2  0  0  0  0
+  4  6  2  0  0  0  0
+  4 13  1  0  0  0  0
+  5  6  1  0  0  0  0
+  5 21  1  0  0  0  0
+  7  8  1  0  0  0  0
+  7  9  1  0  0  0  0
+  7 14  1  0  0  0  0
+  7 15  1  0  0  0  0
+  8 10  1  0  0  0  0
+  8 16  1  0  0  0  0
+  8 17  1  0  0  0  0
+  9 11  2  0  0  0  0
+  9 12  1  0  0  0  0
+ 10 11  1  0  0  0  0
+ 10 18  1  0  0  0  0
+ 10 19  1  0  0  0  0
+ 12 13  1  0  0  0  0
+M  END
+> <PUBCHEM_COMPOUND_CID>
+11159621
+
+> <PUBCHEM_COMPOUND_CANONICALIZED>
+1
+
+> <PUBCHEM_CACTVS_COMPLEXITY>
+197
+
+> <PUBCHEM_CACTVS_HBOND_ACCEPTOR>
+4
+
+> <PUBCHEM_CACTVS_HBOND_DONOR>
+2
+
+> <PUBCHEM_CACTVS_ROTATABLE_BOND>
+1
+
+> <PUBCHEM_CACTVS_SUBSKEYS>
+AAADccBjgAAAAAAAAAAAAAAAAAAAAeLEAAAAAAAAAAAWAAAB4AAAHAAYAAAADAiBHwABkJRjAACiAwZgYACQBAIgAAAUOSAwRBgAYAIA0NGAhABgmAAISAMQgAAOAAAAAAAAAAAAAAAAAAAAAAAAAQAAAA==
+
+> <PUBCHEM_IUPAC_OPENEYE_NAME>
+3-(2H-tetrazol-5-yl)-1,4,5,6-tetrahydrocyclopenta[c]pyrazole
+
+> <PUBCHEM_IUPAC_CAS_NAME>
+3-(2H-tetrazol-5-yl)-1,4,5,6-tetrahydrocyclopenta[c]pyrazole
+
+> <PUBCHEM_IUPAC_NAME_MARKUP>
+3-(2<I>H</I>-tetrazol-5-yl)-1,4,5,6-tetrahydrocyclopenta[c]pyrazole
+
+> <PUBCHEM_IUPAC_NAME>
+3-(2H-tetrazol-5-yl)-1,4,5,6-tetrahydrocyclopenta[c]pyrazole
+
+> <PUBCHEM_IUPAC_SYSTEMATIC_NAME>
+3-(2H-1,2,3,4-tetrazol-5-yl)-1,4,5,6-tetrahydrocyclopenta[c]pyrazole
+
+> <PUBCHEM_IUPAC_TRADITIONAL_NAME>
+3-(2H-tetrazol-5-yl)-1,4,5,6-tetrahydrocyclopenta[c]pyrazole
+
+> <PUBCHEM_IUPAC_INCHI>
+InChI=1S/C7H8N6/c1-2-4-5(3-1)8-9-6(4)7-10-12-13-11-7/h1-3H2,(H,8,9)(H,10,11,12,13)
+
+> <PUBCHEM_IUPAC_INCHIKEY>
+LTQYSJKGRPGMPO-UHFFFAOYSA-N
+
+> <PUBCHEM_XLOGP3_AA>
+0.2
+
+> <PUBCHEM_EXACT_MASS>
+176.08104428
+
+> <PUBCHEM_MOLECULAR_FORMULA>
+C7H8N6
+
+> <PUBCHEM_MOLECULAR_WEIGHT>
+176.18
+
+> <PUBCHEM_OPENEYE_CAN_SMILES>
+C1CC2=C(C1)NN=C2C3=NNN=N3
+
+> <PUBCHEM_OPENEYE_ISO_SMILES>
+C1CC2=C(C1)NN=C2C3=NNN=N3
+
+> <PUBCHEM_CACTVS_TPSA>
+83.1
+
+> <PUBCHEM_MONOISOTOPIC_WEIGHT>
+176.08104428
+
+> <PUBCHEM_TOTAL_CHARGE>
+0
+
+> <PUBCHEM_HEAVY_ATOM_COUNT>
+13
+
+> <PUBCHEM_ATOM_DEF_STEREO_COUNT>
+0
+
+> <PUBCHEM_ATOM_UDEF_STEREO_COUNT>
+0
+
+> <PUBCHEM_BOND_DEF_STEREO_COUNT>
+0
+
+> <PUBCHEM_BOND_UDEF_STEREO_COUNT>
+0
+
+> <PUBCHEM_ISOTOPIC_ATOM_COUNT>
+0
+
+> <PUBCHEM_COMPONENT_COUNT>
+1
+
+> <PUBCHEM_CACTVS_TAUTO_COUNT>
+23
+
+> <PUBCHEM_COORDINATE_TYPE>
+1
+5
+255
+
+> <PUBCHEM_BONDANNOTATIONS>
+1  11  8
+1  2  8
+2  12  8
+3  13  8
+3  5  8
+4  13  8
+4  6  8
+5  6  8
+9  11  8
+9  12  8
+
+$$$$

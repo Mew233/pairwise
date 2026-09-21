@@ -1,0 +1,195 @@
+46925884
+  -OEChem-06142321292D
+
+ 34 37  0     0  0  0  0  0  0999 V2000
+    7.8007    0.1224    0.0000 S   0  0  0  0  0  0  0  0  0  0  0  0
+    4.6783    0.4272    0.0000 S   0  0  0  0  0  0  0  0  0  0  0  0
+    8.1879    1.9177    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    7.7979   -2.4870    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+    6.5406    1.3825    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+    4.6783   -1.1823    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+    6.8497   -1.1866    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    7.8007   -0.8776    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    6.8522   -2.1807    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    8.3829   -1.6833    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    6.2619   -0.3776    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    6.8497    0.4314    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    5.2619   -0.3776    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    3.7320    0.1224    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    3.7320   -0.8776    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    7.2098    2.1256    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.8660    0.6224    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.8660   -1.3776    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.0000    0.1224    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.0000   -0.8776    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    6.9008    3.0767    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    6.2355   -2.1171    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    6.7242   -2.7873    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    8.8431   -2.0988    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    8.8445   -1.2694    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    7.9895   -3.0767    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    5.9342    1.5114    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    2.8660    1.2424    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    2.8660   -1.9976    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.4631    0.4324    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.4631   -1.1876    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    7.4904    3.2683    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    6.7092    3.6664    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    6.3111    2.8851    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+  1  8  1  0  0  0  0
+  1 12  1  0  0  0  0
+  2 13  1  0  0  0  0
+  2 14  1  0  0  0  0
+  3 16  2  0  0  0  0
+  4  9  1  0  0  0  0
+  4 10  1  0  0  0  0
+  4 26  1  0  0  0  0
+  5 12  1  0  0  0  0
+  5 16  1  0  0  0  0
+  5 27  1  0  0  0  0
+  6 13  2  0  0  0  0
+  6 15  1  0  0  0  0
+  7  8  2  0  0  0  0
+  7  9  1  0  0  0  0
+  7 11  1  0  0  0  0
+  8 10  1  0  0  0  0
+  9 22  1  0  0  0  0
+  9 23  1  0  0  0  0
+ 10 24  1  0  0  0  0
+ 10 25  1  0  0  0  0
+ 11 12  2  0  0  0  0
+ 11 13  1  0  0  0  0
+ 14 15  1  0  0  0  0
+ 14 17  2  0  0  0  0
+ 15 18  2  0  0  0  0
+ 16 21  1  0  0  0  0
+ 17 19  1  0  0  0  0
+ 17 28  1  0  0  0  0
+ 18 20  1  0  0  0  0
+ 18 29  1  0  0  0  0
+ 19 20  2  0  0  0  0
+ 19 30  1  0  0  0  0
+ 20 31  1  0  0  0  0
+ 21 32  1  0  0  0  0
+ 21 33  1  0  0  0  0
+ 21 34  1  0  0  0  0
+M  END
+> <PUBCHEM_COMPOUND_CID>
+46925884
+
+> <PUBCHEM_COMPOUND_CANONICALIZED>
+1
+
+> <PUBCHEM_CACTVS_COMPLEXITY>
+422
+
+> <PUBCHEM_CACTVS_HBOND_ACCEPTOR>
+5
+
+> <PUBCHEM_CACTVS_HBOND_DONOR>
+2
+
+> <PUBCHEM_CACTVS_ROTATABLE_BOND>
+2
+
+> <PUBCHEM_CACTVS_SUBSKEYS>
+AAADccBzIABgAAAAAAAAAAAAAAAAAWLEgAAwAAAAAAAWAFgB/AAAHgQQAAAADAjB3gQywbLIEAisAyVyVACD8KBhCjlImLw4ZJgIIKLg0ZGEIAhglADoyAcQAAAOgAAAAAAAAQAAAAAAAAACAAAAAAAAAA==
+
+> <PUBCHEM_IUPAC_OPENEYE_NAME>
+N-[3-(1,3-benzothiazol-2-yl)-5,6-dihydro-4H-thieno[2,3-c]pyrrol-2-yl]acetamide
+
+> <PUBCHEM_IUPAC_CAS_NAME>
+N-[3-(1,3-benzothiazol-2-yl)-5,6-dihydro-4H-thieno[2,3-c]pyrrol-2-yl]acetamide
+
+> <PUBCHEM_IUPAC_NAME_MARKUP>
+<I>N</I>-[3-(1,3-benzothiazol-2-yl)-5,6-dihydro-4<I>H</I>-thieno[2,3-c]pyrrol-2-yl]acetamide
+
+> <PUBCHEM_IUPAC_NAME>
+N-[3-(1,3-benzothiazol-2-yl)-5,6-dihydro-4H-thieno[2,3-c]pyrrol-2-yl]acetamide
+
+> <PUBCHEM_IUPAC_SYSTEMATIC_NAME>
+N-[3-(1,3-benzothiazol-2-yl)-5,6-dihydro-4H-thieno[2,3-c]pyrrol-2-yl]ethanamide
+
+> <PUBCHEM_IUPAC_TRADITIONAL_NAME>
+N-[3-(1,3-benzothiazol-2-yl)-5,6-dihydro-4H-thieno[2,3-c]pyrrol-2-yl]acetamide
+
+> <PUBCHEM_IUPAC_INCHI>
+InChI=1S/C15H13N3OS2/c1-8(19)17-14-13(9-6-16-7-12(9)21-14)15-18-10-4-2-3-5-11(10)20-15/h2-5,16H,6-7H2,1H3,(H,17,19)
+
+> <PUBCHEM_IUPAC_INCHIKEY>
+MODNMLYGANOZDZ-UHFFFAOYSA-N
+
+> <PUBCHEM_XLOGP3_AA>
+2.2
+
+> <PUBCHEM_EXACT_MASS>
+315.05000439
+
+> <PUBCHEM_MOLECULAR_FORMULA>
+C15H13N3OS2
+
+> <PUBCHEM_MOLECULAR_WEIGHT>
+315.4
+
+> <PUBCHEM_OPENEYE_CAN_SMILES>
+CC(=O)NC1=C(C2=C(S1)CNC2)C3=NC4=CC=CC=C4S3
+
+> <PUBCHEM_OPENEYE_ISO_SMILES>
+CC(=O)NC1=C(C2=C(S1)CNC2)C3=NC4=CC=CC=C4S3
+
+> <PUBCHEM_CACTVS_TPSA>
+111
+
+> <PUBCHEM_MONOISOTOPIC_WEIGHT>
+315.05000439
+
+> <PUBCHEM_TOTAL_CHARGE>
+0
+
+> <PUBCHEM_HEAVY_ATOM_COUNT>
+21
+
+> <PUBCHEM_ATOM_DEF_STEREO_COUNT>
+0
+
+> <PUBCHEM_ATOM_UDEF_STEREO_COUNT>
+0
+
+> <PUBCHEM_BOND_DEF_STEREO_COUNT>
+0
+
+> <PUBCHEM_BOND_UDEF_STEREO_COUNT>
+0
+
+> <PUBCHEM_ISOTOPIC_ATOM_COUNT>
+0
+
+> <PUBCHEM_COMPONENT_COUNT>
+1
+
+> <PUBCHEM_CACTVS_TAUTO_COUNT>
+-1
+
+> <PUBCHEM_COORDINATE_TYPE>
+1
+5
+255
+
+> <PUBCHEM_BONDANNOTATIONS>
+1  12  8
+1  8  8
+11  12  8
+14  15  8
+14  17  8
+15  18  8
+17  19  8
+18  20  8
+19  20  8
+2  13  8
+2  14  8
+6  13  8
+6  15  8
+7  11  8
+7  8  8
+
+$$$$

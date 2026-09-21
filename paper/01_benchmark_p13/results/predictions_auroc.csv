@@ -1,0 +1,7 @@
+model,model_tag,n_folds,cv_auroc_mean,cv_auroc_sd,cv_auroc_se,ci95_low,ci95_high,seed
+PAIRWISE,pairwise,5,0.852,0.003,0.0013,0.8494,0.8547,42
+Multitask-DNN,multitaskdnn_kim,5,0.7812,0.0036,0.0016,0.778,0.7843,42
+Transynergy,transynergy_liu,5,0.7804,0.0031,0.0014,0.7777,0.7831,42
+DeepDDS,deepdds_wang,5,0.7194,0.0039,0.0017,0.716,0.7228,42
+DeepSynergy,deepsynergy_preuer,5,0.7144,0.0037,0.0017,0.7111,0.7177,42
+MatchMaker,matchmaker_brahim,5,0.6848,0.0035,0.0016,0.6817,0.6879,42

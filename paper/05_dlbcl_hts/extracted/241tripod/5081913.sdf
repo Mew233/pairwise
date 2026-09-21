@@ -1,0 +1,188 @@
+5081913
+  -OEChem-06142321272D
+
+ 33 34  0     0  0  0  0  0  0999 V2000
+    7.1962    3.6830    0.0000 Cl  0  0  0  0  0  0  0  0  0  0  0  0
+    2.0000   -3.3170    0.0000 F   0  0  0  0  0  0  0  0  0  0  0  0
+    2.3660   -1.9510    0.0000 F   0  0  0  0  0  0  0  0  0  0  0  0
+    3.3660   -3.6830    0.0000 F   0  0  0  0  0  0  0  0  0  0  0  0
+    7.1962   -3.3170    0.0000 F   0  0  0  0  0  0  0  0  0  0  0  0
+    5.8301   -3.6830    0.0000 F   0  0  0  0  0  0  0  0  0  0  0  0
+    6.8301   -1.9510    0.0000 F   0  0  0  0  0  0  0  0  0  0  0  0
+    6.3301    0.1830    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    3.7320    1.6830    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    4.5981    0.1830    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+    4.5981   -0.8170    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    3.7320   -2.3170    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    5.4641   -2.3170    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    5.4641   -1.3170    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    3.7320   -1.3170    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.5981   -2.8170    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.8660   -2.8170    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    6.3301   -2.8170    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    5.4641    1.6830    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    5.4641    0.6830    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.5981    2.1830    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    6.3301    2.1830    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.5981    3.1830    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    6.3301    3.1830    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    5.4641    3.6830    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    6.0010   -1.0070    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    3.1951   -1.0070    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    4.5981   -3.4370    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    4.0611    0.4930    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    6.8671    1.8730    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    4.0611    3.4930    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    5.4641    4.3030    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    3.1951    1.9930    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+  1 24  1  0  0  0  0
+  2 17  1  0  0  0  0
+  3 17  1  0  0  0  0
+  4 17  1  0  0  0  0
+  5 18  1  0  0  0  0
+  6 18  1  0  0  0  0
+  7 18  1  0  0  0  0
+  8 20  2  0  0  0  0
+  9 21  1  0  0  0  0
+  9 33  1  0  0  0  0
+ 10 11  1  0  0  0  0
+ 10 20  1  0  0  0  0
+ 10 29  1  0  0  0  0
+ 11 14  2  0  0  0  0
+ 11 15  1  0  0  0  0
+ 12 15  2  0  0  0  0
+ 12 16  1  0  0  0  0
+ 12 17  1  0  0  0  0
+ 13 14  1  0  0  0  0
+ 13 16  2  0  0  0  0
+ 13 18  1  0  0  0  0
+ 14 26  1  0  0  0  0
+ 15 27  1  0  0  0  0
+ 16 28  1  0  0  0  0
+ 19 20  1  0  0  0  0
+ 19 21  2  0  0  0  0
+ 19 22  1  0  0  0  0
+ 21 23  1  0  0  0  0
+ 22 24  2  0  0  0  0
+ 22 30  1  0  0  0  0
+ 23 25  2  0  0  0  0
+ 23 31  1  0  0  0  0
+ 24 25  1  0  0  0  0
+ 25 32  1  0  0  0  0
+M  END
+> <PUBCHEM_COMPOUND_CID>
+5081913
+
+> <PUBCHEM_COMPOUND_CANONICALIZED>
+1
+
+> <PUBCHEM_CACTVS_COMPLEXITY>
+462
+
+> <PUBCHEM_CACTVS_HBOND_ACCEPTOR>
+8
+
+> <PUBCHEM_CACTVS_HBOND_DONOR>
+2
+
+> <PUBCHEM_CACTVS_ROTATABLE_BOND>
+2
+
+> <PUBCHEM_CACTVS_SUBSKEYS>
+AAADccByMcAEAAAAAAAAAAAAAAAAAAAAAAAwYAAAAAAAAAABQAAAHwIQCAAADA6BmDAwxoLAAgCIAiVSUACCAAAlJwAIiAEGbsgIJjbDl5OEcUhm9BHI2YeYyGCOACACYAAIAAAAQATAABAAAAAAAAAAAA==
+
+> <PUBCHEM_IUPAC_OPENEYE_NAME>
+N-[3,5-bis(trifluoromethyl)phenyl]-5-chloro-2-hydroxy-benzamide
+
+> <PUBCHEM_IUPAC_CAS_NAME>
+N-[3,5-bis(trifluoromethyl)phenyl]-5-chloro-2-hydroxybenzamide
+
+> <PUBCHEM_IUPAC_NAME_MARKUP>
+<I>N</I>-[3,5-bis(trifluoromethyl)phenyl]-5-chloro-2-hydroxybenzamide
+
+> <PUBCHEM_IUPAC_NAME>
+N-[3,5-bis(trifluoromethyl)phenyl]-5-chloro-2-hydroxybenzamide
+
+> <PUBCHEM_IUPAC_SYSTEMATIC_NAME>
+N-[3,5-bis(trifluoromethyl)phenyl]-5-chloranyl-2-oxidanyl-benzamide
+
+> <PUBCHEM_IUPAC_TRADITIONAL_NAME>
+N-[3,5-bis(trifluoromethyl)phenyl]-5-chloro-2-hydroxy-benzamide
+
+> <PUBCHEM_IUPAC_INCHI>
+InChI=1S/C15H8ClF6NO2/c16-9-1-2-12(24)11(6-9)13(25)23-10-4-7(14(17,18)19)3-8(5-10)15(20,21)22/h1-6,24H,(H,23,25)
+
+> <PUBCHEM_IUPAC_INCHIKEY>
+CHILCFMQWMQVAL-UHFFFAOYSA-N
+
+> <PUBCHEM_XLOGP3>
+6.2
+
+> <PUBCHEM_EXACT_MASS>
+383.0147752
+
+> <PUBCHEM_MOLECULAR_FORMULA>
+C15H8ClF6NO2
+
+> <PUBCHEM_MOLECULAR_WEIGHT>
+383.67
+
+> <PUBCHEM_OPENEYE_CAN_SMILES>
+C1=CC(=C(C=C1Cl)C(=O)NC2=CC(=CC(=C2)C(F)(F)F)C(F)(F)F)O
+
+> <PUBCHEM_OPENEYE_ISO_SMILES>
+C1=CC(=C(C=C1Cl)C(=O)NC2=CC(=CC(=C2)C(F)(F)F)C(F)(F)F)O
+
+> <PUBCHEM_CACTVS_TPSA>
+49.3
+
+> <PUBCHEM_MONOISOTOPIC_WEIGHT>
+383.0147752
+
+> <PUBCHEM_TOTAL_CHARGE>
+0
+
+> <PUBCHEM_HEAVY_ATOM_COUNT>
+25
+
+> <PUBCHEM_ATOM_DEF_STEREO_COUNT>
+0
+
+> <PUBCHEM_ATOM_UDEF_STEREO_COUNT>
+0
+
+> <PUBCHEM_BOND_DEF_STEREO_COUNT>
+0
+
+> <PUBCHEM_BOND_UDEF_STEREO_COUNT>
+0
+
+> <PUBCHEM_ISOTOPIC_ATOM_COUNT>
+0
+
+> <PUBCHEM_COMPONENT_COUNT>
+1
+
+> <PUBCHEM_CACTVS_TAUTO_COUNT>
+-1
+
+> <PUBCHEM_COORDINATE_TYPE>
+1
+5
+255
+
+> <PUBCHEM_BONDANNOTATIONS>
+11  14  8
+11  15  8
+12  15  8
+12  16  8
+13  14  8
+13  16  8
+19  21  8
+19  22  8
+21  23  8
+22  24  8
+23  25  8
+24  25  8
+
+$$$$

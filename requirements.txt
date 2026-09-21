@@ -1,0 +1,45 @@
+# Pinned to the environment used for all results reported in the manuscript
+# (conda env `scgpt`, Python 3.10.20, CUDA 12.1).
+#
+# torch / dgl carry local CUDA version tags upstream (2.3.0+cu121, 2.4.0+cu121).
+# Install those two from their CUDA index first:
+#   pip install torch==2.3.0 --index-url https://download.pytorch.org/whl/cu121
+#   pip install dgl==2.4.0 -f https://data.dgl.ai/wheels/torch-2.3/cu121/repo.html
+#
+# torchdrug is only required for the DeepDDS baseline; the other models run without it.
+
+torch==2.3.0
+torch-geometric==2.5.1
+dgl==2.4.0
+torchdrug==0.2.1
+dgllife==0.3.2
+
+numpy==1.26.4
+pandas==2.3.3
+scipy==1.15.3
+scikit-learn==1.7.2
+networkx==3.4.2
+
+rdkit==2022.09.5
+
+shap==0.49.1
+lifelines==0.30.0
+
+matplotlib==3.10.8
+seaborn==0.13.2
+
+wandb==0.27.0
+tqdm
+openpyxl
+dill==0.4.1
+joblib==1.5.3
+requests
+
+# Only needed for the batch-integration diagnostic in
+# paper/09_supplement_analyses (exp1_integration_diagnostic.py,
+# exp1_supplementary_analyses.py, cell_lineage_analysis.py). The benchmark,
+# ablation and survival analyses run without them.
+scanpy
+anndata
+scib-metrics
+umap-learn

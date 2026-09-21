@@ -1,0 +1,194 @@
+3902
+  -OEChem-06142321272D
+
+ 33 35  0     0  0  0  0  0  0999 V2000
+    3.5827    1.7500    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+    2.6691    1.3433    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+    2.5000    2.9524    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+    4.4487   -3.7500    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+    8.7788    3.7500    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+    4.4487    1.2500    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.4487    0.2500    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    5.3147    1.7500    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    5.3147   -0.2500    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    5.3147    2.7500    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    3.5827   -0.2500    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    6.1808    1.2500    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    3.4782    2.7445    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    5.3147   -1.2500    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    6.1808    3.2500    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    3.5827   -1.2500    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    7.0468    1.7500    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.4487   -1.7500    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    7.0468    2.7500    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.0000    2.0864    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.4487   -2.7500    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    7.9128    3.2500    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    3.9118    0.9400    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    5.8517    0.0600    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    4.7778    3.0600    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    3.0457    0.0600    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    6.1808    0.6300    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    3.9389    3.1594    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    5.8517   -1.5600    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    6.1808    3.8700    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    3.0457   -1.5600    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    7.5837    1.4400    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.3834    2.0216    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+  1  2  1  0  0  0  0
+  1  6  1  0  0  0  0
+  1 13  1  0  0  0  0
+  2 20  2  0  0  0  0
+  3 13  2  0  0  0  0
+  3 20  1  0  0  0  0
+  4 21  3  0  0  0  0
+  5 22  3  0  0  0  0
+  6  7  1  0  0  0  0
+  6  8  1  0  0  0  0
+  6 23  1  0  0  0  0
+  7  9  2  0  0  0  0
+  7 11  1  0  0  0  0
+  8 10  2  0  0  0  0
+  8 12  1  0  0  0  0
+  9 14  1  0  0  0  0
+  9 24  1  0  0  0  0
+ 10 15  1  0  0  0  0
+ 10 25  1  0  0  0  0
+ 11 16  2  0  0  0  0
+ 11 26  1  0  0  0  0
+ 12 17  2  0  0  0  0
+ 12 27  1  0  0  0  0
+ 13 28  1  0  0  0  0
+ 14 18  2  0  0  0  0
+ 14 29  1  0  0  0  0
+ 15 19  2  0  0  0  0
+ 15 30  1  0  0  0  0
+ 16 18  1  0  0  0  0
+ 16 31  1  0  0  0  0
+ 17 19  1  0  0  0  0
+ 17 32  1  0  0  0  0
+ 18 21  1  0  0  0  0
+ 19 22  1  0  0  0  0
+ 20 33  1  0  0  0  0
+M  END
+> <PUBCHEM_COMPOUND_CID>
+3902
+
+> <PUBCHEM_COMPOUND_CANONICALIZED>
+1
+
+> <PUBCHEM_CACTVS_COMPLEXITY>
+420
+
+> <PUBCHEM_CACTVS_HBOND_ACCEPTOR>
+4
+
+> <PUBCHEM_CACTVS_HBOND_DONOR>
+0
+
+> <PUBCHEM_CACTVS_ROTATABLE_BOND>
+3
+
+> <PUBCHEM_CACTVS_SUBSKEYS>
+AAADccB7gAAAAAAAAAAAAAAAAAAAAWAAAAAwYAAAAAAAAAAB0AAAHAAIAAAADCjBGAQ1EIYIEACyBiBDJACyAAswgIAdyAAIBIiIqCKAmRGEIAhogAIIiA8QgMAOQAAAAAAAAACAAAAAAAAAAAAAAAAAAA==
+
+> <PUBCHEM_IUPAC_OPENEYE_NAME>
+4-[(4-cyanophenyl)-(1,2,4-triazol-1-yl)methyl]benzonitrile
+
+> <PUBCHEM_IUPAC_CAS_NAME>
+4-[(4-cyanophenyl)-(1,2,4-triazol-1-yl)methyl]benzonitrile
+
+> <PUBCHEM_IUPAC_NAME_MARKUP>
+4-[(4-cyanophenyl)-(1,2,4-triazol-1-yl)methyl]benzonitrile
+
+> <PUBCHEM_IUPAC_NAME>
+4-[(4-cyanophenyl)-(1,2,4-triazol-1-yl)methyl]benzonitrile
+
+> <PUBCHEM_IUPAC_SYSTEMATIC_NAME>
+4-[(4-cyanophenyl)-(1,2,4-triazol-1-yl)methyl]benzenecarbonitrile
+
+> <PUBCHEM_IUPAC_TRADITIONAL_NAME>
+4-[(4-cyanophenyl)-(1,2,4-triazol-1-yl)methyl]benzonitrile
+
+> <PUBCHEM_IUPAC_INCHI>
+InChI=1S/C17H11N5/c18-9-13-1-5-15(6-2-13)17(22-12-20-11-21-22)16-7-3-14(10-19)4-8-16/h1-8,11-12,17H
+
+> <PUBCHEM_IUPAC_INCHIKEY>
+HPJKCIUCZWXJDR-UHFFFAOYSA-N
+
+> <PUBCHEM_XLOGP3_AA>
+2.7
+
+> <PUBCHEM_EXACT_MASS>
+285.10144537
+
+> <PUBCHEM_MOLECULAR_FORMULA>
+C17H11N5
+
+> <PUBCHEM_MOLECULAR_WEIGHT>
+285.30
+
+> <PUBCHEM_OPENEYE_CAN_SMILES>
+C1=CC(=CC=C1C#N)C(C2=CC=C(C=C2)C#N)N3C=NC=N3
+
+> <PUBCHEM_OPENEYE_ISO_SMILES>
+C1=CC(=CC=C1C#N)C(C2=CC=C(C=C2)C#N)N3C=NC=N3
+
+> <PUBCHEM_CACTVS_TPSA>
+78.3
+
+> <PUBCHEM_MONOISOTOPIC_WEIGHT>
+285.10144537
+
+> <PUBCHEM_TOTAL_CHARGE>
+0
+
+> <PUBCHEM_HEAVY_ATOM_COUNT>
+22
+
+> <PUBCHEM_ATOM_DEF_STEREO_COUNT>
+0
+
+> <PUBCHEM_ATOM_UDEF_STEREO_COUNT>
+0
+
+> <PUBCHEM_BOND_DEF_STEREO_COUNT>
+0
+
+> <PUBCHEM_BOND_UDEF_STEREO_COUNT>
+0
+
+> <PUBCHEM_ISOTOPIC_ATOM_COUNT>
+0
+
+> <PUBCHEM_COMPONENT_COUNT>
+1
+
+> <PUBCHEM_CACTVS_TAUTO_COUNT>
+-1
+
+> <PUBCHEM_COORDINATE_TYPE>
+1
+5
+255
+
+> <PUBCHEM_BONDANNOTATIONS>
+1  13  8
+1  2  8
+10  15  8
+11  16  8
+12  17  8
+14  18  8
+15  19  8
+16  18  8
+17  19  8
+2  20  8
+3  13  8
+3  20  8
+7  11  8
+7  9  8
+8  10  8
+8  12  8
+9  14  8
+
+$$$$

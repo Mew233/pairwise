@@ -1,0 +1,198 @@
+25169382
+  -OEChem-06142321292D
+
+ 35 38  0     0  0  0  0  0  0999 V2000
+    2.0000   -1.5012    0.0000 Cl  0  0  0  0  0  0  0  0  0  0  0  0
+    8.8726    2.9118    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+    8.1226    0.6171    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+    4.5981   -2.0012    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+    6.8335   -0.5397    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+    5.5443   -3.3059    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+    8.4333    1.5676    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    9.3251    2.0200    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    7.9808    2.4594    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    7.1441    0.4108    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    5.8550   -0.7459    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    5.5443   -1.6964    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    6.4763    1.1551    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.5981   -3.0012    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    5.1871   -0.0016    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    5.4978    0.9489    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    6.1279   -2.5012    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    3.7320   -1.5012    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    3.7320   -3.5012    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.8660   -2.0012    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.8660   -3.0012    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    8.9040    1.1641    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    9.6056    1.4671    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    9.8780    2.3006    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    7.7003    3.0123    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    7.4279    2.1789    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    9.0652    3.5012    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    8.5367    0.1556    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    6.6689    1.7445    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    4.5804   -0.1294    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    5.0837    1.4104    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    6.7479   -2.5012    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    3.7320   -0.8811    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    3.7320   -4.1212    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    2.3291   -3.3112    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+  1 20  1  0  0  0  0
+  2  8  1  0  0  0  0
+  2  9  1  0  0  0  0
+  2 27  1  0  0  0  0
+  3  7  1  0  0  0  0
+  3 10  1  0  0  0  0
+  3 28  1  0  0  0  0
+  4 12  1  0  0  0  0
+  4 14  1  0  0  0  0
+  4 18  1  0  0  0  0
+  5 10  1  0  0  0  0
+  5 11  2  0  0  0  0
+  6 14  2  0  0  0  0
+  6 17  1  0  0  0  0
+  7  8  1  0  0  0  0
+  7  9  1  0  0  0  0
+  7 22  1  0  0  0  0
+  8 23  1  0  0  0  0
+  8 24  1  0  0  0  0
+  9 25  1  0  0  0  0
+  9 26  1  0  0  0  0
+ 10 13  2  0  0  0  0
+ 11 12  1  0  0  0  0
+ 11 15  1  0  0  0  0
+ 12 17  2  0  0  0  0
+ 13 16  1  0  0  0  0
+ 13 29  1  0  0  0  0
+ 14 19  1  0  0  0  0
+ 15 16  2  0  0  0  0
+ 15 30  1  0  0  0  0
+ 16 31  1  0  0  0  0
+ 17 32  1  0  0  0  0
+ 18 20  2  0  0  0  0
+ 18 33  1  0  0  0  0
+ 19 21  2  0  0  0  0
+ 19 34  1  0  0  0  0
+ 20 21  1  0  0  0  0
+ 21 35  1  0  0  0  0
+M  END
+> <PUBCHEM_COMPOUND_CID>
+25169382
+
+> <PUBCHEM_COMPOUND_CANONICALIZED>
+1
+
+> <PUBCHEM_CACTVS_COMPLEXITY>
+364
+
+> <PUBCHEM_CACTVS_HBOND_ACCEPTOR>
+4
+
+> <PUBCHEM_CACTVS_HBOND_DONOR>
+2
+
+> <PUBCHEM_CACTVS_ROTATABLE_BOND>
+3
+
+> <PUBCHEM_CACTVS_SUBSKEYS>
+AAADccBzgAAEAAAAAAAAAAAAAABYAWAAAAAsWAAAAAAAAFgB+AAAHAIQAAAACCrBFyQ9sJ/MGACgATZnZACCgC0xF6AJ2KA4dpiIaOLB25HUIAhokALIyCcQgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
+
+> <PUBCHEM_IUPAC_OPENEYE_NAME>
+N-(azetidin-3-yl)-6-(6-chloroimidazo[1,2-a]pyridin-3-yl)pyridin-2-amine
+
+> <PUBCHEM_IUPAC_CAS_NAME>
+N-(3-azetidinyl)-6-(6-chloro-3-imidazo[1,2-a]pyridinyl)-2-pyridinamine
+
+> <PUBCHEM_IUPAC_NAME_MARKUP>
+<I>N</I>-(azetidin-3-yl)-6-(6-chloroimidazo[1,2-a]pyridin-3-yl)pyridin-2-amine
+
+> <PUBCHEM_IUPAC_NAME>
+N-(azetidin-3-yl)-6-(6-chloroimidazo[1,2-a]pyridin-3-yl)pyridin-2-amine
+
+> <PUBCHEM_IUPAC_SYSTEMATIC_NAME>
+N-(azetidin-3-yl)-6-(6-chloranylimidazo[1,2-a]pyridin-3-yl)pyridin-2-amine
+
+> <PUBCHEM_IUPAC_TRADITIONAL_NAME>
+azetidin-3-yl-[6-(6-chloroimidazo[1,2-a]pyridin-3-yl)-2-pyridyl]amine
+
+> <PUBCHEM_IUPAC_INCHI>
+InChI=1S/C15H14ClN5/c16-10-4-5-15-18-8-13(21(15)9-10)12-2-1-3-14(20-12)19-11-6-17-7-11/h1-5,8-9,11,17H,6-7H2,(H,19,20)
+
+> <PUBCHEM_IUPAC_INCHIKEY>
+RDTAHMIMQLRAMR-UHFFFAOYSA-N
+
+> <PUBCHEM_XLOGP3_AA>
+2.7
+
+> <PUBCHEM_EXACT_MASS>
+299.0937732
+
+> <PUBCHEM_MOLECULAR_FORMULA>
+C15H14ClN5
+
+> <PUBCHEM_MOLECULAR_WEIGHT>
+299.76
+
+> <PUBCHEM_OPENEYE_CAN_SMILES>
+C1C(CN1)NC2=CC=CC(=N2)C3=CN=C4N3C=C(C=C4)Cl
+
+> <PUBCHEM_OPENEYE_ISO_SMILES>
+C1C(CN1)NC2=CC=CC(=N2)C3=CN=C4N3C=C(C=C4)Cl
+
+> <PUBCHEM_CACTVS_TPSA>
+54.2
+
+> <PUBCHEM_MONOISOTOPIC_WEIGHT>
+299.0937732
+
+> <PUBCHEM_TOTAL_CHARGE>
+0
+
+> <PUBCHEM_HEAVY_ATOM_COUNT>
+21
+
+> <PUBCHEM_ATOM_DEF_STEREO_COUNT>
+0
+
+> <PUBCHEM_ATOM_UDEF_STEREO_COUNT>
+0
+
+> <PUBCHEM_BOND_DEF_STEREO_COUNT>
+0
+
+> <PUBCHEM_BOND_UDEF_STEREO_COUNT>
+0
+
+> <PUBCHEM_ISOTOPIC_ATOM_COUNT>
+0
+
+> <PUBCHEM_COMPONENT_COUNT>
+1
+
+> <PUBCHEM_CACTVS_TAUTO_COUNT>
+-1
+
+> <PUBCHEM_COORDINATE_TYPE>
+1
+5
+255
+
+> <PUBCHEM_BONDANNOTATIONS>
+10  13  8
+11  15  8
+12  17  8
+13  16  8
+14  19  8
+15  16  8
+18  20  8
+19  21  8
+20  21  8
+4  12  8
+4  14  8
+4  18  8
+5  10  8
+5  11  8
+6  14  8
+6  17  8
+
+$$$$

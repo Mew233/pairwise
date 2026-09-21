@@ -1,83 +1,114 @@
-### PAIRWISE
+# PAIRWISE: Deep Learning-based Prediction of Effective Personalized Drug Combinations in Cancer
 
-PAIRWISE is an all-in-one package for drug synergy prediction. This package allows the user to conduct **standardized** experiments to compare the prediction performance between reviewed methods.  
+PAIRWISE predicts whether a drug pair acts synergistically in a *specific* tumour
+sample. It fuses three modalities — molecular graphs of the two compounds, their
+drug–target interaction profiles propagated over a protein–protein interaction
+network, and the sample transcriptome — through an attention encoder into a single
+synergy probability.
 
-The user can freely include new datasets, and select preferential cell/drug features to train the deep learning model.
-****
+This repository contains the model, the seven benchmarked baselines, and the code
+that reproduces figure and table in the manuscript.
 
-#### Installation
+- Code: <https://github.com/Mew233/pairwise>
+- All Data and model weights and code: [Figshare] https://doi.org/10.6084/m9.figshare.33950731
+- Interactive predictions: [synergy explorer](https://mew233.shinyapps.io/synergyy_shinyr/) · [BTKi explorer](https://mew233.shinyapps.io/PAIRWISE_Explorer/)
+
+---
+
+## 1. Installation
 
 ```bash
-# Unzip 
-unzip pairwise.zip
-cd pairwise/
-
-#create conda environment
-conda env create --name pairwise --file=environment.yml
+conda create -n pairwise python=3.10
 conda activate pairwise
-#To install for PyTorch 1.10.0, simply run on your mac
-pip install torch-scatter -f https://pytorch-geometric.com/whl/torch-1.10.0+${cpu}.html
-pip install torch-geometric -f https://pytorch-geometric.com/whl/torch-1.10.0+${cpu}.html
-pip install torch-cluster -f https://pytorch-geometric.com/whl/torch-1.10.0+${cpu}.html 
-pip install torch-sparse -f https://pytorch-geometric.com/whl/torch-1.10.0+${cpu}.html 
-pip install torch-spline-conv -f https://pytorch-geometric.com/whl/torch-1.10.0+${cpu}.html
 
-#install pairwise
+# torch and dgl carry CUDA-specific wheels; install them first
+pip install torch==2.3.0 --index-url https://download.pytorch.org/whl/cu121
+pip install dgl==2.4.0 -f https://data.dgl.ai/wheels/torch-2.3/cu121/repo.html
+
+git clone https://github.com/Mew233/pairwise.git
+cd pairwise
 pip install -e .
-
-#Please download data/ and put it in the same path as setup.py
-[data folder] https://zenodo.org/records/18263823
 ```
-If you are using Mac M1 chip, we recommend checking out this [github issue for installation of required dependencies](https://github.com/rusty1s/pytorch_scatter/issues/241)
-****
 
-#### Getting strarted
+Verify:
 
 ```bash
- python pairwise/main.py --model 'deepsynergy_preuer' --synergy_df 'p13' --train_test_mode train
+python -c "import pairwise; print(pairwise.__version__)"
 ```
 
-#### Features explained
-| Model                            |   Input feature format   |                                                                                      | Feature encoders |                                  | Features concatenated   ||Drug1 and drug2 summed  |
-|----------------------------------|:------------------------:|:------------------------------------------------------------------------------------:|:----------------:|:--------------------------------:|:----------------:|:----:|:----------------:|
-|                                  |       *Cell line*        |                                        *Drug*                                        |   *Cell line*    |              *Drug*              |     *Cell line*   |       *Drug*               |      
-| PAIRWISE                         |           exp            |       Chemical structures, Drug-target interaction from DrugTargetCommons v2.0       |   Autoencoders   | Pretrained foundation model, DNN | | | False |
-| ML approaches: LR,RF,XGBoost,ERT |    exp or cnv or mut     |                               Drug-target interaction                                |                  |                                  |         |       |  True|        
-| DeepSynergy                      |           exp            |                       Drug chemical descriptor or fingerprints                       |       DNN        |               DNN                |      |      |   True   |
-| MatchMaker                       |           exp            |                       Drug chemical descriptor or fingerprints                       |       DNN        |               DNN                |      |      |   False    |
-| Multitask_DNN                    |           exp            |                Morgan or MACCS fingerprints, Drug-target interaction                 |       DNN        |               DNN                |  | False| False |
-| DeepDDS                          |           exp            |                                     SMILES2Graph                                     |       MLP        |               GCN                | | | False |
-| TGSynergy                        |           exp            |                                     SMILES2Graph                                     |       GCN        |               GCN                | | | False |
-| TranSynergy                      |           exp            | Network propagated Drug-target interaction or morgan_fingerprint,smiles,smiles2graph |   Transformer    |       GCN(RWR)+Transformer       | | | False |
-| GraphSynergy                     | cell_protein,PPI network |                               drug_protein,PPI network                               |       GCN        |               GCN                | | | False |
+## 2. Data setup
+
+```
+data/
+├── synergy_data/p13/drugcomb_trueset_NoDup.csv   # ~30K curated combinations
+├── cell_line_data/CCLE/                          # expression, CNV, mutation, PPI graphs
+├── cell_line_data/tcga/tcga_encoder.pth          # pretrained transcriptome autoencoder
+├── drug_data/                                    # DTI matrices, structures.sdf, smiles.grover
+└── gene_sets/
+```
+
+See [paper/00_data/data_README.md](paper/00_data/data_README.md) for the full schema and
+for how the p13 benchmark was curated from 13 public screens.
 
 
-****
-#### Data downloaded
-PAIWISE used multi-omics datasets. 
-1. We have provided a cleaned benchmark synergy truset. For details of reporducing, please go to trueset_generation/ to follow the instructions.
-2. CCLE dataset including exp, cnv, mut
-3. Drug-target interaction dataset from DrugComb, and structures.sdf which  enables fingerprints calculation or smiles2graph
-Link and please put into Data/ folder
-****
 
-#### Models included
-In detail, the following drug synergy prediction models were implemented.
-- Baseline machine Learning models (random forest, extreme gradient boosting, extremely randomized tree, logistic regression)
+## 3. Quick start
 
-- End-to-end deep learning models
-    - [1] [Kristina Preuer, Richard PI Lewis, Sepp Hochre-iter, Andreas Bender, Krishna C Bulusu, and G ̈unter Klambauer.DeepSynergy: Predicting Anti-Cancer Drug Synergy with DeepLearning.Bioinformatics, 34(9):1538–1546, 2018.](https://academic.oup.com/bioinformatics/article/34/9/1538/4747884?login=false)
-    - [2] [Kuru Halil Brahim, Oznur Tastan, and Ercument Cicek. MatchMaker: A Deep Learning Framework for Drug Synergy Prediction. IEEE/ACM Transactions on Computational Biology and Bioinformatics, 2021.](https://ieeexplore-ieee-org.proxy.library.cornell.edu/document/9447196/)
-    - [3] [Yejin Kim, Shuyu Zheng, Jing Tang, Wenjin Jim Zheng, Zhao Li, and Xiaoqian Jiang. Anticancer Drug Synergy Prediction in Understudied Tissues Using Transfer Learning. Journal of the American Medical Informatics Association, 28(1):42–51, 2021.](https://academic.oup.com/jamia/article/28/1/42/5920819?login=true)
-    - [4] [Jinxian Wang, Xuejun Liu, Siyuan Shen, Lei Deng, and Hui Liu. DeepDDS: Deep Graph Neural Network with Attention Mechanism to Predict Synergistic Drug Combinations. Briefings in Bioinformatics, 09 2021](https://academic.oup.com/bib/article/23/1/bbab390/6375262)
-    - [5] [Yiheng Zhu, Zhenqiu Ouyang, Wenbo Chen, Ruiwei Feng, Danny Z Chen, Ji Cao, Jian Wu, TGSA: protein–protein association-based twin graph neural networks for drug response prediction with similarity augmentation, Bioinformatics, Volume 38, Issue 2, 15 January 2022, Pages 461–468](https://academic.oup.com/bioinformatics/article-abstract/38/2/461/6374919?redirectedFrom=fulltext)
-    - [6] [Liu, Qiao, and Lei Xie. "TranSynergy: Mechanism-driven interpretable deep neural network for the synergistic prediction and pathway deconvolution of drug combinations." PLoS computational biology 17.2 (2021): e1008653.](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008653&ref=https://githubhelp.com)
-    - [7] [Yang, Jiannan, Zhongzhi Xu, William Ka Kei Wu, Qian Chu, and Qingpeng Zhang. "GraphSynergy: a network-inspired deep learning model for anticancer drug combination prediction." Journal of the American Medical Informatics Association 28, no. 11 (2021): 2336-2345.](https://academic.oup.com/jamia/article/28/11/2336/6362567)
-****
+`example/example2run.ipynb` walks through prediction, feature extraction, fine-tuning, and
+training. Full-data training uses `k_fold_trainer_graph_combonet` (Adam `lr=1e-4`, BCE, batch 256,
+50 epochs × 2 passes, 5-fold CV) and reaches ~0.85 AUROC (held-out / leave-combo).
 
-#### Customized dataset
-Use customized dataset to test. The testing drug combos are sourced from specialized tissues. The testing results are stored in /results/predicts_"Model"_"Customized".csv
-****
+**Train a model**
 
-#### License
-[MIT](https://choosealicense.com/licenses/mit/)
+```bash
+python -m pairwise.main --model pairwise --synergy_df p13 --train_test_mode train
+```
+
+Feature settings (`drug_omics`, `cell_filtered_by`, …) are read from
+`pairwise/configs/config_<model>.json` .
+
+
+**Evaluate a trained checkpoint**
+
+```bash
+python -m pairwise.main --model pairwise --synergy_df p13 --train_test_mode test
+```
+
+Predictions are written to `results/predicts_{model}_{dataset}.txt` with columns
+`index`, `actuals`, `predicts_{model}`; checkpoints go to `weights/best_model_{model}.pth`.
+
+The `pairwise-train` console script is installed as an alias for `python -m pairwise.main`.
+
+GROVER, and DLBCL cooclassifier:
+
+```bash
+python scripts/download_grover.py
+```
+
+
+## 4. Models included
+
+`--model` accepts any of the following. Each has a matching `pairwise/configs/config_{model}.json`
+declaring which drug and cell features it consumes.
+
+| Model | Cell features | Drug features | Reference |
+|---|---|---|---|
+| `pairwise` | expression → autoencoder | GROVER embeddings + RWR-propagated DTI | this work |
+| `transynergy_liu` | expression → transformer | RWR-propagated DTI | [Liu & Xie 2021](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008653) |
+| `multitaskdnn_kim` | expression → DNN | fingerprints + DTI | [Kim et al. 2021](https://academic.oup.com/jamia/article/28/1/42/5920819) |
+| `deepsynergy_preuer` | expression → DNN | chemical descriptors | [Preuer et al. 2018](https://academic.oup.com/bioinformatics/article/34/9/1538/4747884) |
+| `deepdds_wang` | expression → MLP | SMILES → graph → GCN | [Wang et al. 2021](https://academic.oup.com/bib/article/23/1/bbab390/6375262) |
+| `matchmaker_brahim` | expression → DNN | chemical descriptors | [Kuru et al. 2021](https://ieeexplore.ieee.org/document/9447196/) |
+| `TGSynergy` | expression → GCN | SMILES → graph → GCN | [Zhu et al. 2022](https://academic.oup.com/bioinformatics/article-abstract/38/2/461/6374919) |
+| `graphsynergy` | cell–protein + PPI → GCN | drug–protein + PPI → GCN | [Yang et al. 2021](https://academic.oup.com/jamia/article/28/11/2336/6362567) |
+| `LR`, `RF`, `ERT`, `XGBOOST` | expression / CNV / mutation | DTI | scikit-learn baselines |
+
+
+## 5. License
+
+[MIT](LICENSE)
+
+## 6. Citation
+
+> Chengqi X., et al. PAIRWISE: Deep Learning-based Prediction of Effective Personalized
+> Drug Combinations in Cancer.

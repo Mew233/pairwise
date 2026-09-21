@@ -1,0 +1,6 @@
+"variable","test","statistic","p_value","note"
+"COO","Fisher (simulated)",NA,0.00149925037481259,"BTKiCombo(-)/BTKiCombo(+) × ABC/GCB/Unclass"
+"Genetic subtype","Fisher (simulated)",NA,0.129435282358821,"BTKiCombo(-)/BTKiCombo(+) × BN2/EZB/MCD/N1/Other"
+"Ann Arbor stage","Fisher (simulated)",NA,0.220889555222389,"BTKiCombo(-)/BTKiCombo(+) × 0/1/2/3/4"
+"IPI score","Fisher (simulated)",NA,0.0684657671164418,"BTKiCombo(-)/BTKiCombo(+) × 0/1/2/3/4/5"
+"Gender","Chi-square",0.848567981816924,0.356957764632799,"M/F vs BTKiCombo"

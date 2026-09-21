@@ -1,0 +1,227 @@
+RowName,RowTarget,compound0,compound1,ExcessHSA
+Bendamustine,DNA Alkylating Drug,65628,DB06769,18.82449
+Lonidamine,Mitochondrial pyruvate carrier 1 (MPC1) inhibitor,39562,DB06266,76.97292
+Lenalidomide,Cereblon inhibitor,216326,DB00480,-259.13768
+Cladribine,DNA Polymerase inhibitor,20279,DB00242,-47.49334
+Everolimus,mTOR Inhibitor,6442177,DB01590,-420.59198
+Aminoglutethimide,Aromatase Inhibitor,2145,DB00357,-61.07626
+4-Hydroxyandrostenedione,Aromatase Inhibitor,11273,DB08905,3.47503
+Letrozole,Aromatase inhibitor,3902,DB01006,-6.71492
+Gemcitabine,DNA Polymerase inhibitor,60750,DB00441,-289.29784
+Tamoxifen,Selective Estrogen Receptor modulator (SERM),2733526,DB00675,-156.23443
+Combretastatin A-4,Tubulin polymerization inhibitor,5351344,DB14680,-10.96112
+Plinabulin,Tubulin polymerization inhibitor,9949641,DB05992,-257.78729
+Docetaxel,Tubulin depolymerization inhibitor,148124,DB01248,-410.23603
+Blebbistatin,myosin II ATPase inhibitor,3476986,DB01944,-114.70871
+Ispinesib,Kinesin-Like Protein KIF11 inhibitor,6851740,DB06188,-504.87745
+Doxorubicin,DNA Topoisomerase II inhibitor,31703,DB00445,-217.4926
+Cyclophosphamide,DNA Alkylating Drug,2907,DB00531,-51.55482
+5-Azacitidine,DNA Methyltransferase (DNMT) inhibitor,9444,DB00928,-204.44282
+Actinomycin D,DNA-Directed RNA Polymerase Inhibitor,457193,DB00970,-3.16129
+Mithramycin,Alcohol Dehydrogenase Inhibitor,163659,DB06810,-169.15451
+Itraconazole,Anti-fungal,55283,DB01167,-143.51628
+Mifepristone,Progesterone Receptor antagonist,55245,DB00834,-115.97759
+Acadesine,AMP-Activated Protein Kinase (AMPK) activator,17513,DB04944,15.58023
+Imatinib,Bcr-Abl Kinase inhibitor,5291,DB00619,-45.06743
+Nilotinib,Bcr-Abl Kinase inhibitor,644241,DB04868,-197.66546
+Ponatinib,Proto-oncogene tyrosine-protein kinase receptor Ret inhibitor,24826799,DB08901,-361.78155
+DCC-2036,Bcr-Abl Kinase inhibitor,25066467,DB13005,-200.45155
+Dasatinib,Bcr-Abl Kinase inhibitor,3062316,DB01254,-113.14963
+Bosutinib,Bcr-Abl Kinase inhibitor,5328940,DB06616,-53.89877
+Saracatinib,Proto-oncogene tyrosine-protein kinase Src inhibitor,10302451,DB11805,-244.58338
+Vandetanib,Proto-oncogene tyrosine-protein kinase receptor Ret inhibitor,3081361,DB05294,62.60391
+Erlotinib,Epidermal Growth Factor Receptor inhibitor,176870,DB00530,-151.50016
+Gefitinib,Epidermal Growth Factor Receptor inhibitor,123631,DB00317,-98.07198
+Lapatinib,Epidermal Growth Factor Receptor inhibitor,208908,DB01259,-156.97848
+Neratinib,Epidermal Growth Factor Receptor inhibitor,9915743,DB11828,-82.89116
+Canertinib,Epidermal Growth Factor Receptor inhibitor,156414,DB05424,513.4439
+AV-412,Epidermal Growth Factor Receptor inhibitor,11700696,DB06021,144.39302
+Dacomitinib,Epidermal Growth Factor Receptor inhibitor,11511120,DB11963,-15.29503
+CP-724714,Receptor tyrosine-protein kinase NEU (HER2; erbB2) inhibitor,9874913,DB12302,-145.63498
+Afatinib,Epidermal Growth Factor Receptor inhibitor,10184653,DB08916,-20.60108
+AEE-788,Epidermal Growth Factor Receptor inhibitor,10297043,DB12558,39.02027
+CUDC-101,Epidermal Growth Factor Receptor inhibitor,24756910,DB12174,-253.93527
+Pelitinib,Epidermal Growth Factor Receptor inhibitor,6445562,DB05524,-62.93667
+Linifanib,Vascular Endothelial Growth Factor Receptor 2 (VEGFR-2) inhibitor,11485656,DB06080,36.78114
+Axitinib,Vascular Endothelial Growth Factor Receptor 3 (VEGFR-3) inhibitor,6450551,DB06626,129.12805
+Sorafenib,Vascular Endothelial Growth Factor Receptor 3 (VEGFR-3) inhibitor,216239,DB00398,-62.79043
+Vatalanib,Vascular Endothelial Growth Factor Receptor 2 (VEGFR-2) inhibitor,151194,DB04879,71.35288
+Motesanib,Vascular Endothelial Growth Factor Receptor 2 (VEGFR-2) inhibitor,11667893,DB05575,-7.8872
+Tivozanib,Vascular Endothelial Growth Factor Receptor 2 (VEGFR-2) inhibitor,9911830,DB11800,9.00905
+Brivanib,Vascular Endothelial Growth Factor Receptor 2 (VEGFR-2) inhibitor,11234052,DB11958,-65.4515
+Telatinib,Vascular Endothelial Growth Factor Receptor 3 (VEGFR-3) inhibitor,9808844,DB15393,14.13125
+Cabozantinib,Proto-oncogene tyrosine-protein kinase receptor Ret inhibitor,25102847,DB08875,-32.18012
+Cediranib,Vascular Endothelial Growth Factor Receptor 2 (VEGFR-2) inhibitor,9933475,DB04849,-115.20985
+Lenvatinib,Proto-oncogene tyrosine-protein kinase receptor Ret inhibitor,9823820,DB09078,-264.33718
+OSI-632,Vascular Endothelial Growth Factor Receptor 2 (VEGFR-2) inhibitor,9811611,DB12962,59.75674
+Foretinib,Vascular Endothelial Growth Factor Receptor 2 (VEGFR-2) inhibitor,42642645,DB12307,-224.04503
+Regorafenib,Proto-oncogene tyrosine-protein kinase receptor Ret inhibitor,11167602,DB08896,-44.31833
+Dovitinib,Vascular Endothelial Growth Factor Receptor 2 (VEGFR-2) inhibitor,135398510,DB05928,-9.65246
+Masitinib,Fibroblast Growth Factor Receptor 3 inhibitor,10074640,DB11526,-250.14962
+SG-00529,mTOR Complex 1 (mTORC1) inhibitor,11998575,DB12812,-135.19247
+Amuvatinib,Proto-oncogene tyrosine-protein kinase receptor Ret inhibitor,11282283,DB12742,-9.3388
+OSI-930,Vascular Endothelial Growth Factor Receptor 2 (VEGFR-2) inhibitor,9868037,DB05913,-57.67165
+Crizotinib,ALK Tyrosine Kinase Receptor inhibitor,11626560,DB08865,-87.46817
+BMS-777607,Tyrosine-protein kinase Mer inhibitor,24794418,DB12064,-97.38828
+PF-04217903,Hepatocyte Growth Factor Receptor inhibitor,17754438,DB12848,3.32409
+JNJ-38877605,Hepatocyte Growth Factor Receptor inhibitor,46911863,DB13113,69.25928
+SGX-523,Hepatocyte Growth Factor Receptor inhibitor,24779724,DB06314,-212.94741
+Podofilox,Tubulin polymerization inhibitor,10607,DB01179,-99.56504
+Linsitinib,Insulin-like growth factor 1 receptor inhibitor,11640390,DB06075,-116.23294
+Dorsomorphin,Bone morphogenetic protein receptor type-1A inhibitor,11524144,DB08597,11.49463
+LY2157299,TGF-bR1 (ALK5) and TGFbR2 inhibitor,10090485,DB11911,-5.86878
+Tandutinib,Platelet-derived growth factor receptor alpha inhibitor,3038522,DB05465,64.60029
+Quizartinib,Receptor-type tyrosine-protein kinase FLT3 inhibitor,24889392,DB12874,-58.02346
+PRT-060318,Tyrosine-protein kinase SYK inhibitor,11493841,DB08361,-172.15118
+R-406,Tyrosine-protein kinase SYK inhibitor,11213558,DB07159,-9.05846
+Perifosine,AKT serine/threonine kinase inhibitor,148177,DB06641,-192.15342
+Pictilisib,Phosphatidylinositol 3-Kinase alpha isoform inhibitor,17755052,DB11663,-209.80868
+GSK-2126458,Phosphatidylinositol 3-Kinase beta isoform inhibitor,25167777,DB12703,-63.39857
+BKM-120,Phosphatidylinositol 3-Kinase beta isoform inhibitor,16654980,DB11666,-165.02036
+AZD-6482,Phosphatidylinositol 3-Kinase beta isoform inhibitor,44137675,DB14980,-242.00384
+17_-hydroxy Wortmannin,PI3K Inhibitor,3003565,DB08059,-407.34117
+GSK-690693,AKT serine/threonine kinase inhibitor,16725726,DB12745,-247.35409
+BEZ-235,mTOR Complex 1 (mTORC1) inhibitor,11977753,DB11651,-325.06034
+PF-05212384,mTOR Inhibitor,44516953,DB11896,-264.53224
+GDC-0980,Phosphatidylinositol 3-Kinase alpha isoform inhibitor,25254071,DB12180,-244.48431
+AZD-8055,mTOR Complex 1 (mTORC1) inhibitor,25262965,DB12774,-256.34047
+OSI-027,mTORC1/2 Inhibitor,135398516,DB12387,-346.36246
+Salirasib,mTOR Complex 1 (mTORC1) inhibitor,5469318,DB12681,-76.5707
+VX-702,Mitogen-Activated Protein Kinase p38 inhibitor,10341154,DB05470,-205.79993
+SB-203580,Mitogen-Activated Protein Kinase p38 inhibitor,176155,DB08521,10.54012
+VX-745,Mitogen-Activated Protein Kinase p38 inhibitor,3038525,DB07138,-106.86876
+Doramapimod,Mitogen-Activated Protein Kinase 11 inhibitor,156422,DB03044,-115.85683
+PH-797804,Mitogen-Activated Protein Kinase p38 inhibitor,22049997,DB07941,-144.66778
+Talmapimod,Mitogen-Activated Protein Kinase p38 inhibitor,9871074,DB05412,-113.62988
+Bardoxolone methyl,Nuclear Factor Erythroid 2-Related Factor 2 activator,400769,DB05983,-321.34505
+Sulfasalazine,Arachidonate 5-Lipoxygenase inhibitor,5339,DB00795,-37.38477
+(-)-Gossypol,Apoptosis regulator Bcl-2 inhibitor,3503,DB13044,-132.28569
+Navitoclax (ABT-263),Apoptosis regulator Bcl-2 inhibitor,24978538,DB12340,-547.83738
+Serdemetan,E3 Ubiquitin-Protein Ligase Mdm2 (Hdm2) inhibitor,11609586,DB12027,-180.09689
+AZD-7762,Checkpoint kinase 1 inhibitor,11152667,DB12242,-275.28058
+PF-477736,Checkpoint kinase 1 inhibitor,135565545,DB12611,-329.08411
+Flavopiridol,Cyclin-Dependent Kinase 1 inhibitor,5287969,DB03496,-200.94253
+Purvalanol B,Cyclin-Dependent Kinase 1 inhibitor,448991,DB02733,4.99315
+Seliciclib,Cyclin-Dependent Kinase 9 inhibitor,160355,DB06195,-75.54047
+SNS-032,Cyclin-Dependent Kinase 9 inhibitor,3025986,DB05969,-75.37325
+PHA-793887,Cyclin-Dependent Kinase 4 inhibitor,46191454,DB12686,-104.36442
+Palbociclib,Cyclin-Dependent Kinase 6 inhibitor,5330286,DB09073,-240.01491
+SNS-314,Aurora kinase A inhibitor,24995524,DB06134,-119.84861
+Alisertib,Aurora kinase A inhibitor,24771867,DB05220,-168.78309
+Danusertib,Aurora kinase A inhibitor,11442891,DB11778,-122.06826
+CHIR-265,Serine/threonine-protein kinase B-raf inhibitor,11656518,DB05984,-136.77359
+Vemurafenib,Serine/threonine-protein kinase B-raf inhibitor,42611257,DB08881,55.69515
+PLX-4720,Serine/threonine-protein kinase B-raf (Val600Glu Mutant) inhibitor,24180719,DB06999,-74.65971
+Refametinib,Dual Specificity Mitogen-Activated Protein Kinase Kinase 1 inhibitor,44182295,DB06309,-18.10854
+Selumetinib,Dual Specificity Mitogen-Activated Protein Kinase Kinase 1 inhibitor,10127622,DB11689,-118.99718
+PD-0325901,Dual Specificity Mitogen-Activated Protein Kinase Kinase 1 inhibitor,9826528,DB07101,-270.80281
+Trametinib,Dual Specificity Mitogen-Activated Protein Kinase Kinase 1 inhibitor,11707110,DB08911,-295.0883
+TAK-733,Dual Specificity Mitogen-Activated Protein Kinase Kinase 1 inhibitor,24963252,DB12241,-87.37206
+Ibrutinib (PCI-32765),Bruton's Tyrosine Kinase (BTK) inhibitor,24821094,DB09053,-18.60323
+Midostaurin,Receptor-type tyrosine-protein kinase FLT3 inhibitor,9829523,DB06595,-140.27298
+Enzastaurin,Phosphatidylinositol 3-Kinase alpha isoform inhibitor,176167,DB06486,-26.55342
+Sotrastaurin,PKC Inhibitor,10296883,DB12369,-66.50919
+BI-2536,Serine/threonine-protein kinase PLK1 inhibitor,11364421,DB16107,-326.42879
+Volasertib,Serine/threonine-protein kinase PLK1 inhibitor,10461508,DB12062,-320.05825
+Y-27632,Rho-associated protein kinase 1 inhibitor,448042,DB08756,16.60101
+AZD-1480,Tyrosine-protein kinase JAK2 inhibitor,16659841,DB12588,-110.11473
+Tofacitinib,Tyrosine-protein kinase JAK3 inhibitor,9926791,DB08895,47.50179
+Ruxolitinib,Tyrosine-protein kinase JAK2 inhibitor,25126798,DB08877,94.08956
+Momelotinib,Tyrosine-protein kinase JAK1 inhibitor,25062766,DB11763,-198.18689
+Lestaurtinib,Jak/Tyk/Flt Inhibitor,126565,DB06469,-358.70674
+SB1518,Jak2 inhibitor,46216796,DB11697,-239.71864
+Leflunomide,Dihydroorotate Dehydrogenase inhibitor,3899,DB01097,72.26594
+Silmitasertib,Casein Kinase 2 inhibitor,24748573,DB15408,-203.8783
+Sonidegib,Smoothened Receptor antagonist,24775005,DB09143,20.26403
+Taladegib,Smoothened Receptor antagonist,49848070,DB12550,-78.53493
+Vismodegib,Smoothened Receptor antagonist,24776445,DB08828,87.53299
+RO-4929097,Notch Signaling inhibitor,49867930,DB11870,154.77683
+MK-0752,gamma-Secretase inhibitor,9803433,DB12852,24.61972
+NCGC00241411,Interleukin-1 Receptor-Associated Kinase 1 inhibitor,11987888,DB08590,108.96399
+Apilimod,Interleukin-12 Production inhibitor,10173277,DB05611,47.43395
+Pim 1 Inhibitor 2,Serine/threonine-protein kinase pim-1 inhibitor,2765355,DB08707,-28.23053
+SGI-1776,Serine/threonine-protein kinase pim-1 inhibitor,24795070,DB12494,-144.845
+MK-1775,Wee1-like protein kinase inhibitor,24856436,DB11740,-351.34914
+Pazopanib,Vascular Endothelial Growth Factor Receptor 3 (VEGFR-3) inhibitor,10113978,DB06589,-6.18499
+TG-101348,Tyrosine-protein kinase JAK2 inhibitor,16722836,DB12500,-131.97092
+CNF-2024,Heat Shock Protein 90 (Hsp90) inhibitor,16736529,DB12359,-156.17435
+Elesclomol (STA-4783),Heat Shock Protein 70 inducer,300471,DB05719,-255.32109
+Vorinostat (SAHA),"Histone deacetylase 1, class I inhibitor",5311,DB02546,-219.45476
+AR-42,"Histone deacetylase 2, class I inhibitor",6918848,DB12707,-201.38895
+Belinostat,"Histone deacetylase 1, class I inhibitor",6918638,DB05015,-348.95764
+Mocetinostat,"Histone deacetylase 1, class I inhibitor",9865515,DB11830,84.66325
+Panobinostat,"Histone deacetylase 1, class I inhibitor",6918837,DB06603,-78.58321
+Pracinostat,"Histone deacetylase 2, class I inhibitor",49855250,DB05223,-290.02925
+Romidepsin,"Histone deacetylase 1, class I inhibitor",5352062,DB06176,-6.26005
+Selisistat,NAD-Dependent Protein Deacetylase Sirtuin-1 inhibitor,5113032,DB13978,-26.39916
+Entinostat,"Histone deacetylase 2, class I inhibitor",4261,DB11841,-53.87616
+Olaparib,Poly [ADP-ribose] polymerase 1 inhibitor,23725625,DB09074,-1.8928
+Rucaparib,Poly [ADP-ribose] polymerase 1 inhibitor,9931954,DB12332,-2.22
+Iniparib,Poly [ADP-ribose] polymerase 1 inhibitor,9796068,DB13877,-122.65641
+Ixazomib,Proteasome inhibitor,25183872,DB09570,-30.67608
+Carfilzomib,Proteasome inhibitor,11556711,DB08889,-137.27723
+Bortezomib,Proteasome inhibitor,387447,DB00188,-16.50058
+Tosedostat,Aminopeptidase N inhibitor,15547703,DB11781,72.17437
+Teriflunomide,Dihydroorotate Dehydrogenase inhibitor,54684141,DB08880,-179.62577
+Tipifarnib,Protein farnesyltransferase/geranylgeranyltransferase type-1 inhibitor,159324,DB04960,-388.95677
+LG-100268,Retinoic Acid Receptor RXR-alpha agonist,3922,DB01941,54.75867
+Fenretinide,Retinoic Acid Receptor gamma agonist,5288209,DB05076,-183.48508
+Hydrocortisone,Glucocorticoid Receptor agonist,5754,DB00741,-328.83482
+Dexamethasone,Antiinflammatory; glucocorticoid receptor antagonist,5743,DB00443,-398.72347
+Cortivazol,Glucocorticoid Receptor (GR) Agonist,66249,DB13003,-369.2543
+Abiraterone,"Steroid 17-alpha-hydroxylase/17,20 lyase inhibitor",132971,DB05812,-281.44625
+2-Methoxyestradiol,Hypoxia-inducible factor 1-alpha inhibitor,66414,DB02342,-153.67159
+Quercetin,Catechol-O-Methyltransferase inhibitor,5280343,DB04216,-14.39659
+Doxercalciferol,Vitamin D3 Receptor agonist,5281107,DB06410,-15.4866
+Seocalcitol,Vitamin D3 Receptor agonist,5288149,DB04258,-86.71965
+Bicalutamide,Androgen Receptor Antagonist,2375,DB01128,25.33025
+Andarine,Selective Androgen Receptor modulator (SARM),9824562,DB07423,27.2189
+Enzalutamide,Androgen Receptor antagonist,15951529,DB08899,-20.01744
+GW-501516,Peroxisome proliferator-activated receptor delta agonist,9803963,DB05416,-142.95165
+Troglitazone,Peroxisome proliferator-activated receptor gamma agonist,5591,DB00197,49.88125
+Telmisartan,Angiotensin AT1 Receptor antagonist,65999,DB00966,164.48429
+Bazedoxifene,Selective Estrogen Receptor modulator (SERM),154257,DB06401,105.83447
+Triptolide,dCTP Pyrophosphatase 1 inhibitor,107985,DB12025,-195.27051
+Apratastat,ADAM metallopeptidase domain 17 inhibitor,11452716,DB13020,-59.49376
+GSK-3965,LiverX Receptor (LXR) agonist,447905,DB03791,4.50687
+Omeprazole,H+/K+ ATPase inhibitor,4594,DB00338,-167.86799
+Elacridar,Multidrug resistance protein 1 inhibitor,119373,DB04881,-36.87863
+Anagrelide,Phosphodiesterase 3A inhibitor,135409400,DB00261,70.03418
+Ubenimex,Aminopeptidase N inhibitor,72172,DB03424,-17.38197
+Vinpocetine,"Na channel blocker, also PDE1, IKK inhibitor",443955,DB12131,-94.60076
+Verapamil,Calcium Channel inhibitor,2520,DB00661,-40.7083
+Riluzole,Short transient receptor potential channel 5 agonist,5070,DB00740,-13.35334
+SCH-900435,Sodium and chloride glycine transporter 1 inhibitor,11717074,DB12220,-179.87124
+Ivacaftor,CFTR Channel Potentiator,16220172,DB08820,-9.37601
+Meclinertant,Carboxypeptidase A inhibitor,119192,DB06455,-117.74561
+Zibotentan,Endothelin-1 Receptor antagonist,9910224,DB06629,8.13353
+Turofexorate isopropyl,Farnesoid X receptor agonist,10026128,DB12719,-47.82909
+MK-0354,Hydroxycarboxylic Acid Receptor 2 Partial agonist,11159621,DB05939,28.57744
+Cutamesine hydrochloride,sigma1 Receptor Agonist,9907323,DB06618,-31.02632
+Vorapaxar,Proteinase-activated receptor 1 antagonist,10077130,DB09030,-32.01057
+Aprepitant,Tachykinin receptor 1 antagonist,135413536,DB00673,-96.2765
+Osanetant,Tachykinin receptor antagonist,219077,DB04872,-39.63379
+Rolofylline,Adenosine Receptor A1 antagonist,64627,DB12670,14.87955
+Maraviroc,Chemokine CCR5 Antagonist,3002977,DB04835,75.49249
+MK-886,5-lipoxygenase-activating (FLAP) inhibitor,3651377,DB16739,-3.93957
+Veliflapon,Arachidonate 5-Lipoxygenase-Activating Protein inhibitor,123723,DB16346,-70.47937
+Licofelone,Arachidonate 5-Lipoxygenase inhibitor,133021,DB04725,65.33472
+Zileuton,Arachidonate 5-Lipoxygenase inhibitor,60490,DB00744,-86.32111
+Celecoxib,Cyclooxygenase 2(COX2) inhibitor,2662,DB00482,-85.93725
+Fluvastatin,HMG-CoA Reductase inhibitor,446155,DB01095,49.81319
+Simvastatin,HMG-CoA Reductase Inhibitor,54454,DB00641,95.68407
+Dalcetrapib,Cholesteryl Ester Transfer Protein (CETP) Inhibitor,6918540,DB12181,-75.069
+Piraxostat,Xanthine Dehydrogenase/Oxidase inhibitor,449035,DB03841,-135.47916
+Ezatiostat,Glutathione-S-transferase P inhibitor,5310939,DB05460,-14.96487
+Ezetimibe,NPC1L1 Inhibitor,150311,DB00973,-22.09796
+Daporinad,Nicotinamide phosphoribosyltransferase inhibitor,6914657,DB12731,17.9099
+cPEPCK Inhibitor,"Phosphoenolpyruvate Carboxykinase, cytosolic [GTP] inhibitor",447371,DB02008,-23.8872
+AZD-7545,Pyruvate dehydrogenase (PDH) inhibitor,16741245,DB07403,21.85832
+PDHK RIKEN,Pyruvate dehydrogenase (PDH) inhibitor,764764,DB08356,32.76111
+CAP-232,Somatostatin srif2B (sst4) Agonist,6918265,DB12088,-0.08151
+Eliprodil,NMDA Receptor antagonist,60703,DB12869,-47.39729
+Caroverine,NMDA Receptor antagonist,65709,DB13835,-93.66238
+Dapagliflozin,Sodium/glucose cotransporter 2 inhibitor,9887712,DB06292,-12.21732
+Salinomycin,Anticoccidial/Antibacterial,3085092,DB11544,-295.47525
+Efavirenz,Reverse Transcriptase Inhibitor,64139,DB00625,75.58364
+PAC-1,Caspase-3 activator,135421197,DB13048,-76.82948

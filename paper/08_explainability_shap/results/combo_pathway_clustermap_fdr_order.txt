@@ -1,0 +1,90 @@
+Metal Sequestration By Antimicrobial Proteins R-HSA-6799990
+Metabolism R-HSA-1430728
+Metabolism Of Steroids R-HSA-8957322
+Innate Immune System R-HSA-168249
+Signaling By Interleukins R-HSA-449147
+Biological Oxidations R-HSA-211859
+Glycolysis
+Immune System R-HSA-168256
+Cytokine Signaling In Immune System R-HSA-1280215
+Allograft Rejection
+Phase I - Functionalization Of Compounds R-HSA-211945
+Bile Acid And Bile Salt Metabolism R-HSA-194068
+Signaling By Nuclear Receptors R-HSA-9006931
+Transport Of Small Molecules R-HSA-382551
+Neutrophil Degranulation R-HSA-6798695
+Metabolism Of Water-Soluble Vitamins And Cofactors R-HSA-196849
+Apoptosis
+Platelet Degranulation R-HSA-114608
+Response To Elevated Platelet Cytosolic Ca2+ R-HSA-76005
+Transmission Across Chemical Synapses R-HSA-112315
+Neuronal System R-HSA-112316
+Xenobiotic Metabolism
+Interferon Gamma Response
+KRAS Signaling Dn
+SLC-mediated Transmembrane Transport R-HSA-425407
+Hemostasis R-HSA-109582
+NR1H3 And NR1H2 Regulate Gene Expression Linked To Cholesterol Transport And Efflux R-HSA-9029569
+Signaling By Retinoic Acid R-HSA-5362517
+Arachidonic Acid Metabolism R-HSA-2142753
+Apical Junction
+Detoxification Of Reactive Oxygen Species R-HSA-3299685
+Transport Of Inorganic Cations/Anions And Amino Acids/Oligopeptides R-HSA-425393
+Peptide Hormone Metabolism R-HSA-2980736
+Inflammatory Response
+Metabolism Of Vitamins And Cofactors R-HSA-196854
+Translocation Of ZAP-70 To Immunological Synapse R-HSA-202430
+Phosphorylation Of CD3 And TCR Zeta Chains R-HSA-202427
+PD-1 Signaling R-HSA-389948
+Classical Antibody-Mediated Complement Activation R-HSA-173623
+Initial Triggering Of Complement R-HSA-166663
+Basigin Interactions R-HSA-210991
+Generation Of Second Messenger Molecules R-HSA-202433
+Amino Acid Transport Across Plasma Membrane R-HSA-352230
+Calcitonin-like Ligand Receptors R-HSA-419812
+Nicotinate Metabolism R-HSA-196807
+Paracetamol ADME R-HSA-9753281
+Estrogen Response Late
+Interleukin-4 And Interleukin-13 Signaling R-HSA-6785807
+UV Response Dn
+p53 Pathway
+Degradation Of Extracellular Matrix R-HSA-1474228
+Cell Surface Interactions At Vascular Wall R-HSA-202733
+Hypoxia
+Complement
+Myogenesis
+Visual Phototransduction R-HSA-2187338
+Regulation Of Complement Cascade R-HSA-977606
+Complement Cascade R-HSA-166658
+Metabolism Of Ingested SeMet, Sec, MeSec Into H2Se R-HSA-2408508
+Cell Recruitment (Pro-Inflammatory Response) R-HSA-9664424
+HDL Remodeling R-HSA-8964058
+MHC Class II Antigen Presentation R-HSA-2132295
+TNF-alpha Signaling via NF-kB
+RA Biosynthesis Pathway R-HSA-5365859
+Transport Of Organic Anions R-HSA-879518
+Estrogen Response Early
+Coagulation
+Extracellular Matrix Organization R-HSA-1474244
+Activation Of C3 And C5 R-HSA-174577
+Retinoid Metabolism And Transport R-HSA-975634
+Metabolism Of Fat-Soluble Vitamins R-HSA-6806667
+Integrin Cell Surface Interactions R-HSA-216083
+Regulation Of IGF Transport And Uptake By IGFBPs R-HSA-381426
+Post-translational Protein Phosphorylation R-HSA-8957275
+Synthesis Of Bile Acids And Bile Salts Via 27-Hydroxycholesterol R-HSA-193807
+Synthesis Of Bile Acids And Bile Salts Via 7Alpha-Hydroxycholesterol R-HSA-193368
+Synthesis Of Bile Acids And Bile Salts R-HSA-192105
+Peptide Hormone Biosynthesis R-HSA-209952
+Synthesis Of Bile Acids And Bile Salts Via 24-Hydroxycholesterol R-HSA-193775
+Metallothioneins Bind Metals R-HSA-5661231
+Response To Metal Ions R-HSA-5660526
+Keratinization R-HSA-6805567
+Epithelial Mesenchymal Transition
+KRAS Signaling Up
+Insulin Processing R-HSA-264876
+Assembly Of Collagen Fibrils And Other Multimeric Structures R-HSA-2022090
+Presynaptic Depolarization And Calcium Channel Opening R-HSA-112308
+ECM Proteoglycans R-HSA-3000178
+Angiogenesis
+GAG Synthesis Requires Tetrasaccharide Linker Sequence R-HSA-1971475

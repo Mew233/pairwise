@@ -1,0 +1,93 @@
+Drug Combination,Rank
+Aclacinomycin A & Blebbistatin,47
+Aclacinomycin A & Camptothecin,60
+Aclacinomycin A & Cycloheximide,75
+Aclacinomycin A & Doxorubicin,83
+Aclacinomycin A & Etoposide,42
+Aclacinomycin A & Geldanamycin,77
+Aclacinomycin A & H-7,2
+Aclacinomycin A & Methotrexate,34
+Aclacinomycin A & Mitomycin C,82
+Aclacinomycin A & Monastrol,90
+Aclacinomycin A & Rapamycin,6
+Aclacinomycin A & Trichostatin A,62
+Aclacinomycin A & Vincristine,51
+Blebbistatin & Camptothecin,67
+Blebbistatin & Cycloheximide,85
+Blebbistatin & Doxorubicin,37
+Blebbistatin & Etoposide,50
+Blebbistatin & Geldanamycin,57
+Blebbistatin & H-7,13
+Blebbistatin & Methotrexate,76
+Blebbistatin & Mitomycin C,40
+Blebbistatin & Monastrol,36
+Blebbistatin & Rapamycin,10
+Blebbistatin & Trichostatin A,64
+Blebbistatin & Vincristine,16
+Camptothecin & Cycloheximide,72
+Camptothecin & Doxorubicin,43
+Camptothecin & Etoposide,53
+Camptothecin & Geldanamycin,41
+Camptothecin & H-7,49
+Camptothecin & Methotrexate,88
+Camptothecin & Mitomycin C,22
+Camptothecin & Monastrol,55
+Camptothecin & Rapamycin,45
+Camptothecin & Trichostatin A,31
+Camptothecin & Vincristine,70
+Cycloheximide & Doxorubicin,84
+Cycloheximide & Etoposide,69
+Cycloheximide & Geldanamycin,74
+Cycloheximide & H-7,29
+Cycloheximide & Methotrexate,73
+Cycloheximide & Mitomycin C,68
+Cycloheximide & Monastrol,81
+Cycloheximide & Rapamycin,89
+Cycloheximide & Trichostatin A,86
+Cycloheximide & Vincristine,87
+Doxorubicin & Etoposide,26
+Doxorubicin & Geldanamycin,78
+Doxorubicin & H-7,12
+Doxorubicin & Methotrexate,63
+Doxorubicin & Mitomycin C,24
+Doxorubicin & Monastrol,44
+Doxorubicin & Rapamycin,23
+Doxorubicin & Trichostatin A,25
+Doxorubicin & Vincristine,39
+Etoposide & Geldanamycin,17
+Etoposide & H-7,30
+Etoposide & Methotrexate,80
+Etoposide & Mitomycin C,18
+Etoposide & Monastrol,38
+Etoposide & Rapamycin,27
+Etoposide & Trichostatin A,19
+Etoposide & Vincristine,58
+Geldanamycin & H-7,1
+Geldanamycin & Methotrexate,14
+Geldanamycin & Mitomycin C,66
+Geldanamycin & Monastrol,79
+Geldanamycin & Rapamycin,3
+Geldanamycin & Trichostatin A,52
+Geldanamycin & Vincristine,61
+H-7 & Methotrexate,91
+H-7 & Mitomycin C,8
+H-7 & Monastrol,7
+H-7 & Rapamycin,5
+H-7 & Trichostatin A,4
+H-7 & Vincristine,11
+Methotrexate & Mitomycin C,32
+Methotrexate & Monastrol,59
+Methotrexate & Rapamycin,56
+Methotrexate & Trichostatin A,35
+Methotrexate & Vincristine,71
+Mitomycin C & Monastrol,54
+Mitomycin C & Rapamycin,21
+Mitomycin C & Trichostatin A,28
+Mitomycin C & Vincristine,65
+Monastrol & Rapamycin,20
+Monastrol & Trichostatin A,48
+Monastrol & Vincristine,33
+Rapamycin & Trichostatin A,15
+Rapamycin & Vincristine,9
+Trichostatin A & Vincristine,46
+Compound pair with additive activity (IC36),Camptothecin&Trichostatin A

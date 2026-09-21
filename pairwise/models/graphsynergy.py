@@ -9,7 +9,6 @@ import collections
 import torch.nn.functional as F
 
 def get_neighbor_set(items, item_target_dict, graph):
-    # print('constructing neighbor set ...')
     n_memory = 128
 
     neighbor_set = collections.defaultdict(list)

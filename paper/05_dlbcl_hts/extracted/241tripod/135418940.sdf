@@ -1,0 +1,187 @@
+135418940
+  -OEChem-06142321282D
+
+ 32 34  0     0  0  0  0  0  0999 V2000
+    2.0000   -1.2038    0.0000 S   0  0  0  0  0  0  0  0  0  0  0  0
+    9.8622    2.3170    0.0000 F   0  0  0  0  0  0  0  0  0  0  0  0
+    8.4962    2.6830    0.0000 F   0  0  0  0  0  0  0  0  0  0  0  0
+    9.4962    0.9510    0.0000 F   0  0  0  0  0  0  0  0  0  0  0  0
+    4.6660   -2.6830    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    4.6660    0.3170    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+    5.5321   -1.1830    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+    3.8000   -0.1830    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.9061    0.3516    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    3.8000   -1.1830    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.0000   -0.1622    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.9061   -1.7177    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    5.5321   -0.1830    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.6660   -1.6830    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    6.3981    0.3170    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    6.3981    1.3170    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    7.2641   -0.1830    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    8.1301    1.3170    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    7.2641    1.8170    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    8.1301    0.3170    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    8.9962    1.8170    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    3.3107    0.8214    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    2.5124    0.8307    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.7909    0.4215    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.3891   -0.2683    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    2.5124   -2.1967    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    3.3107   -2.1875    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    6.0690   -1.4930    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    5.8612    1.6270    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    7.2641   -0.8030    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    7.2641    2.4370    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    8.6671    0.0070    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+  1 11  1  0  0  0  0
+  1 12  1  0  0  0  0
+  2 21  1  0  0  0  0
+  3 21  1  0  0  0  0
+  4 21  1  0  0  0  0
+  5 14  2  0  0  0  0
+  6  8  1  0  0  0  0
+  6 13  2  0  0  0  0
+  7 13  1  0  0  0  0
+  7 14  1  0  0  0  0
+  7 28  1  0  0  0  0
+  8  9  1  0  0  0  0
+  8 10  2  0  0  0  0
+  9 11  1  0  0  0  0
+  9 22  1  0  0  0  0
+  9 23  1  0  0  0  0
+ 10 12  1  0  0  0  0
+ 10 14  1  0  0  0  0
+ 11 24  1  0  0  0  0
+ 11 25  1  0  0  0  0
+ 12 26  1  0  0  0  0
+ 12 27  1  0  0  0  0
+ 13 15  1  0  0  0  0
+ 15 16  2  0  0  0  0
+ 15 17  1  0  0  0  0
+ 16 19  1  0  0  0  0
+ 16 29  1  0  0  0  0
+ 17 20  2  0  0  0  0
+ 17 30  1  0  0  0  0
+ 18 19  2  0  0  0  0
+ 18 20  1  0  0  0  0
+ 18 21  1  0  0  0  0
+ 19 31  1  0  0  0  0
+ 20 32  1  0  0  0  0
+M  END
+> <PUBCHEM_COMPOUND_CID>
+135418940
+
+> <PUBCHEM_COMPOUND_CANONICALIZED>
+1
+
+> <PUBCHEM_CACTVS_COMPLEXITY>
+505
+
+> <PUBCHEM_CACTVS_HBOND_ACCEPTOR>
+6
+
+> <PUBCHEM_CACTVS_HBOND_DONOR>
+1
+
+> <PUBCHEM_CACTVS_ROTATABLE_BOND>
+1
+
+> <PUBCHEM_CACTVS_SUBSKEYS>
+AAADccBzIYBAAAAAAAAAAAAAAAAAAAAAAAAwQIAAAAAAAACBAAAAHwQQAAAADAiF2BCxAILAAAioAidydACCAAEgABAJiAEgBNgIIKKgmRGEIAhghACoiUcQgAAOQAAAAAAAAACAAAAAAAAAAAAAAAAAAA==
+
+> <PUBCHEM_IUPAC_OPENEYE_NAME>
+2-[4-(trifluoromethyl)phenyl]-3,5,7,8-tetrahydrothiopyrano[4,3-d]pyrimidin-4-one
+
+> <PUBCHEM_IUPAC_CAS_NAME>
+2-[4-(trifluoromethyl)phenyl]-3,5,7,8-tetrahydrothiopyrano[4,3-d]pyrimidin-4-one
+
+> <PUBCHEM_IUPAC_NAME_MARKUP>
+2-[4-(trifluoromethyl)phenyl]-3,5,7,8-tetrahydrothiopyrano[4,3-d]pyrimidin-4-one
+
+> <PUBCHEM_IUPAC_NAME>
+2-[4-(trifluoromethyl)phenyl]-3,5,7,8-tetrahydrothiopyrano[4,3-d]pyrimidin-4-one
+
+> <PUBCHEM_IUPAC_SYSTEMATIC_NAME>
+2-[4-(trifluoromethyl)phenyl]-3,5,7,8-tetrahydrothiopyrano[4,3-d]pyrimidin-4-one
+
+> <PUBCHEM_IUPAC_TRADITIONAL_NAME>
+2-[4-(trifluoromethyl)phenyl]-3,5,7,8-tetrahydrothiopyrano[4,3-d]pyrimidin-4-one
+
+> <PUBCHEM_IUPAC_INCHI>
+InChI=1S/C14H11F3N2OS/c15-14(16,17)9-3-1-8(2-4-9)12-18-11-5-6-21-7-10(11)13(20)19-12/h1-4H,5-7H2,(H,18,19,20)
+
+> <PUBCHEM_IUPAC_INCHIKEY>
+KLGQSVMIPOVQAX-UHFFFAOYSA-N
+
+> <PUBCHEM_XLOGP3_AA>
+2.3
+
+> <PUBCHEM_EXACT_MASS>
+312.05441864
+
+> <PUBCHEM_MOLECULAR_FORMULA>
+C14H11F3N2OS
+
+> <PUBCHEM_MOLECULAR_WEIGHT>
+312.31
+
+> <PUBCHEM_OPENEYE_CAN_SMILES>
+C1CSCC2=C1N=C(NC2=O)C3=CC=C(C=C3)C(F)(F)F
+
+> <PUBCHEM_OPENEYE_ISO_SMILES>
+C1CSCC2=C1N=C(NC2=O)C3=CC=C(C=C3)C(F)(F)F
+
+> <PUBCHEM_CACTVS_TPSA>
+66.8
+
+> <PUBCHEM_MONOISOTOPIC_WEIGHT>
+312.05441864
+
+> <PUBCHEM_TOTAL_CHARGE>
+0
+
+> <PUBCHEM_HEAVY_ATOM_COUNT>
+21
+
+> <PUBCHEM_ATOM_DEF_STEREO_COUNT>
+0
+
+> <PUBCHEM_ATOM_UDEF_STEREO_COUNT>
+0
+
+> <PUBCHEM_BOND_DEF_STEREO_COUNT>
+0
+
+> <PUBCHEM_BOND_UDEF_STEREO_COUNT>
+0
+
+> <PUBCHEM_ISOTOPIC_ATOM_COUNT>
+0
+
+> <PUBCHEM_COMPONENT_COUNT>
+1
+
+> <PUBCHEM_CACTVS_TAUTO_COUNT>
+-1
+
+> <PUBCHEM_COORDINATE_TYPE>
+1
+5
+255
+
+> <PUBCHEM_BONDANNOTATIONS>
+10  14  8
+15  16  8
+15  17  8
+16  19  8
+17  20  8
+18  19  8
+18  20  8
+6  13  8
+6  8  8
+7  13  8
+7  14  8
+8  10  8
+
+$$$$

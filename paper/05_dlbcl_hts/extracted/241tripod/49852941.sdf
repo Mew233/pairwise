@@ -1,0 +1,190 @@
+49852941
+  -OEChem-06142321282D
+
+ 34 36  0     0  0  0  0  0  0999 V2000
+    8.1243    1.6258    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    2.8660   -2.4050    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    2.0000    2.0950    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    3.7320    2.0950    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    6.3961    0.6192    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+    4.6260   -1.4397    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+    6.3923    1.6191    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    7.2641    0.1225    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    5.5321    0.1158    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    7.2564    2.1225    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    8.1282    0.6258    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.6260    0.6297    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    3.7320    0.0950    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    5.5321   -0.9258    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    3.7320   -0.9050    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.8660    0.5950    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.8660   -1.4050    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.0000    0.0950    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.0000   -0.9050    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.8660    1.5950    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    6.1780    2.2009    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    5.7821    1.5091    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    6.8674   -0.3540    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    7.6644   -0.3509    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    7.6531    2.5990    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    6.8560    2.5959    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    8.3425    0.0440    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    8.7384    0.7358    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    4.6188    1.2496    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    6.0678   -1.2379    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.4631    0.4050    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.4631   -1.2150    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    2.3291   -2.7150    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    2.0000    2.7150    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+  1 10  1  0  0  0  0
+  1 11  1  0  0  0  0
+  2 17  1  0  0  0  0
+  2 33  1  0  0  0  0
+  3 20  1  0  0  0  0
+  3 34  1  0  0  0  0
+  4 20  2  0  0  0  0
+  5  7  1  0  0  0  0
+  5  8  1  0  0  0  0
+  5  9  1  0  0  0  0
+  6 14  2  0  0  0  0
+  6 15  1  0  0  0  0
+  7 10  1  0  0  0  0
+  7 21  1  0  0  0  0
+  7 22  1  0  0  0  0
+  8 11  1  0  0  0  0
+  8 23  1  0  0  0  0
+  8 24  1  0  0  0  0
+  9 12  2  0  0  0  0
+  9 14  1  0  0  0  0
+ 10 25  1  0  0  0  0
+ 10 26  1  0  0  0  0
+ 11 27  1  0  0  0  0
+ 11 28  1  0  0  0  0
+ 12 13  1  0  0  0  0
+ 12 29  1  0  0  0  0
+ 13 15  1  0  0  0  0
+ 13 16  2  0  0  0  0
+ 14 30  1  0  0  0  0
+ 15 17  2  0  0  0  0
+ 16 18  1  0  0  0  0
+ 16 20  1  0  0  0  0
+ 17 19  1  0  0  0  0
+ 18 19  2  0  0  0  0
+ 18 31  1  0  0  0  0
+ 19 32  1  0  0  0  0
+M  END
+> <PUBCHEM_COMPOUND_CID>
+49852941
+
+> <PUBCHEM_COMPOUND_CANONICALIZED>
+1
+
+> <PUBCHEM_CACTVS_COMPLEXITY>
+359
+
+> <PUBCHEM_CACTVS_HBOND_ACCEPTOR>
+6
+
+> <PUBCHEM_CACTVS_HBOND_DONOR>
+2
+
+> <PUBCHEM_CACTVS_ROTATABLE_BOND>
+2
+
+> <PUBCHEM_CACTVS_SUBSKEYS>
+AAADccBzOAAAAAAAAAAAAAAAAAAAAAAAAAA8WIAAAAAAAACx8AAAHgAACAAADAzhngY8zvMIFgCoAzT3TASCgCA1ciAI2CEvfNgKZvLSlZOXcQhkwBHY2Ye8/bfeoAABQAASEABAAAKAACQgAAAAAAAAAA==
+
+> <PUBCHEM_IUPAC_OPENEYE_NAME>
+8-hydroxy-3-morpholino-quinoline-5-carboxylic acid
+
+> <PUBCHEM_IUPAC_CAS_NAME>
+8-hydroxy-3-(4-morpholinyl)-5-quinolinecarboxylic acid
+
+> <PUBCHEM_IUPAC_NAME_MARKUP>
+8-hydroxy-3-morpholin-4-ylquinoline-5-carboxylic acid
+
+> <PUBCHEM_IUPAC_NAME>
+8-hydroxy-3-morpholin-4-ylquinoline-5-carboxylic acid
+
+> <PUBCHEM_IUPAC_SYSTEMATIC_NAME>
+3-morpholin-4-yl-8-oxidanyl-quinoline-5-carboxylic acid
+
+> <PUBCHEM_IUPAC_TRADITIONAL_NAME>
+8-hydroxy-3-morpholino-quinoline-5-carboxylic acid
+
+> <PUBCHEM_IUPAC_INCHI>
+InChI=1S/C14H14N2O4/c17-12-2-1-10(14(18)19)11-7-9(8-15-13(11)12)16-3-5-20-6-4-16/h1-2,7-8,17H,3-6H2,(H,18,19)
+
+> <PUBCHEM_IUPAC_INCHIKEY>
+XYBGOSXCBPMITI-UHFFFAOYSA-N
+
+> <PUBCHEM_XLOGP3_AA>
+1.1
+
+> <PUBCHEM_EXACT_MASS>
+274.09535693
+
+> <PUBCHEM_MOLECULAR_FORMULA>
+C14H14N2O4
+
+> <PUBCHEM_MOLECULAR_WEIGHT>
+274.27
+
+> <PUBCHEM_OPENEYE_CAN_SMILES>
+C1COCCN1C2=CC3=C(C=CC(=C3N=C2)O)C(=O)O
+
+> <PUBCHEM_OPENEYE_ISO_SMILES>
+C1COCCN1C2=CC3=C(C=CC(=C3N=C2)O)C(=O)O
+
+> <PUBCHEM_CACTVS_TPSA>
+82.9
+
+> <PUBCHEM_MONOISOTOPIC_WEIGHT>
+274.09535693
+
+> <PUBCHEM_TOTAL_CHARGE>
+0
+
+> <PUBCHEM_HEAVY_ATOM_COUNT>
+20
+
+> <PUBCHEM_ATOM_DEF_STEREO_COUNT>
+0
+
+> <PUBCHEM_ATOM_UDEF_STEREO_COUNT>
+0
+
+> <PUBCHEM_BOND_DEF_STEREO_COUNT>
+0
+
+> <PUBCHEM_BOND_UDEF_STEREO_COUNT>
+0
+
+> <PUBCHEM_ISOTOPIC_ATOM_COUNT>
+0
+
+> <PUBCHEM_COMPONENT_COUNT>
+1
+
+> <PUBCHEM_CACTVS_TAUTO_COUNT>
+-1
+
+> <PUBCHEM_COORDINATE_TYPE>
+1
+5
+255
+
+> <PUBCHEM_BONDANNOTATIONS>
+12  13  8
+13  15  8
+13  16  8
+15  17  8
+16  18  8
+17  19  8
+18  19  8
+6  14  8
+6  15  8
+9  12  8
+9  14  8
+
+$$$$

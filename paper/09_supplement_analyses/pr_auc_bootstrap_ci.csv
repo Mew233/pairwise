@@ -1,0 +1,7 @@
+model,split,pr_point,pr_ci_lo,pr_ci_hi,n_boot
+deepdds_wang,random,0.5451,0.5382,0.552,2000
+deepsynergy_preuer,random,0.5459,0.5389,0.5527,2000
+matchmaker_brahim,random,0.5133,0.5065,0.5202,2000
+multitaskdnn_kim,random,0.6143,0.6078,0.6211,2000
+pairwise,random,0.7099,0.7038,0.7161,2000
+transynergy_liu,random,0.6879,0.6817,0.6942,2000

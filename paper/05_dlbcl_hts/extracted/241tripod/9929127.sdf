@@ -1,0 +1,215 @@
+9929127
+  -OEChem-06142321282D
+
+ 41 44  0     0  0  0  0  0  0999 V2000
+    7.3991   -3.2713    0.0000 Cl  0  0  0  0  0  0  0  0  0  0  0  0
+    8.0321   -1.3232    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    8.3031   -0.3278    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    4.5274   -0.4107    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+    6.6498    0.1884    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+    2.0000   -1.5349    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+    7.5438    3.0521    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+    5.3364   -0.9985    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    5.0274   -1.9495    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.0274   -1.9495    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    3.7183   -0.9985    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    6.3518   -0.7662    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    5.7123   -2.7342    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    7.0547   -1.5349    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    6.7328   -2.5256    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    3.3424   -2.7342    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.7029   -0.7662    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.3219   -2.5256    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    7.6255    0.4076    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    7.9235    1.3621    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    7.2458    2.0975    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    8.8991    1.5813    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    8.7040   -2.0638    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    6.2701    1.8783    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    9.1971    2.5359    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    8.5195    3.2713    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.5274    0.2093    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    5.5139   -3.3216    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    3.5408   -3.3216    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    6.2296    0.6443    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    2.5182   -0.1744    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.9088   -2.9879    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    9.3193    1.1254    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    8.2449   -2.4804    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    9.1207   -2.5229    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    9.1632   -1.6471    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    6.1342    2.4832    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    5.6652    1.7424    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    6.4060    1.2734    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    9.8021    2.6718    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    8.7042    3.8631    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+  1 15  1  0  0  0  0
+  2 14  1  0  0  0  0
+  2 23  1  0  0  0  0
+  3 19  2  0  0  0  0
+  4  8  1  0  0  0  0
+  4 11  1  0  0  0  0
+  4 27  1  0  0  0  0
+  5 12  1  0  0  0  0
+  5 19  1  0  0  0  0
+  5 30  1  0  0  0  0
+  6 17  2  0  0  0  0
+  6 18  1  0  0  0  0
+  7 21  1  0  0  0  0
+  7 26  2  0  0  0  0
+  8  9  1  0  0  0  0
+  8 12  2  0  0  0  0
+  9 10  1  0  0  0  0
+  9 13  2  0  0  0  0
+ 10 11  2  0  0  0  0
+ 10 16  1  0  0  0  0
+ 11 17  1  0  0  0  0
+ 12 14  1  0  0  0  0
+ 13 15  1  0  0  0  0
+ 13 28  1  0  0  0  0
+ 14 15  2  0  0  0  0
+ 16 18  2  0  0  0  0
+ 16 29  1  0  0  0  0
+ 17 31  1  0  0  0  0
+ 18 32  1  0  0  0  0
+ 19 20  1  0  0  0  0
+ 20 21  2  0  0  0  0
+ 20 22  1  0  0  0  0
+ 21 24  1  0  0  0  0
+ 22 25  2  0  0  0  0
+ 22 33  1  0  0  0  0
+ 23 34  1  0  0  0  0
+ 23 35  1  0  0  0  0
+ 23 36  1  0  0  0  0
+ 24 37  1  0  0  0  0
+ 24 38  1  0  0  0  0
+ 24 39  1  0  0  0  0
+ 25 26  1  0  0  0  0
+ 25 40  1  0  0  0  0
+ 26 41  1  0  0  0  0
+M  END
+> <PUBCHEM_COMPOUND_CID>
+9929127
+
+> <PUBCHEM_COMPOUND_CANONICALIZED>
+1
+
+> <PUBCHEM_CACTVS_COMPLEXITY>
+522
+
+> <PUBCHEM_CACTVS_HBOND_ACCEPTOR>
+4
+
+> <PUBCHEM_CACTVS_HBOND_DONOR>
+2
+
+> <PUBCHEM_CACTVS_ROTATABLE_BOND>
+3
+
+> <PUBCHEM_CACTVS_SUBSKEYS>
+AAADccB7sAAEAAAAAAAAAAAAAAAAAWAAAAA8WIAAAAAAAFgB/gAAHgIQAAAADA7BniY+xvLJlACoAzV3VACCiCQ1N2AI2SE9f9gOZvvF95uVMahm1BnY6ceY0fMOoABAYgICGCBAAIDEBAQwQAAAAAAAAA==
+
+> <PUBCHEM_IUPAC_OPENEYE_NAME>
+N-(6-chloro-7-methoxy-9H-pyrido[3,4-b]indol-8-yl)-2-methyl-pyridine-3-carboxamide
+
+> <PUBCHEM_IUPAC_CAS_NAME>
+N-(6-chloro-7-methoxy-9H-pyrido[3,4-b]indol-8-yl)-2-methyl-3-pyridinecarboxamide
+
+> <PUBCHEM_IUPAC_NAME_MARKUP>
+<I>N</I>-(6-chloro-7-methoxy-9<I>H</I>-pyrido[3,4-b]indol-8-yl)-2-methylpyridine-3-carboxamide
+
+> <PUBCHEM_IUPAC_NAME>
+N-(6-chloro-7-methoxy-9H-pyrido[3,4-b]indol-8-yl)-2-methylpyridine-3-carboxamide
+
+> <PUBCHEM_IUPAC_SYSTEMATIC_NAME>
+N-(6-chloranyl-7-methoxy-9H-pyrido[3,4-b]indol-8-yl)-2-methyl-pyridine-3-carboxamide
+
+> <PUBCHEM_IUPAC_TRADITIONAL_NAME>
+N-(6-chloro-7-methoxy-9H-beta-carbolin-8-yl)-2-methyl-nicotinamide
+
+> <PUBCHEM_IUPAC_INCHI>
+InChI=1S/C19H15ClN4O2/c1-10-11(4-3-6-22-10)19(25)24-17-16-13(8-14(20)18(17)26-2)12-5-7-21-9-15(12)23-16/h3-9,23H,1-2H3,(H,24,25)
+
+> <PUBCHEM_IUPAC_INCHIKEY>
+ZNOLRTPMNMPLHY-UHFFFAOYSA-N
+
+> <PUBCHEM_XLOGP3_AA>
+3.1
+
+> <PUBCHEM_EXACT_MASS>
+366.0883534
+
+> <PUBCHEM_MOLECULAR_FORMULA>
+C19H15ClN4O2
+
+> <PUBCHEM_MOLECULAR_WEIGHT>
+366.8
+
+> <PUBCHEM_OPENEYE_CAN_SMILES>
+CC1=C(C=CC=N1)C(=O)NC2=C3C(=CC(=C2OC)Cl)C4=C(N3)C=NC=C4
+
+> <PUBCHEM_OPENEYE_ISO_SMILES>
+CC1=C(C=CC=N1)C(=O)NC2=C3C(=CC(=C2OC)Cl)C4=C(N3)C=NC=C4
+
+> <PUBCHEM_CACTVS_TPSA>
+79.9
+
+> <PUBCHEM_MONOISOTOPIC_WEIGHT>
+366.0883534
+
+> <PUBCHEM_TOTAL_CHARGE>
+0
+
+> <PUBCHEM_HEAVY_ATOM_COUNT>
+26
+
+> <PUBCHEM_ATOM_DEF_STEREO_COUNT>
+0
+
+> <PUBCHEM_ATOM_UDEF_STEREO_COUNT>
+0
+
+> <PUBCHEM_BOND_DEF_STEREO_COUNT>
+0
+
+> <PUBCHEM_BOND_UDEF_STEREO_COUNT>
+0
+
+> <PUBCHEM_ISOTOPIC_ATOM_COUNT>
+0
+
+> <PUBCHEM_COMPONENT_COUNT>
+1
+
+> <PUBCHEM_CACTVS_TAUTO_COUNT>
+4
+
+> <PUBCHEM_COORDINATE_TYPE>
+1
+5
+255
+
+> <PUBCHEM_BONDANNOTATIONS>
+10  11  8
+10  16  8
+11  17  8
+12  14  8
+13  15  8
+14  15  8
+16  18  8
+20  21  8
+20  22  8
+22  25  8
+25  26  8
+4  11  8
+4  8  8
+6  17  8
+6  18  8
+7  21  8
+7  26  8
+8  12  8
+8  9  8
+9  10  8
+9  13  8
+
+$$$$

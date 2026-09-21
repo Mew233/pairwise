@@ -1,5 +1,6 @@
 import re
 import os
+from .paths import DATA_DIR, config_path
 import pandas as pd
 import argparse
 import networkx as nx
@@ -14,7 +15,6 @@ import torch_geometric
 import torch_geometric.data
 from dgllife.utils import *
 
-ROOT_DIR = os.path.realpath(os.path.join(os.path.dirname(__file__), '..'))
 
 # split DB -- unique identifier
 def split_it(compound):
@@ -52,7 +52,7 @@ def explode_dpi(targets):
 
     targets = targets[['HGNC ID','Name','Gene Name','Drug IDs']]
     ## convert HGNC ID to NCBI ID
-    entrez_IDs_df = pd.read_csv(os.path.join(ROOT_DIR, 'data', 'drug_data','hgnc_ncbi.txt'), sep="\t", index_col=False)
+    entrez_IDs_df = pd.read_csv(os.path.join(DATA_DIR, 'drug_data','hgnc_ncbi.txt'), sep="\t", index_col=False)
     entrez_to_genename = dict(entrez_IDs_df[['HGNC ID', 'NCBI Gene ID']].values)
     targets = targets.dropna(subset=['HGNC ID'])
     targets['NCBI_ID'] = targets['HGNC ID'].apply(lambda x: entrez_to_genename[x])
@@ -67,30 +67,36 @@ def explode_dpi(targets):
 # read the method_config file
 import json
 def configuration_from_json(args):
-    with open(os.path.join(ROOT_DIR,'configs','%s%s%s' % ('config_',args.model,'.json')), "r") as jsonfile:
+    with open(config_path(args.model), "r") as jsonfile:
         config = json.load(jsonfile)
     return config
 
 
-## write json from argparse
+## write a run record; never overwrite the shipped package configs
 def write_config(args):
-    with open(os.path.join(ROOT_DIR,'configs','%s%s%s' % ('config_',args.model,'.json')), "w") as f:
+    from .paths import RESULTS_DIR
+    out_dir = os.path.join(RESULTS_DIR, "run_configs")
+    os.makedirs(out_dir, exist_ok=True)
+    out_path = os.path.join(out_dir, f"config_{args.model}.json")
+    with open(out_path, "w") as f:
         json.dump(
             {
-                args.model:{
-                "synergy_df": args.synergy_df,
-                "drug_omics": args.drug_omics,
-                "cell_df": args.cell_df,
-                "cell_omics": args.cell_omics,
-                "cell_filtered_by": args.cell_filtered_by,
-                "model_name": args.model,
-                "get_cellfeature_concated": args.get_cellfeature_concated,
-                "get_drugfeature_concated": args.get_drugfeature_concated,
-                "get_drugs_summed": args.get_drugs_summed,
+                args.model: {
+                    "synergy_df": args.synergy_df,
+                    "drug_omics": args.drug_omics,
+                    "cell_df": args.cell_df,
+                    "cell_omics": args.cell_omics,
+                    "cell_filtered_by": args.cell_filtered_by,
+                    "model_name": args.model,
+                    "get_cellfeature_concated": args.get_cellfeature_concated,
+                    "get_drugfeature_concated": args.get_drugfeature_concated,
+                    "get_drugs_summed": args.get_drugs_summed,
                 }
-             },
-                f
-            )
+            },
+            f,
+            indent=2,
+        )
+    return out_path
         
 
 ## SMILES2Graph for prepare_data for TGSynergy
@@ -238,7 +244,12 @@ def smile_to_graph(smile):
         graph.__setitem__('c_size', torch.LongTensor([c_size]))
 
     except Exception:
-        pass
+        n_feat = len(features[0]) if features else 78
+        graph = torch_geometric.data.Data(
+            x=torch.zeros(1, n_feat),
+            edge_index=torch.zeros(2, 0, dtype=torch.long),
+        )
+        graph.c_size = torch.LongTensor([1])
     
     return graph
 
@@ -374,28 +385,11 @@ class Norm(nn.Module):
         norm = self.alpha * (x - x.mean(dim=-1, keepdim=True)) \
                / (x.std(dim=-1, keepdim=True) + self.eps) + self.bias
         return norm
-
-class Layer(nn.Module):
+        
+class EncoderLayer(nn.Module):
     def __init__(self, d_model, heads, dropout=0.1):
         super().__init__()
-        self.norm_1 = Norm(d_model)
-        self.norm_2 = Norm(d_model)
-        self.attn = MultiHeadAttention(heads, d_model, dropout=dropout)
-        self.ff = FeedForward(d_model, dropout=dropout)
-        self.dropout_1 = nn.Dropout(dropout)
-        self.dropout_2 = nn.Dropout(dropout)
-
-    def forward(self, x, mask=None):
-        x2 = self.norm_1(x)
-        x = x + self.dropout_1(self.attn(x2, x2, x2, mask))
-        x2 = self.norm_2(x)
-        x = x + self.dropout_2(self.ff(x2))
-        return x
-
-class EncoderLayer(nn.Module):
-    def __init__(self, d_input, d_model, heads, dropout=0.1):
-        super().__init__()
-        self.input_linear = nn.Linear(d_input, d_model)
+        #self.input_linear = nn.Linear(d_input, d_model)
         self.norm_1 = Norm(d_model)
         self.norm_2 = Norm(d_model)
         self.attn = MultiHeadAttention(heads, d_model, dropout=dropout)
@@ -556,8 +550,8 @@ def dice(im1, im2):
     The order of inputs for `dice` is irrelevant. The result will be
     identical if `im1` and `im2` are switched.
     """
-    im1 = np.asarray(im1).astype(np.bool)
-    im2 = np.asarray(im2).astype(np.bool)
+    im1 = np.asarray(im1).astype(bool)
+    im2 = np.asarray(im2).astype(bool)
 
     if im1.shape != im2.shape:
         raise ValueError("Shape mismatch: im1 and im2 must have the same shape.")
@@ -586,4 +580,3 @@ if __name__ == "__main__":
     # configuration_from_json()
     test = smile_to_graph('CC[C@H](C)[C@H](NC(=O)[C@H](CCC(O)=O)NC(=O)[C@H](CCC(O)=O)NC(=O)[C@H](CC1=CC=CC=C1)NC(=O)[C@H](CC(O)=O)NC(=O)CNC(=O)[C@H](CC(N)=O)NC(=O)CNC(=O)CNC(=O)CNC(=O)CNC(=O)[C@@H]1CCCN1C(=O)[C@H](CCCNC(N)=N)NC(=O)[C@@H]1CCCN1C(=O)[C@H](N)CC1=CC=CC=C1)C(=O)N1CCC[C@H]1C(=O)N[C@@H](CCC(O)=O)C(=O)N[C@@H](CCC(O)=O)C(=O)N[C@@H](CC1=CC=C(O)C=C1)C(=O)N[C@@H](CC(C)C)C(O)=O')
 
-    #print(test)

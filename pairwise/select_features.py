@@ -1,34 +1,29 @@
 import numpy as np 
 import pandas as pd 
 import os
-from utilitis import *
-import pickle
+from .paths import DATA_DIR
+from .utilitis import *
 
-ROOT_DIR = os.path.realpath(os.path.join(os.path.dirname(__file__), '..'))
 
-def get_drug(drugFeature_dicts, original_list):
-    targets = pd.read_csv(os.path.join(ROOT_DIR, 'data', 'drug_data','all_targets.csv'))
-    enzymes = pd.read_csv(os.path.join(ROOT_DIR, 'data', 'drug_data','all_enzyme.csv'))
-    carrier = pd.read_csv(os.path.join(ROOT_DIR, 'data', 'drug_data','all_carrier.csv'))
-    transporter = pd.read_csv(os.path.join(ROOT_DIR, 'data', 'drug_data','all_transporter.csv'))
+def get_drug(original_list):
+    targets = pd.read_csv(os.path.join(DATA_DIR, 'drug_data','all_targets.csv'))
+    enzymes = pd.read_csv(os.path.join(DATA_DIR, 'drug_data','all_enzyme.csv'))
+    carrier = pd.read_csv(os.path.join(DATA_DIR, 'drug_data','all_carrier.csv'))
+    transporter = pd.read_csv(os.path.join(DATA_DIR, 'drug_data','all_transporter.csv'))
     all = pd.concat([targets,enzymes,carrier,transporter])
     drug_targets = explode_dpi(all)
     
-    dtc = pd.read_csv(os.path.join(ROOT_DIR, 'data', 'drug_data','dtc_db2ncbi.csv'))
+    dtc = pd.read_csv(os.path.join(DATA_DIR, 'drug_data','dtc_db2ncbi.csv'))
     drug_targets_L = pd.concat([drug_targets,dtc])
     drug_targets_L = drug_targets_L.drop_duplicates(subset=['Drug IDs','NCBI_ID'])
 
     drug_list_with_targets = drug_targets_L['Drug IDs'].unique().tolist()
     selected_drugs = list(set(original_list) & set(drug_list_with_targets))
 
-    # remove drugs not in grover
-    grover = drugFeature_dicts['smiles_grover'].keys()
-    selected_drugs = list(set(selected_drugs) & set(grover))
-
     return selected_drugs
 
 def get_GNNCell(cellFeatures_dicts, cellset):
-    # targets = np.load(os.path.join(ROOT_DIR, 'data', 'cell_line_data','CCLE','cell_feature_cn_std.npy'),\
+    # targets = np.load(os.path.join(DATA_DIR, 'cell_line_data','CCLE','cell_feature_cn_std.npy'),\
     #     allow_pickle=True).item()
     # selected_cells = list(targets.keys())
 
@@ -56,13 +51,13 @@ def get_cell(cellFeature_dicts, synergy_cellset, cell_omics, cell_filtered_by, m
 
     def filter_by_2000_genes():
         # following is copied from prepare_data
-        data_dicts = np.load(os.path.join(ROOT_DIR, 'data', 'drug_data','input_drug_data.npy'),allow_pickle=True).item()
+        data_dicts = np.load(os.path.join(DATA_DIR, 'drug_data','input_drug_data.npy'),allow_pickle=True).item()
         selected_genes = data_dicts['drug_target_rwr'].index
         return selected_genes
     
     def filter_by_706_genes():
         # following is copied from prepare_data
-        temp = pd.read_csv(os.path.join(ROOT_DIR, 'data', 'cell_line_data', 'CCLE','CCLE_exp.csv'), index_col=0)
+        temp = pd.read_csv(os.path.join(DATA_DIR, 'cell_line_data', 'CCLE','CCLE_exp.csv'), index_col=0)
         temp.columns = ['Entrez gene id']+[split_it_cell(_) for _ in list(temp.columns)[1:]]
         df_transpose = temp.T
         df_transpose.columns = df_transpose.iloc[0]
@@ -72,7 +67,7 @@ def get_cell(cellFeature_dicts, synergy_cellset, cell_omics, cell_filtered_by, m
         gene_list = list(var_df.sort_values(ascending=False).iloc[:1000].index)
 
         #
-        ppi_data = pd.read_csv(os.path.join(ROOT_DIR, 'data', 'cell_line_data','PPI','protein-protein_network.csv'))
+        ppi_data = pd.read_csv(os.path.join(DATA_DIR, 'cell_line_data','PPI','protein-protein_network.csv'))
         ppi_data_genes = set(list(ppi_data['protein_a']) + list(ppi_data['protein_b']))
         selected_genes = list(set(gene_list) & set(ppi_data_genes))
         return selected_genes
@@ -80,7 +75,7 @@ def get_cell(cellFeature_dicts, synergy_cellset, cell_omics, cell_filtered_by, m
     def ALL():
         # use before batch corrected CCLE most vairance genes
         # index is drug, so we need clean up the df
-        temp = pd.read_csv(os.path.join(ROOT_DIR, 'data', 'cell_line_data','CCLE','CCLE_exp.csv'),sep=',')
+        temp = pd.read_csv(os.path.join(DATA_DIR, 'cell_line_data','CCLE','CCLE_exp.csv'),sep=',')
         temp.columns = ['Entrez gene id']+[split_it_cell(_) for _ in list(temp.columns)[1:]]
         df_transpose = temp.T
         df_transpose.columns = df_transpose.iloc[0]
@@ -88,9 +83,7 @@ def get_cell(cellFeature_dicts, synergy_cellset, cell_omics, cell_filtered_by, m
 
         var_df = processed_data.var(axis=1)
         selected_genes = list(var_df.sort_values(ascending=False).iloc[:1000].index)
-        with open(os.path.join(ROOT_DIR, 'data', 'drug_data','input_drug_data.npy'), 'rb') as file:
-            data_dicts = np.load(file, allow_pickle=True).item()
-
+        data_dicts = np.load(os.path.join(DATA_DIR, 'drug_data','input_drug_data.npy'),allow_pickle=True).item()
         drug_target = list(data_dicts['drug_target'].index)
 
         return list(set(selected_genes+drug_target))

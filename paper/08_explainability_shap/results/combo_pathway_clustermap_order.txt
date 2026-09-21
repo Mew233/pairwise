@@ -1,0 +1,560 @@
+Glycoprotein Hormones R-HSA-209822
+Metabolism R-HSA-1430728
+Signal Transduction R-HSA-162582
+Metabolism Of RNA R-HSA-8953854
+Degradation Of Beta-Catenin By Destruction Complex R-HSA-195253
+TCF Dependent Signaling In Response To WNT R-HSA-201681
+Oxidative Phosphorylation
+Citric Acid (TCA) Cycle And Respiratory Electron Transport R-HSA-1428517
+Interleukin-12 Signaling R-HSA-9020591
+Gene And Protein Expression By JAK-STAT Signaling After Interleukin-12 Stimulation R-HSA-8950505
+Interleukin-12 Family Signaling R-HSA-447115
+Metabolism Of Folate And Pterines R-HSA-196757
+Regulation Of mRNA Stability By Proteins That Bind AU-rich Elements R-HSA-450531
+Oxygen-dependent Proline Hydroxylation Of Hypoxia-inducible Factor Alpha R-HSA-1234176
+Class A/1 (Rhodopsin-like Receptors) R-HSA-373076
+SARS-CoV-2 Infection R-HSA-9694516
+Cell Cycle R-HSA-1640170
+Cytoprotection By HMOX1 R-HSA-9707564
+Signaling By High-Kinase Activity BRAF Mutants R-HSA-6802948
+MAP2K And MAPK Activation R-HSA-5674135
+Paradoxical Activation Of RAF Signaling By Kinase Inactive BRAF R-HSA-6802955
+Oncogenic MAPK Signaling R-HSA-6802957
+Signaling By RAF1 Mutants R-HSA-9656223
+Signaling By BRAF And RAF1 Fusions R-HSA-6802952
+Cellular Response To Heat Stress R-HSA-3371556
+Fc Epsilon Receptor (FCERI) Signaling R-HSA-2454202
+Cellular Response To Hypoxia R-HSA-1234174
+Signaling By NOTCH4 R-HSA-9013694
+Deubiquitination R-HSA-5688426
+SUMO E3 Ligases SUMOylate Target Proteins R-HSA-3108232
+SUMOylation R-HSA-2990846
+Signaling By WNT R-HSA-195721
+GPCR Ligand Binding R-HSA-500792
+G Alpha (I) Signaling Events R-HSA-418594
+Selenoamino Acid Metabolism R-HSA-2408522
+UCH Proteinases R-HSA-5689603
+Branched-chain Amino Acid Catabolism R-HSA-70895
+Deactivation Of Beta-Catenin Transactivating Complex R-HSA-3769402
+Formation Of beta-catenin:TCF Transactivating Complex R-HSA-201722
+Signaling By ALK Fusions And Activated Point Mutants R-HSA-9725370
+Downstream TCR Signaling R-HSA-202424
+TCR Signaling R-HSA-202403
+Glucuronidation R-HSA-156588
+HSF1-dependent Transactivation R-HSA-3371571
+Regulation Of HSF1-mediated Heat Shock Response R-HSA-3371453
+RHOH GTPase Cycle R-HSA-9013407
+Nuclear Events Mediated By NFE2L2 R-HSA-9759194
+KEAP1-NFE2L2 Pathway R-HSA-9755511
+Metabolism Of Porphyrins R-HSA-189445
+Clathrin-mediated Endocytosis R-HSA-8856828
+Protein Localization R-HSA-9609507
+EPHB-mediated Forward Signaling R-HSA-3928662
+C-type Lectin Receptors (CLRs) R-HSA-5621481
+Interleukin-1 Signaling R-HSA-9020702
+Interleukin-1 Family Signaling R-HSA-446652
+ADORA2B Mediated Anti-Inflammatory Cytokine Production R-HSA-9660821
+MAPK6/MAPK4 Signaling R-HSA-5687128
+MyD88-independent TLR4 Cascade R-HSA-166166
+TRAF6 Mediated Induction Of NFkB And MAP Kinases Upon TLR7/8 Or 9 Activation R-HSA-975138
+MyD88 Dependent Cascade Initiated On Endosome R-HSA-975155
+Toll Like Receptor 7/8 (TLR7/8) Cascade R-HSA-168181
+Toll Like Receptor 9 (TLR9) Cascade R-HSA-168138
+SARS-CoV Infections R-HSA-9679506
+Peptide Ligand-Binding Receptors R-HSA-375276
+Apoptosis R-HSA-109581
+Diseases Of Signal Transduction By Growth Factor Receptors And Second Messengers R-HSA-5663202
+TP53 Regulates Metabolic Genes R-HSA-5628897
+PI3K/AKT/mTOR  Signaling
+Transcriptional Regulation By RUNX3 R-HSA-8878159
+Beta-catenin Independent WNT Signaling R-HSA-3858494
+Anti-inflammatory Response Favoring Leishmania Infection R-HSA-9662851
+Transcriptional Regulation By TP53 R-HSA-3700989
+RAF/MAP Kinase Cascade R-HSA-5673001
+MAPK1/MAPK3 Signaling R-HSA-5684996
+Infectious Disease R-HSA-5663205
+Signaling By GPCR R-HSA-372790
+GPCR Downstream Signaling R-HSA-388396
+RHO GTPase Effectors R-HSA-195258
+Signaling By Rho GTPases R-HSA-194315
+Signaling By Rho GTPases, Miro GTPases And RHOBTB3 R-HSA-9716542
+Transcriptional Regulation By RUNX1 R-HSA-8878171
+Signaling By NOTCH R-HSA-157118
+G Alpha (Q) Signaling Events R-HSA-416476
+Early SARS-CoV-2 Infection Events R-HSA-9772572
+TNF Signaling R-HSA-75893
+TNFR2 Non-Canonical NF-kB Pathway R-HSA-5668541
+Attenuation Phase R-HSA-3371568
+HSP90 Chaperone Cycle For Steroid Hormone Receptors (SHR) In Presence Of Ligand R-HSA-3371497
+Recycling Of Bile Acids And Salts R-HSA-159418
+ABC Transporter Disorders R-HSA-5619084
+Platelet Aggregation (Plug Formation) R-HSA-76009
+Chemokine Receptors Bind Chemokines R-HSA-380108
+Factors Involved In Megakaryocyte Development And Platelet Production R-HSA-983231
+Heme Degradation R-HSA-189483
+Potential Therapeutics For SARS R-HSA-9679191
+G Alpha (S) Signaling Events R-HSA-418555
+Metabolism Of Nucleotides R-HSA-15869
+Death Receptor Signaling R-HSA-73887
+Reactive Oxygen Species Pathway
+Signaling By NTRK1 (TRKA) R-HSA-187037
+Nuclear Events (Kinase And Transcription Factor Activation) R-HSA-198725
+Class I MHC Mediated Antigen Processing And Presentation R-HSA-983169
+Toll Like Receptor 4 (TLR4) Cascade R-HSA-166016
+MyD88:MAL(TIRAP) Cascade Initiated On Plasma Membrane R-HSA-166058
+Toll-like Receptor Cascades R-HSA-168898
+Vesicle-mediated Transport R-HSA-5653656
+Cellular Senescence R-HSA-2559583
+Cellular Responses To Stimuli R-HSA-8953897
+Disease R-HSA-1643685
+Leishmania Infection R-HSA-9658195
+ABC-family Proteins Mediated Transport R-HSA-382556
+Cytochrome P450 - Arranged By Substrate Type R-HSA-211897
+Aspirin ADME R-HSA-9749641
+CDC42 GTPase Cycle R-HSA-9013148
+RHOC GTPase Cycle R-HSA-9013106
+RHOA GTPase Cycle R-HSA-8980692
+Transcriptional Regulation By MECP2 R-HSA-8986944
+Chromatin Modifying Enzymes R-HSA-3247509
+Unfolded Protein Response
+Glycosphingolipid Metabolism R-HSA-1660662
+Sphingolipid Metabolism R-HSA-428157
+RHO GTPases Activate PKNs R-HSA-5625740
+Semaphorin Interactions R-HSA-373755
+P75 NTR Receptor-Mediated Signaling R-HSA-193704
+Asparagine N-linked Glycosylation R-HSA-446203
+COPII-mediated Vesicle Transport R-HSA-204005
+ER To Golgi Anterograde Transport R-HSA-199977
+Transport To Golgi And Subsequent Modification R-HSA-948021
+Pyruvate Metabolism And Citric Acid (TCA) Cycle R-HSA-71406
+Signaling By B Cell Receptor (BCR) R-HSA-983705
+Cellular Response To Chemical Stress R-HSA-9711123
+RHO GTPase Cycle R-HSA-9012999
+ER-Phagosome Pathway R-HSA-1236974
+Programmed Cell Death R-HSA-5357801
+Adipogenesis
+Membrane Trafficking R-HSA-199991
+Fatty Acid Metabolism
+MAPK Family Signaling Cascades R-HSA-5683057
+Axon Guidance R-HSA-422475
+Nervous System Development R-HSA-9675108
+Cellular Responses To Stress R-HSA-2262752
+RNA Polymerase II Transcription R-HSA-73857
+Generic Transcription Pathway R-HSA-212436
+Gene Expression (Transcription) R-HSA-74160
+HDMs Demethylate Histones R-HSA-3214842
+Molybdenum Cofactor Biosynthesis R-HSA-947581
+CS/DS Degradation R-HSA-2024101
+Caspase Activation Via Death Receptors In Presence Of Ligand R-HSA-140534
+Caspase Activation Via Extrinsic Apoptotic Signaling Pathway R-HSA-5357769
+Activation Of IRF3/IRF7 Mediated By TBK1/IKK Epsilon R-HSA-936964
+TRIF-mediated Programmed Cell Death R-HSA-2562578
+IRAK2 Mediated Activation Of TAK1 Complex Upon TLR7/8 Or 9 Stimulation R-HSA-975163
+TRAF6-mediated Induction Of TAK1 Complex Within TLR4 Complex R-HSA-937072
+LGI-ADAM Interactions R-HSA-5682910
+Miscellaneous Substrates R-HSA-211958
+Fatty Acids R-HSA-211935
+HS-GAG Degradation R-HSA-2024096
+Pyroptosis R-HSA-5620971
+Scavenging Of Heme From Plasma R-HSA-2168880
+Kinesins R-HSA-983189
+Other Interleukin Signaling R-HSA-449836
+Insertion Of Tail-Anchored Proteins Into Endoplasmic Reticulum Membrane R-HSA-9609523
+Meiosis R-HSA-1500620
+Highly Calcium Permeable Postsynaptic Nicotinic Acetylcholine Receptors R-HSA-629594
+Acetylcholine Binding And Downstream Events R-HSA-181431
+Highly Calcium Permeable Nicotinic Acetylcholine Receptors R-HSA-629597
+Presynaptic Nicotinic Acetylcholine Receptors R-HSA-622323
+Reversible Hydration Of Carbon Dioxide R-HSA-1475029
+HCMV Early Events R-HSA-9609690
+HCMV Infection R-HSA-9609646
+Chylomicron Assembly R-HSA-8963888
+Plasma Lipoprotein Assembly R-HSA-8963898
+NRIF Signals Cell Death From Nucleus R-HSA-205043
+p75NTR Recruits Signaling Complexes R-HSA-209543
+NF-kB Is Activated And Signals Survival R-HSA-209560
+Synthesis Of Very Long-Chain Fatty acyl-CoAs R-HSA-75876
+Phase 2 - Plateau Phase R-HSA-5576893
+Collagen Biosynthesis And Modifying Enzymes R-HSA-1650814
+NLRP3 Inflammasome R-HSA-844456
+Inflammasomes R-HSA-622312
+Azathioprine ADME R-HSA-9748787
+TP53 Regulates Transcription Of Cell Death Genes R-HSA-5633008
+RHO GTPases Activate PAKs R-HSA-5627123
+Sema4D In Semaphorin Signaling R-HSA-400685
+Keratan Sulfate/Keratin Metabolism R-HSA-1638074
+Na+/Cl- Dependent Neurotransmitter Transporters R-HSA-442660
+Voltage Gated Potassium Channels R-HSA-1296072
+Recycling Pathway Of L1 R-HSA-437239
+Reproduction R-HSA-1474165
+Diseases Associated With TLR Signaling Cascade R-HSA-5602358
+Senescence-Associated Secretory Phenotype (SASP) R-HSA-2559582
+Cell-Cell Communication R-HSA-1500931
+Apoptosis
+Platelet Degranulation R-HSA-114608
+Response To Elevated Platelet Cytosolic Ca2+ R-HSA-76005
+Ion Homeostasis R-HSA-5578775
+Xenobiotic Metabolism
+Interferon Gamma Response
+Transmission Across Chemical Synapses R-HSA-112315
+Neuronal System R-HSA-112316
+Muscle Contraction R-HSA-397014
+Cardiac Conduction R-HSA-5576891
+KRAS Signaling Dn
+SLC-mediated Transmembrane Transport R-HSA-425407
+Metabolism Of Water-Soluble Vitamins And Cofactors R-HSA-196849
+Signaling By PDGF R-HSA-186797
+Uptake And Actions Of Bacterial Toxins R-HSA-5339562
+Regulation Of Insulin Secretion R-HSA-422356
+Sensory Processing Of Sound By Outer Hair Cells Of Cochlea R-HSA-9662361
+Interferon Alpha Response
+Signaling By Non-Receptor Tyrosine Kinases R-HSA-9006927
+L1CAM Interactions R-HSA-373760
+IL-6/JAK/STAT3 Signaling
+IL-2/STAT5 Signaling
+Hemostasis R-HSA-109582
+Bile Acid Metabolism
+Ion Channel Transport R-HSA-983712
+Signaling By Nuclear Receptors R-HSA-9006931
+Phase II - Conjugation Of Compounds R-HSA-156580
+Transport Of Small Molecules R-HSA-382551
+Neutrophil Degranulation R-HSA-6798695
+NR1H2 And NR1H3-mediated Signaling R-HSA-9024446
+Plasma Lipoprotein Assembly, Remodeling, And Clearance R-HSA-174824
+Spermatogenesis
+SLC Transporter Disorders R-HSA-5619102
+Role Of LAT2/NTAL/LAB On Calcium Mobilization R-HSA-2730905
+Neurotransmitter Clearance R-HSA-112311
+Ethanol Oxidation R-HSA-71384
+ALK Mutants Bind TKIs R-HSA-9700645
+Glucocorticoid Biosynthesis R-HSA-194002
+MECP2 Regulates Neuronal Receptors And Channels R-HSA-9022699
+Nuclear Events Stimulated By ALK Signaling In Cancer R-HSA-9725371
+p130Cas Linkage To MAPK Signaling For Integrins R-HSA-372708
+GRB2:SOS Provides Linkage To MAPK Signaling For Integrins R-HSA-354194
+Integrin Signaling R-HSA-354192
+Glutamate Binding, Activation Of AMPA Receptors And Synaptic Plasticity R-HSA-399721
+EPHA-mediated Growth Cone Collapse R-HSA-3928663
+RHO GTPases Activate ROCKs R-HSA-5627117
+Sema4D Induced Cell Migration And Growth-Cone Collapse R-HSA-416572
+Endogenous Sterols R-HSA-211976
+RUNX1 Regulates Genes Involved In Megakaryocyte Differentiation And Platelet Function R-HSA-8936459
+Triglyceride Catabolism R-HSA-163560
+Triglyceride Metabolism R-HSA-8979227
+Regulated Proteolysis Of p75NTR R-HSA-193692
+p75NTR Signals Via NF-kB R-HSA-193639
+Cell Death Signaling Via NRAGE, NRIF And NADE R-HSA-204998
+Regulation Of Pyruvate Dehydrogenase (PDH) Complex R-HSA-204174
+Uptake And Function Of Anthrax Toxins R-HSA-5210891
+Regulated Necrosis R-HSA-5218859
+IKK Complex Recruitment Mediated By RIP1 R-HSA-937041
+Synthesis Of Substrates In N-glycan Biosythesis R-HSA-446219
+Biosynthesis Of N-glycan Precursor (Dolichol LLO) And Transfer To Protein R-HSA-446193
+Metal Ion SLC Transporters R-HSA-425410
+VEGFR2 Mediated Vascular Permeability R-HSA-5218920
+RHOB GTPase Cycle R-HSA-9013026
+Sulfur Amino Acid Metabolism R-HSA-1614635
+Methylation R-HSA-156581
+Cargo Concentration In ER R-HSA-5694530
+RHOJ GTPase Cycle R-HSA-9013409
+RHOQ GTPase Cycle R-HSA-9013406
+Fatty acyl-CoA Biosynthesis R-HSA-75105
+Amyloid Fiber Formation R-HSA-977225
+Transcriptional Regulation Of Granulopoiesis R-HSA-9616222
+Nucleotide-binding Domain, Leucine Rich Repeat Containing NLR Signaling Pathways R-HSA-168643
+Antigen processing-Cross Presentation R-HSA-1236975
+Metabolism Of Carbohydrates R-HSA-71387
+ESR-mediated Signaling R-HSA-8939211
+Signaling By NTRKs R-HSA-166520
+Metabolism Of Lipids R-HSA-556833
+Metabolism Of Proteins R-HSA-392499
+Post-translational Protein Modification R-HSA-597592
+Metabolism Of Amino Acids And Derivatives R-HSA-71291
+Developmental Biology R-HSA-1266738
+heme Metabolism
+VEGFA-VEGFR2 Pathway R-HSA-4420097
+Signaling By VEGF R-HSA-194138
+Allograft Rejection
+mTORC1 Signaling
+Integration Of Energy Metabolism R-HSA-163685
+Fatty Acid Metabolism R-HSA-8978868
+EPH-Ephrin Signaling R-HSA-2682334
+Pperoxisome
+Phase I - Functionalization Of Compounds R-HSA-211945
+Nuclear Receptor Transcription Pathway R-HSA-383280
+Drug ADME R-HSA-9748784
+Disorders Of Transmembrane Transporters R-HSA-5619115
+Wnt-beta Catenin Signaling
+Class B/2 (Secretin Family Receptors) R-HSA-373080
+Signaling By TGFB Family Members R-HSA-9006936
+Ca2+ Pathway R-HSA-4086398
+Signal Transduction By L1 R-HSA-445144
+Androgen Response
+Metabolism Of Steroid Hormones R-HSA-196071
+Pyruvate Metabolism R-HSA-70268
+Metabolic Disorders Of Biological Oxidation Enzymes R-HSA-5579029
+Costimulation By CD28 Family R-HSA-388841
+Interferon Signaling R-HSA-913531
+Extra-nuclear Estrogen Signaling R-HSA-9009391
+Metabolism Of Steroids R-HSA-8957322
+Diseases Of Metabolism R-HSA-5668914
+Platelet Activation, Signaling And Aggregation R-HSA-76002
+Interleukin-2 Family Signaling R-HSA-451927
+Transport Of Bile Salts And Organic Acids, Metal Ions And Amine Compounds R-HSA-425366
+Signaling By Interleukins R-HSA-449147
+Innate Immune System R-HSA-168249
+Signaling By Receptor Tyrosine Kinases R-HSA-9006934
+UV Response Up
+Glycolysis
+Biological Oxidations R-HSA-211859
+Adaptive Immune System R-HSA-1280218
+Immune System R-HSA-168256
+Cytokine Signaling In Immune System R-HSA-1280215
+Heme Signaling R-HSA-9707616
+Unfolded Protein Response (UPR) R-HSA-381119
+Neurotransmitter Receptors And Postsynaptic Signal Transmission R-HSA-112314
+Platelet Homeostasis R-HSA-418346
+Ion Transport By P-type ATPases R-HSA-936837
+Phase 0 - Rapid Depolarisation R-HSA-5576892
+Repression Of WNT Target Genes R-HSA-4641265
+Transcriptional Regulation By VENTX R-HSA-8853884
+COPI-dependent Golgi-to-ER Retrograde Traffic R-HSA-6811434
+Golgi-to-ER Retrograde Transport R-HSA-8856688
+Intra-Golgi And Retrograde Golgi-to-ER Traffic R-HSA-6811442
+HCMV Late Events R-HSA-9610379
+Binding Of TCF/LEF:CTNNB1 To Target Gene Promoters R-HSA-4411364
+RUNX3 Regulates WNT Signaling R-HSA-8951430
+Vitamin C (Ascorbate) Metabolism R-HSA-196836
+RNA Polymerase II Transcribes snRNA Genes R-HSA-6807505
+Generation Of Second Messenger Molecules R-HSA-202433
+Cation-coupled Chloride Cotransporters R-HSA-426117
+Keratan Sulfate Degradation R-HSA-2022857
+Keratan Sulfate Biosynthesis R-HSA-2022854
+SUMOylation Of Transcription Factors R-HSA-3232118
+Nicotinamide Salvaging R-HSA-197264
+Lewis Blood Group Biosynthesis R-HSA-9037629
+Blood Group Systems Biosynthesis R-HSA-9033658
+Synthesis, Secretion, And Deacylation Of Ghrelin R-HSA-422085
+Eicosanoids R-HSA-211979
+RHO GTPases Activate CIT R-HSA-5625900
+Bile Acid And Bile Salt Metabolism R-HSA-194068
+Synthesis Of Prostaglandins (PG) And Thromboxanes (TX) R-HSA-2162123
+Endosomal/Vacuolar Pathway R-HSA-1236977
+Trafficking And Processing Of Endosomal TLR R-HSA-1679131
+Pancreas Beta Cells
+Synthesis, Secretion, And Inactivation Of Glucagon-like Peptide-1 (GLP-1) R-HSA-381771
+Incretin Synthesis, Secretion, And Inactivation R-HSA-400508
+Creation Of C4 And C2 Activators R-HSA-166786
+Scavenging By Class A Receptors R-HSA-3000480
+Binding And Uptake Of Ligands By Scavenger Receptors R-HSA-2173782
+Signaling By ERBB4 R-HSA-1236394
+Nuclear Signaling By ERBB4 R-HSA-1251985
+NGF-stimulated Transcription R-HSA-9031628
+Formation Of Fibrin Clot (Clotting Cascade) R-HSA-140877
+Common Pathway Of Fibrin Clot Formation R-HSA-140875
+Alpha-Linolenic (Omega3) And Linoleic (Omega6) Acid Metabolism R-HSA-2046104
+Synthesis Of Leukotrienes (LT) And Eoxins (EX) R-HSA-2142691
+Nucleotide Catabolism R-HSA-8956319
+Pyrimidine Catabolism R-HSA-73621
+Cellular Hexose Transport R-HSA-189200
+NR1H3 And NR1H2 Regulate Gene Expression Linked To Cholesterol Transport And Efflux R-HSA-9029569
+Signaling By Retinoic Acid R-HSA-5362517
+Sensory Perception R-HSA-9709957
+Detoxification Of Reactive Oxygen Species R-HSA-3299685
+Glutathione Conjugation R-HSA-156590
+Transport Of Inorganic Cations/Anions And Amino Acids/Oligopeptides R-HSA-425393
+Neurotransmitter Release Cycle R-HSA-112310
+Apical Junction
+Diseases Of Glycosylation R-HSA-3781865
+Inflammatory Response
+Potassium Channels R-HSA-1296071
+Peptide Hormone Metabolism R-HSA-2980736
+Metabolism Of Vitamins And Cofactors R-HSA-196854
+Stimuli-sensing Channels R-HSA-2672351
+Interaction Between L1 And Ankyrins R-HSA-445095
+Glycosaminoglycan Metabolism R-HSA-1630316
+Plasma Lipoprotein Remodeling R-HSA-8963899
+Smooth Muscle Contraction R-HSA-445355
+Sensory Processing Of Sound By Inner Hair Cells Of Cochlea R-HSA-9662360
+Sensory Processing Of Sound R-HSA-9659379
+Iron Uptake And Transport R-HSA-917937
+Arachidonic Acid Metabolism R-HSA-2142753
+EPH-ephrin Mediated Repulsion Of Cells R-HSA-3928665
+Interferon Gamma Signaling R-HSA-877300
+Aflatoxin Activation And Detoxification R-HSA-5423646
+Hedgehog Signaling
+RHO GTPases Activate NADPH Oxidases R-HSA-5668599
+Immunoregulatory Interactions Between A Lymphoid And A non-Lymphoid Cell R-HSA-198933
+PERK Regulates Gene Expression R-HSA-381042
+Transport Of Vitamins, Nucleosides, And Related Molecules R-HSA-425397
+Interleukin-10 Signaling R-HSA-6783783
+Cell Surface Interactions At Vascular Wall R-HSA-202733
+Hypoxia
+Complement
+Vitamin B5 (Pantothenate) Metabolism R-HSA-199220
+p75NTR Negatively Regulates Cell Cycle Via SC1 R-HSA-193670
+NADE Modulates Death Signaling R-HSA-205025
+Crosslinking Of Collagen Fibrils R-HSA-2243919
+Translocation Of ZAP-70 To Immunological Synapse R-HSA-202430
+Phosphorylation Of CD3 And TCR Zeta Chains R-HSA-202427
+PD-1 Signaling R-HSA-389948
+Termination Of O-glycan Biosynthesis R-HSA-977068
+O-linked Glycosylation Of Mucins R-HSA-913709
+Defective GALNT12 Causes CRCS1 R-HSA-5083636
+Defective GALNT3 Causes HFTC R-HSA-5083625
+Defective C1GALT1C1 Causes TNPS R-HSA-5083632
+Estrogen Biosynthesis R-HSA-193144
+PTK6 Promotes HIF1A Stabilization R-HSA-8857538
+Dectin-2 Family R-HSA-5621480
+Synthesis Of Bile Acids And Bile Salts Via 27-Hydroxycholesterol R-HSA-193807
+Retrograde Neurotrophin Signaling R-HSA-177504
+Defective B4GALT1 Causes B4GALT1-CDG (CDG-2d) R-HSA-3656244
+Meiotic Synapsis R-HSA-1221632
+Collagen Chain Trimerization R-HSA-8948216
+p75NTR Regulates Axonogenesis R-HSA-193697
+NRAGE Signals Death Thru JNK R-HSA-193648
+Gastrulation R-HSA-9758941
+Fibronectin Matrix Formation R-HSA-1566977
+HS-GAG Biosynthesis R-HSA-2022928
+Glutamate Neurotransmitter Release Cycle R-HSA-210500
+Assembly Of Collagen Fibrils And Other Multimeric Structures R-HSA-2022090
+Presynaptic Depolarization And Calcium Channel Opening R-HSA-112308
+ECM Proteoglycans R-HSA-3000178
+Angiogenesis
+Keratinization R-HSA-6805567
+Cell-cell Junction Organization R-HSA-421270
+Adherens Junctions Interactions R-HSA-418990
+Epithelial Mesenchymal Transition
+KRAS Signaling Up
+Defensins R-HSA-1461973
+Extrinsic Pathway Of Fibrin Clot Formation R-HSA-140834
+TNFs Bind Their Physiological Receptors R-HSA-5669034
+ABC Transporters In Lipid Homeostasis R-HSA-1369062
+Dissolution Of Fibrin Clot R-HSA-75205
+Synthesis Of 15-Eicosatetraenoic Acid Derivatives R-HSA-2142770
+Synthesis Of 12-Eicosatetraenoic Acid Derivatives R-HSA-2142712
+TNFR1-mediated Ceramide Production R-HSA-5626978
+Post-translational Modification: Synthesis Of GPI-anchored Proteins R-HSA-163125
+Synthesis Of Bile Acids And Bile Salts Via 7Alpha-Hydroxycholesterol R-HSA-193368
+Synthesis Of Bile Acids And Bile Salts R-HSA-192105
+Terminal Pathway Of Complement R-HSA-166665
+Highly Sodium Permeable Postsynaptic Acetylcholine Nicotinic Receptors R-HSA-629587
+Regulation Of HMOX1 Expression And Activity R-HSA-9707587
+Norepinephrine Neurotransmitter Release Cycle R-HSA-181430
+Insulin Processing R-HSA-264876
+RHO GTPases Activate KTN1 R-HSA-5625970
+Metabolism Of Ingested SeMet, Sec, MeSec Into H2Se R-HSA-2408508
+TP53 Regulates Transcription Of Death Receptors And Ligands R-HSA-6803211
+Elastic Fibre Formation R-HSA-1566948
+Molecules Associated With Elastic Fibres R-HSA-2129379
+Creatine Metabolism R-HSA-71288
+Formation Of Cornified Envelope R-HSA-6809371
+HDL Remodeling R-HSA-8964058
+Syndecan Interactions R-HSA-3000170
+Non-integrin membrane-ECM Interactions R-HSA-3000171
+Laminin Interactions R-HSA-3000157
+Canonical Retinoid Cycle In Rods (Twilight Vision) R-HSA-2453902
+Synthesis Of 5-Eicosatetraenoic Acids R-HSA-2142688
+Activation Of C3 And C5 R-HSA-174577
+Retinoid Metabolism And Transport R-HSA-975634
+Metabolism Of Fat-Soluble Vitamins R-HSA-6806667
+Integrin Cell Surface Interactions R-HSA-216083
+Regulation Of IGF Transport And Uptake By IGFBPs R-HSA-381426
+Post-translational Protein Phosphorylation R-HSA-8957275
+Interleukin-1 Processing R-HSA-448706
+Synthesis, Secretion, And Inactivation Of Glucose-dependent Insulinotropic Polypeptide (GIP) R-HSA-400511
+Synthesis Of UDP-N-acetyl-glucosamine R-HSA-446210
+Classical Antibody-Mediated Complement Activation R-HSA-173623
+Initial Triggering Of Complement R-HSA-166663
+Basigin Interactions R-HSA-210991
+GABA Receptor Activation R-HSA-977443
+Linoleic Acid (LA) Metabolism R-HSA-2046105
+MyD88 Deficiency (TLR2/4) R-HSA-5602498
+Regulation Of TLR By Endogenous Ligand R-HSA-5686938
+IRAK4 Deficiency (TLR2/4) R-HSA-5603041
+Cell Recruitment (Pro-Inflammatory Response) R-HSA-9664424
+TNF-alpha Signaling via NF-kB
+Diseases Associated With Glycosaminoglycan Metabolism R-HSA-3560782
+RA Biosynthesis Pathway R-HSA-5365859
+Heparan Sulfate/Heparin (HS-GAG) Metabolism R-HSA-1638091
+Cobalamin (Cbl, Vitamin B12) Transport And Metabolism R-HSA-196741
+Transport Of Organic Anions R-HSA-879518
+MHC Class II Antigen Presentation R-HSA-2132295
+ATF4 Activates Genes In Response To Endoplasmic Reticulum Stress R-HSA-380994
+Diseases Associated With O-glycosylation Of Proteins R-HSA-3906995
+O-linked Glycosylation R-HSA-5173105
+Estrogen Response Early
+cGMP Effects R-HSA-418457
+Nitric Oxide Stimulates Guanylate Cyclase R-HSA-392154
+Chylomicron Remodeling R-HSA-8963901
+Assembly Of Active LPL And LIPC Lipase Complexes R-HSA-8963889
+Vitamins R-HSA-211916
+Vitamin D (Calciferol) Metabolism R-HSA-196791
+Chondroitin Sulfate/Dermatan Sulfate Metabolism R-HSA-1793185
+Antimicrobial Peptides R-HSA-6803157
+Amino Acid Transport Across Plasma Membrane R-HSA-352230
+Calcitonin-like Ligand Receptors R-HSA-419812
+NOTCH4 Intracellular Domain Regulates Transcription R-HSA-9013695
+Surfactant Metabolism R-HSA-5683826
+Striated Muscle Contraction R-HSA-390522
+Antigen Activates B Cell Receptor Leading To Second Messenger Generation R-HSA-983695
+Lysine Catabolism R-HSA-71064
+Purine Catabolism R-HSA-74259
+Nicotinate Metabolism R-HSA-196807
+Cell Junction Organization R-HSA-446728
+Collagen Formation R-HSA-1474290
+Coagulation
+Extracellular Matrix Organization R-HSA-1474244
+Degradation Of Extracellular Matrix R-HSA-1474228
+Activation Of Matrix Metalloproteinases R-HSA-1592389
+Collagen Degradation R-HSA-1442490
+GABA Synthesis, Release, Reuptake And Degradation R-HSA-888590
+Visual Phototransduction R-HSA-2187338
+Regulation Of Complement Cascade R-HSA-977606
+Complement Cascade R-HSA-166658
+Estrogen Response Late
+Myogenesis
+Interleukin-4 And Interleukin-13 Signaling R-HSA-6785807
+UV Response Dn
+p53 Pathway
+Paracetamol ADME R-HSA-9753281
+TRP Channels R-HSA-3295583
+Signaling By Activin R-HSA-1502540
+HuR (ELAVL1) Binds And Stabilizes mRNA R-HSA-450520
+Tight Junction Interactions R-HSA-420029
+Dopamine Neurotransmitter Release Cycle R-HSA-212676
+Acetylcholine Neurotransmitter Release Cycle R-HSA-264642
+Neurotoxicity Of Clostridium Toxins R-HSA-168799
+Serotonin Neurotransmitter Release Cycle R-HSA-181429
+Transport Of Fatty Acids R-HSA-804914
+Gap Junction Trafficking And Regulation R-HSA-157858
+Histidine Catabolism R-HSA-70921
+Synthesis Of Bile Acids And Bile Salts Via 24-Hydroxycholesterol R-HSA-193775
+Bicarbonate Transporters R-HSA-425381
+Peptide Hormone Biosynthesis R-HSA-209952
+CD22 Mediated BCR Regulation R-HSA-5690714
+Defective CHST6 Causes MCDC1 R-HSA-3656225
+Defective ST3GAL3 Causes MCT12 And EIEE15 R-HSA-3656243
+Gap Junction Trafficking R-HSA-190828
+Formation Of Annular Gap Junctions R-HSA-196025
+Gap Junction Degradation R-HSA-190873
+Retinoid Cycle In Cones (Daylight Vision) R-HSA-2187335
+Chondroitin Sulfate Biosynthesis R-HSA-2022870
+Dermatan Sulfate Biosynthesis R-HSA-2022923
+Defective CHSY1 Causes TPBS R-HSA-3595177
+Defective CHST14 Causes EDS, Musculocontractural Type R-HSA-3595174
+Defective CHST3 Causes SEDCJD R-HSA-3595172
+Tryptophan Catabolism R-HSA-71240
+Axonal Growth Inhibition (RHOA Activation) R-HSA-193634
+Diseases Associated With Surfactant Metabolism R-HSA-5687613
+Diseases Associated With Visual Transduction R-HSA-2474795
+Metallothioneins Bind Metals R-HSA-5661231
+Response To Metal Ions R-HSA-5660526
+Defective EXT1 Causes Exostoses 1, TRPS2 And CHDS R-HSA-3656253
+Defective B3GALT6 Causes EDSP2 And SEMDJL1 R-HSA-4420332
+Defective B4GALT7 Causes EDS, Progeroid Type R-HSA-3560783
+Uptake Of Dietary Cobalamins Into Enterocytes R-HSA-9758881
+GAG Synthesis Requires Tetrasaccharide Linker Sequence R-HSA-1971475
+Defective B3GAT3 Causes JDSSDHD R-HSA-3560801
+Metal Sequestration By Antimicrobial Proteins R-HSA-6799990
+Alpha-defensins R-HSA-1462054

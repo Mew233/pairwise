@@ -1,13 +1,62 @@
-*.egg-info
-*.pyc
-*.sdf
-tcga_*
+# ---- Large external assets (fetch via scripts/download_data.py) ----
+# Anchored to the repository root: paper/*/data/ holds the small per-stage
+# inputs (DREAM team predictions, Griner blocks, wet-lab manifests) and stays
+# tracked.
 /data/
-data/synergy_data/Customized
-results/
+/weights/
+vendor/grover/
+vendor/cooclassifier/
 
-trueset_generation/
-build/
+# ---- Model checkpoints ----
+*.pth
+*.pt
+*.ckpt
+!example/model/*.pth
+
+# ---- Experiment tracking / scratch ----
+wandb/
+runs/
+logs/
 tmp/
-best_model_ERT.pth
-best_model_RF.pth
+checkpoint/
+
+# ---- Bulky derived results (keep only the curated tables under paper/) ----
+# Anchored to the repository root: paper/*/results/ holds the small result
+# tables behind each figure and must stay tracked.
+/results/
+*.bz2
+*.npz
+*.npy
+!paper/**/*.npy
+!example/**/*.npy
+!example/**/*.npz
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.eggs/
+.venv/
+venv/
+
+# ---- Notebooks ----
+.ipynb_checkpoints/
+
+# ---- OS / editor ----
+.DS_Store
+.idea/
+.vscode/
+*.executed.ipynb
+
+# local recompute outputs
+**/errorbar_intervals.from_predictions.csv
+
+# ---- Files over GitHub's 100 MB limit (obtain from the Figshare deposit) ----
+example/data/p13_example_train.npz
+example/data/p13_example_test.npz
+example/data/p13_example_predict.npz
+example/model/*.pth
+paper/08_explainability_shap/results/shap_30combos_long.csv
+paper/06_dream_benchmark/data/ACalifano_DLBCL_Ly3_14Comp_treatment.txt

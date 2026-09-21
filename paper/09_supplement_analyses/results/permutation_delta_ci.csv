@@ -1,0 +1,3 @@
+scheme,auroc_original,auroc_swapped,delta_auroc,delta_ci_lo,delta_ci_hi,n_boot,boot_mean,boot_se,n_pos,n_neg
+same_tissue,0.816408,0.739564,-0.076844,-0.080063,-0.073537,2000,-0.076835,0.00168,17686,43241
+cross_tissue,0.816408,0.719161,-0.097247,-0.100874,-0.093376,2000,-0.097231,0.001909,17686,43241

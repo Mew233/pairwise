@@ -1,0 +1,1 @@
+{"multitaskdnn_kim": {"synergy_df": "p13", "drug_omics": ["morgan_fingerprint", "drug_target"], "cell_df": "CCLE", "cell_omics": ["exp"], "cell_filtered_by": "all", "model_name": "multitaskdnn_kim", "get_cellfeature_concated": true, "get_drugfeature_concated": false, "get_drugs_summed": false}}

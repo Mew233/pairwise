@@ -1,0 +1,32 @@
+drug_name,pubchem_id,model_drug_id,mapped,notes
+AZD1208,1204144,1204144,True,PIM inhibitor
+AZD1480,16659841,12590,True,
+AZD2461,10074640,8058,True,PARP inhibitor
+AZD3463,24794419,24794419,True,ALK inhibitor
+AZD4320,86661883,86661883,True,
+AZD4573,138563668,138563668,True,zemirciclib
+AZD5991,,14793,True,
+AZD7648,138563669,138563669,True,ATR inhibitor
+AZD8055,25262965,12774,True,
+AZD8186,52913813,15031,True,
+Acalabrutinib,49836054,11704,True,
+Adavosertib,11485656,12243,True,AZD7762
+Alisertib,24771867,5223,True,
+Capivasertib,,12219,True,
+Ceralasertib,,14918,True,
+Crizotinib,11626560,8867,True,
+Daporinad,6914657,12732,True,
+Doxorubicin HCl,,998,True,
+Fexagratinib,11656518,14896,True,Infigratinib BGJ398
+Lapatinib,208908,1260,True,
+Olaparib,23725625,9075,True,
+Palbociclib HCl,24825969,9074,True,
+Prexasertib,,12009,True,
+Saracatinib,10302451,11806,True,
+Saruparib,11879753,15685,True,AZD5305
+Selumetinib,10127622,11689,True,
+Silmitasertib,24748573,15410,True,
+Taselisib,,12109,True,
+Vandetanib,3081361,5294,True,
+Venetoclax,49846579,11581,True,
+Vorinostat,5311,2546,True,

@@ -2,6 +2,7 @@ import numpy as np
 import pandas as pd
 import collections
 import os
+from .paths import DATA_DIR, RESULTS_DIR
 from rdkit.Chem import AllChem
 import rdkit
 import pickle
@@ -9,9 +10,8 @@ from rdkit.ML.Descriptors import MoleculeDescriptors
 from rdkit.Chem import Descriptors
 from rdkit.Chem.EState import Fingerprinter
 
-from utilitis import *
+from .utilitis import *
 
-ROOT_DIR = os.path.realpath(os.path.join(os.path.dirname(__file__), '..'))
 
 def load_synergy(dataset,args):
     '''
@@ -22,11 +22,10 @@ def load_synergy(dataset,args):
         dataset: str
     '''
 
-    function_mapping = {'p13':'process_drugcomb', 'Sanger2022':'process_sanger2022',\
-        'Customized':'process_customized'}
+    function_mapping = {'p13':'process_drugcomb', 'Customized':'process_customized'}
 
     def process_drugcomb():
-        data = pd.read_csv(os.path.join(ROOT_DIR, 'data', 'synergy_data','p13','p13_trueset.csv'))
+        data = pd.read_csv(os.path.join(DATA_DIR, 'synergy_data','p13','drugcomb_trueset_NoDup.csv'))
         data = data[['drug_row', 'drug_col','cell_line_name','study_name','tissue_name',\
           'synergy_zip','synergy_loewe','synergy_hsa','synergy_bliss','DepMap_ID','RRID',\
           'pubchemID_x','compound0_x','pubchemID_y','compound0_y',\
@@ -55,43 +54,24 @@ def load_synergy(dataset,args):
             'compound0_x':'drug1','compound0_y':'drug2','DepMap_ID':'cell','synergy_loewe':'score',\
                 'ri_row':'ic_1', 'ri_col':'ic_2'})
 
-        # proessed_dpi = pd.read_csv(os.path.join(ROOT_DIR, 'results','proessed_dpi_extended.csv'),index_col=0)
+        # proessed_dpi = pd.read_csv(os.path.join(RESULTS_DIR, 'proessed_dpi_extended.csv'),index_col=0)
         # proessed_dpi.columns = proessed_dpi.columns.astype(int)
         # library = set(proessed_dpi.columns)
         # summary_data = summary_data[summary_data['drug1'].isin(library)]
         # summary_data = summary_data[summary_data['drug2'].isin(library)]
 
-        return summary_data.head(10000)
+        return summary_data
     
-    def process_sanger2022():
-        data = pd.read_csv(os.path.join(ROOT_DIR, 'data', 'synergy_data','Sanger2022','Jaaks2022_trueset_xiabo.csv'))
-        data['compound0_x'] = data['compound0_x'].apply(lambda x: split_it(x))
-        data['compound0_y'] = data['compound0_y'].apply(lambda x: split_it(x))
-        data['synergy_loewe'] = data['synergy_loewe'].apply(lambda x: x*1)
-
-        summary_data = data[['compound0_x','compound0_y','DepMap_ID','synergy_loewe','Tissue']].rename(columns={\
-            'compound0_x':'drug1','compound0_y':'drug2','DepMap_ID':'cell','synergy_loewe':'score'})
-        
-        #only test drugs that were see in drugcomb
-        drugcomb = process_drugcomb()
-        bags = drugcomb['drug1'].unique().tolist() + drugcomb['drug2'].unique().tolist()
-        s_1 = summary_data[summary_data['drug1'].isin(bags)]
-        s_2 = s_1[s_1['drug2'].isin(bags)]
-
-        s_2 = s_2[s_2['Tissue'] == "pancreas"]
-
-        return s_2
-
     #create a dummy synergy dataframe
     def process_customized():
         # drugcomb = process_drugcomb()
         # # drugcomb_colon = drugcomb[drugcomb['tissue_name'] == 'haematopoietic_and_lymphoid']
         # drugcomb_colon = drugcomb.drop_duplicates(subset=['drug1', 'drug2'])
 
-        # # crc_exp = pd.read_csv(os.path.join(ROOT_DIR, 'data', 'cell_line_data','Customized','crc_%s.csv' % "exp"),sep=',')
-        # # crc_exp = pd.read_csv(os.path.join(ROOT_DIR, 'data', 'cell_line_data','Customized','tcga_DLBC_%s.csv' % "exp"),sep=',')
-        # crc_exp = pd.read_csv(os.path.join(ROOT_DIR, 'data', 'cell_line_data','Customized','orginal_columbia_DLBC_%s_20221014.csv' % "exp"),sep=',')
-        # # crc_exp = pd.read_csv(os.path.join(ROOT_DIR, 'data', 'cell_line_data','Customized','lstaudt_DLBC_%s.csv' % "exp"),sep=',')
+        # # crc_exp = pd.read_csv(os.path.join(DATA_DIR, 'cell_line_data','Customized','crc_%s.csv' % "exp"),sep=',')
+        # # crc_exp = pd.read_csv(os.path.join(DATA_DIR, 'cell_line_data','Customized','tcga_DLBC_%s.csv' % "exp"),sep=',')
+        # crc_exp = pd.read_csv(os.path.join(DATA_DIR, 'cell_line_data','Customized','orginal_columbia_DLBC_%s_20221014.csv' % "exp"),sep=',')
+        # # crc_exp = pd.read_csv(os.path.join(DATA_DIR, 'cell_line_data','Customized','lstaudt_DLBC_%s.csv' % "exp"),sep=',')
         # summary_data = pd.DataFrame(columns=['drug1','drug2','cell','tissue_name','score'])
         # cell_list = list(crc_exp.columns)
         # for crc_cell in cell_list: #0:255, 255:
@@ -103,24 +83,24 @@ def load_synergy(dataset,args):
         
 
         # for dcdb
-        dcdb_tmd8 = pd.read_csv(os.path.join(ROOT_DIR, 'data', 'synergy_data','Customized','dcdb_tmd8.csv'),sep=',').iloc[:,1:]
+        dcdb_tmd8 = pd.read_csv(os.path.join(DATA_DIR, 'synergy_data','Customized','dcdb_tmd8.csv'),sep=',').iloc[:,1:]
         dcdb_tmd8 = dcdb_tmd8.groupby(['drug1','drug2','cell']).agg({\
             "score":'mean'}).reset_index()
         summary_data = pd.DataFrame(columns=['drug1','drug2','cell','score'])
         #增加az的药物
-        azdream = pd.read_csv(os.path.join(ROOT_DIR, 'data', 'synergy_data','Customized','azdream_drug.csv'),sep=',').iloc[:,1:]
+        azdream = pd.read_csv(os.path.join(DATA_DIR, 'synergy_data','Customized','azdream_drug.csv'),sep=',').iloc[:,1:]
         # dcdb_tmd8 = azdream
 
-        # columbia_exp = pd.read_csv(os.path.join(ROOT_DIR, 'data', 'cell_line_data','Customized','orginal_columbia_DLBC_%s_20221014.csv' % "exp"),sep=',')
-        columbia_exp = pd.read_csv(os.path.join(ROOT_DIR, 'data', 'cell_line_data','Customized','orginal_lstaudt_DLBC_%s.csv' % "exp"),sep=',')
+        # columbia_exp = pd.read_csv(os.path.join(DATA_DIR, 'cell_line_data','Customized','orginal_columbia_DLBC_%s_20221014.csv' % "exp"),sep=',')
+        columbia_exp = pd.read_csv(os.path.join(DATA_DIR, 'cell_line_data','Customized','orginal_lstaudt_DLBC_%s.csv' % "exp"),sep=',')
         cell_list = list(columbia_exp.columns)
         for crc_cell in cell_list:
             dcdb_tmd8['cell'] = crc_cell
-            summary_data = summary_data.append(dcdb_tmd8, ignore_index=True)
+            summary_data = pd.concat([summary_data, dcdb_tmd8], ignore_index=True)
 
         summary_data = summary_data.drop_duplicates(subset=['drug1','drug2','cell','score'])
         ## -------------- 所有ccle
-        # directory = os.path.join(ROOT_DIR,'data', 'cell_line_data','Customized','TCGA_PAN_RNA_TPM')
+        # directory = os.path.join(DATA_DIR, 'cell_line_data','Customized','TCGA_PAN_RNA_TPM')
         # summary_data = pd.DataFrame(columns=['drug1','drug2','cell','score',"tissue"])
         # counter = 0
         # for file in os.listdir(directory):
@@ -133,13 +113,12 @@ def load_synergy(dataset,args):
         #         for crc_cell in cell_list:
         #             dcdb_tmd8['cell'] = crc_cell
         #             dcdb_tmd8['tissue'] = filename.split("_")[1]
-        #             summary_data = summary_data.append(dcdb_tmd8, ignore_index=True)
-        #         # print(os.path.join(directory, filename))
+        #             summary_data = pd.concat([summary_data, dcdb_tmd8], ignore_index=True)
         # summary_data = summary_data.drop_duplicates(subset=['drug1','drug2','cell','score'])
 
         # #// for clincials
         # summary_data = pd.DataFrame(columns=['drug1','drug2','cell','score'])
-        # clinicals = pd.read_csv(os.path.join(ROOT_DIR, 'data', 'synergy_data','Customized','clinicaltrialsgov_confi.csv'),sep=',').iloc[:,1:]
+        # clinicals = pd.read_csv(os.path.join(DATA_DIR, 'synergy_data','Customized','clinicaltrialsgov_confi.csv'),sep=',').iloc[:,1:]
         # clinicals = clinicals[["compound0_x","compound0_y","cell","score"]].rename(columns={\
         #     'compound0_x':'drug1','compound0_y':'drug2'})
         # clinicals['drug1'] = clinicals['drug1'].apply(lambda x: split_it(x))
@@ -154,8 +133,8 @@ def load_synergy(dataset,args):
         # random_shuffle = random_shuffle.apply(lambda x: x.sample(frac=1).values)
     
         # # cell_list = list(set(drugcomb_lym["cell"]))
-        # # columbia_exp = pd.read_csv(os.path.join(ROOT_DIR, 'data', 'cell_line_data','Customized','orginal_columbia_DLBC_%s_20221014.csv' % "exp"),sep=',')
-        # columbia_exp = pd.read_csv(os.path.join(ROOT_DIR, 'data', 'cell_line_data','Customized','orginal_lstaudt_DLBC_%s.csv' % "exp"),sep=',')
+        # # columbia_exp = pd.read_csv(os.path.join(DATA_DIR, 'cell_line_data','Customized','orginal_columbia_DLBC_%s_20221014.csv' % "exp"),sep=',')
+        # columbia_exp = pd.read_csv(os.path.join(DATA_DIR, 'cell_line_data','Customized','orginal_lstaudt_DLBC_%s.csv' % "exp"),sep=',')
         # cell_list = list(columbia_exp.columns)
 
         # for crc_cell in cell_list:
@@ -189,9 +168,9 @@ def load_cellline_features(dataset,args):
 
         def load_file(postfix):
             if args.train_test_mode == 'fine_tune':
-                df = pd.read_csv(os.path.join(ROOT_DIR, 'data', 'cell_line_data','CCLE','CCLE_%s.csv' % postfix),sep=',')
+                df = pd.read_csv(os.path.join(DATA_DIR, 'cell_line_data','CCLE','CCLE_%s.csv' % postfix),sep=',')
             else:
-                df = pd.read_csv(os.path.join(ROOT_DIR, 'data', 'cell_line_data','CCLE','CCLE_%s.csv' % postfix),sep=',')
+                df = pd.read_csv(os.path.join(DATA_DIR, 'cell_line_data','CCLE','CCLE_%s.csv' % postfix),sep=',')
 
 
             ## need to transform mut into one-hot dataframe
@@ -235,14 +214,20 @@ def load_cellline_features(dataset,args):
             return processed_data
 
         # load all cell line features
-        save_path = os.path.join(ROOT_DIR, 'data', 'cell_line_data','CCLE')
+        save_path = os.path.join(DATA_DIR, 'cell_line_data','CCLE')
         save_path = os.path.join(save_path, 'input_cellline_data.npy')
+        # Rebuttal 2-9 Mode B: allow swapping in a ComBat-corrected cache via
+        # env var without touching any other baseline code paths.
+        if os.environ.get('PAIRWISE_CELL_CACHE') and os.path.exists(
+                os.environ['PAIRWISE_CELL_CACHE']):
+            save_path = os.environ['PAIRWISE_CELL_CACHE']
+            print(f'[prepare_data] using PAIRWISE_CELL_CACHE override: {save_path}')
         if not os.path.exists(save_path):
             data_dicts = {}
             for file_type in ['exp', 'cn', 'mut']:
                 data_dicts[ file_type ] = load_file(file_type)
             # load GNN_cell
-            gnn_path = os.path.join(ROOT_DIR, 'data', 'cell_line_data','CCLE')
+            gnn_path = os.path.join(DATA_DIR, 'cell_line_data','CCLE')
             gnn_path = os.path.join(gnn_path, 'cell_feature_cn_std.npy')
             cell_dict = np.load(gnn_path,allow_pickle=True).item()
             data_dicts['GNN_cell'] = cell_dict
@@ -254,42 +239,47 @@ def load_cellline_features(dataset,args):
         else:
             data_dicts = np.load(save_path,allow_pickle=True).item()
             # load GNN_cell
-            gnn_path = os.path.join(ROOT_DIR, 'data', 'cell_line_data','CCLE')
-            gnn_path = os.path.join(gnn_path, 'cell_feature_std.npy')
+            gnn_path = os.path.join(DATA_DIR, 'cell_line_data','CCLE')
+            gnn_path = os.path.join(gnn_path, 'cell_feature_cn_std.npy')
             cell_dict = np.load(gnn_path,allow_pickle=True).item()
             data_dicts['GNN_cell'] = cell_dict
 
             # # load cpi_network
             # data_dicts['cpi_network'] = load_cpi_network()
             
-        # edge_path = os.path.join(ROOT_DIR, 'data', 'cell_line_data','CCLE')
-        # edge_path = os.path.join(edge_path, 'edge_PPI_0.95.npy')
-        # edge_index = np.load(edge_path)
-        # #for key, value in a_dict.items()
-        # for key, value in data_dicts['GNN_cell'].items():
-        #     #value should be a data object
-        #     value.edge_index = torch.tensor(edge_index, dtype=torch.long)
+        edge_path = os.path.join(DATA_DIR, 'cell_line_data','CCLE')
+        edge_index_path = os.path.join(edge_path, 'edge_index_PPI_0.95.npy')
+        if not os.path.exists(edge_index_path):
+            edge_index_path = os.path.join(edge_path, 'edge_PPI_0.95.npy')
+        edge_index = np.load(edge_index_path)
+        #for key, value in a_dict.items()
+        edge_index_tensor = torch.tensor(edge_index, dtype=torch.long)
+        from torch_geometric.data import Data
+        for key, value in data_dicts['GNN_cell'].items():
+            try:
+                value.edge_index = edge_index_tensor
+            except (RuntimeError, AttributeError):
+                # PyG version mismatch: old Data objects saved with a prior PyG
+                # version have incompatible internal storage. Extract the x tensor
+                # via __dict__ and rebuild a fresh Data object.
+                raw_x = object.__getattribute__(value, '__dict__').get('x', None)
+                data_dicts['GNN_cell'][key] = Data(x=raw_x, edge_index=edge_index_tensor)
 
         return data_dicts
     
     def process_Customized():
         def load_file(postfix):
-            # df = pd.read_csv(os.path.join(ROOT_DIR, 'data', 'cell_line_data','Customized','crc_%s.csv' % postfix),sep=',')
-            # df = pd.read_csv(os.path.join(ROOT_DIR, 'data', 'cell_line_data','Customized','tcga_DLBC_%s.csv' % postfix),sep=',')
-            # df = pd.read_csv(os.path.join(ROOT_DIR, 'data', 'cell_line_data','Customized','orginal_columbia_DLBC_exp_20221014.csv'),sep=',')
-            df = pd.read_csv(os.path.join(ROOT_DIR, 'data', 'cell_line_data','Customized','orginal_lstaudt_DLBC_%s.csv' % "exp"),sep=',')
+            df = pd.read_csv(os.path.join(DATA_DIR, 'cell_line_data','Customized','orginal_lstaudt_DLBC_%s.csv' % "exp"),sep=',')
 
-            # directory = os.path.join(ROOT_DIR,'data', 'cell_line_data','Customized','TCGA_PAN_RNA_TPM')
+            # directory = os.path.join(DATA_DIR, 'cell_line_data','Customized','TCGA_PAN_RNA_TPM')
             # data_list = []
             # for file in os.listdir(directory):
             #     filename = os.fsdecode(file)
             #     if filename.endswith("_tpm.csv"):
-            #         df = pd.read_csv(os.path.join(directory,filename))
             #         data_list.append(df)
-            # df = pd.concat(data_list, axis=1, join="inner")
             return df
         # load all cell line features
-        save_path = os.path.join(ROOT_DIR, 'data', 'cell_line_data','Customized')
+        save_path = os.path.join(DATA_DIR, 'cell_line_data','Customized')
         save_path = os.path.join(save_path, 'input_cellline_data.npy')
 
         data_dicts = np.load(save_path,allow_pickle=True).item()
@@ -305,14 +295,14 @@ def load_cellline_features(dataset,args):
 
 def load_drug_features():
     
-    supplier = rdkit.Chem.SDMolSupplier(os.path.join(ROOT_DIR, 'data', 'drug_data','structures.sdf'))
+    supplier = rdkit.Chem.SDMolSupplier(os.path.join(DATA_DIR, 'drug_data','structures.sdf'))
     molecules = [mol for mol in supplier if mol is not None]
 
     def process_fingerprint():
         # load fingerprint data
         ## column is drug, index is morgan bits
         # Read SDF File
-        # supplier = rdkit.Chem.SDMolSupplier(os.path.join(ROOT_DIR, 'data', 'drug_data','structures.sdf'))
+        # supplier = rdkit.Chem.SDMolSupplier(os.path.join(DATA_DIR, 'drug_data','structures.sdf'))
         
 
         fingerprints = dict()
@@ -355,15 +345,15 @@ def load_drug_features():
 
     def process_dpi():
         # load drug target dataset
-        targets = pd.read_csv(os.path.join(ROOT_DIR, 'data', 'drug_data','all_targets.csv'))
-        enzymes = pd.read_csv(os.path.join(ROOT_DIR, 'data', 'drug_data','all_enzyme.csv'))
-        carrier = pd.read_csv(os.path.join(ROOT_DIR, 'data', 'drug_data','all_carrier.csv'))
-        transporter = pd.read_csv(os.path.join(ROOT_DIR, 'data', 'drug_data','all_transporter.csv'))
+        targets = pd.read_csv(os.path.join(DATA_DIR, 'drug_data','all_targets.csv'))
+        enzymes = pd.read_csv(os.path.join(DATA_DIR, 'drug_data','all_enzyme.csv'))
+        carrier = pd.read_csv(os.path.join(DATA_DIR, 'drug_data','all_carrier.csv'))
+        transporter = pd.read_csv(os.path.join(DATA_DIR, 'drug_data','all_transporter.csv'))
         all = pd.concat([targets,enzymes,carrier,transporter])
         # all = targets
         drug_targets = explode_dpi(all)
 
-        dtc = pd.read_csv(os.path.join(ROOT_DIR, 'data', 'drug_data','dtc_db2ncbi.csv'))
+        dtc = pd.read_csv(os.path.join(DATA_DIR, 'drug_data','dtc_db2ncbi.csv'))
         drug_targets_L = pd.concat([drug_targets,dtc])
         drug_targets_L = drug_targets_L.drop_duplicates(subset=['Drug IDs','NCBI_ID'])
 
@@ -378,15 +368,14 @@ def load_drug_features():
         
         proessed_dpi = pd.DataFrame(target_feats)
         proessed_dpi.index = drug_targets_L['NCBI_ID'].unique()
-        # proessed_dpi.to_csv(os.path.join(ROOT_DIR, 'results','proessed_dpi_db.csv'))
+        # proessed_dpi.to_csv(os.path.join(RESULTS_DIR, 'proessed_dpi_db.csv'))
 
-        # network = nx.read_edgelist(os.path.join(ROOT_DIR, 'data','cell_line_data','PPI','string_network'), delimiter='\t', nodetype=int,
         #                    data=(('weight', float),))
 
-        # data_dicts = np.load(os.path.join(ROOT_DIR, 'data', 'cell_line_data',"CCLE",'input_cellline_data.npy'),allow_pickle=True).item()
+        # data_dicts = np.load(os.path.join(DATA_DIR, 'cell_line_data',"CCLE",'input_cellline_data.npy'),allow_pickle=True).item()
         # ccle = data_dicts['exp']
-        # customized = pd.read_csv(os.path.join(ROOT_DIR, 'data', 'cell_line_data',"Customized",'crc_exp.csv'), index_col=0)
-        # tcga = pd.read_csv(os.path.join(ROOT_DIR, 'data', 'cell_line_data',"Customized",'tcga_colon_exp.csv'), index_col=0)
+        # customized = pd.read_csv(os.path.join(DATA_DIR, 'cell_line_data',"Customized",'crc_exp.csv'), index_col=0)
+        # tcga = pd.read_csv(os.path.join(DATA_DIR, 'cell_line_data',"Customized",'tcga_colon_exp.csv'), index_col=0)
 
         # #column is drugbank id, row is entrez id
         # proessed_dpi = proessed_dpi.loc[proessed_dpi.index.isin(list(network.nodes)), :]
@@ -399,20 +388,20 @@ def load_drug_features():
     ##RWR algorithm for drug-target from transynergy
     def process_dpi_RWR():
         
-        network = nx.read_edgelist(os.path.join(ROOT_DIR, 'data','cell_line_data','PPI','string_network'), delimiter='\t', nodetype=int,
+        network = nx.read_edgelist(os.path.join(DATA_DIR, 'cell_line_data','PPI','string_network'), delimiter='\t', nodetype=int,
                            data=(('weight', float),))
 
         # genes needed to be included in customized set
-        # data_dicts = np.load(os.path.join(ROOT_DIR, 'data', 'cell_line_data',"Customized",'input_cellline_data.npy'),allow_pickle=True).item()
+        # data_dicts = np.load(os.path.join(DATA_DIR, 'cell_line_data',"Customized",'input_cellline_data.npy'),allow_pickle=True).item()
         # customized = data_dicts['exp']
-        data_dicts = np.load(os.path.join(ROOT_DIR, 'data', 'cell_line_data',"CCLE",'input_cellline_data.npy'),allow_pickle=True).item()
+        data_dicts = np.load(os.path.join(DATA_DIR, 'cell_line_data',"CCLE",'input_cellline_data.npy'),allow_pickle=True).item()
         ccle = data_dicts['exp']
 
-        customized = pd.read_csv(os.path.join(ROOT_DIR, 'data', 'cell_line_data',"Customized",'crc_exp.csv'), index_col=0)
-        tcga = pd.read_csv(os.path.join(ROOT_DIR, 'data', 'cell_line_data',"Customized",'tcga_colon_exp.csv'), index_col=0)
+        customized = pd.read_csv(os.path.join(DATA_DIR, 'cell_line_data',"Customized",'crc_exp.csv'), index_col=0)
+        tcga = pd.read_csv(os.path.join(DATA_DIR, 'cell_line_data',"Customized",'tcga_colon_exp.csv'), index_col=0)
 
         #column is drugbank id, row is entrez id
-        drug_target = pd.read_csv(os.path.join(ROOT_DIR, 'results','proessed_dpi.csv'), index_col=0)
+        drug_target = pd.read_csv(os.path.join(RESULTS_DIR, 'proessed_dpi.csv'), index_col=0)
         drug_target = drug_target.loc[drug_target.index.isin(list(network.nodes)), :]
         drug_target = drug_target.loc[drug_target.index.isin(list(ccle.index)), :]
         drug_target = drug_target.loc[drug_target.index.isin(list(customized.index)), :]
@@ -445,10 +434,10 @@ def load_drug_features():
 
     # ## for graphsynergy =============unfinished===============
     # def process_dpi_network():
-    #     targets = pd.read_csv(os.path.join(ROOT_DIR, 'data', 'drug_data','all.csv'))
+    #     targets = pd.read_csv(os.path.join(DATA_DIR, 'drug_data','all.csv'))
     #     drug_targets = explode_dpi(targets)
     #     #deplete proteins in dpi, which not in ppi
-    #     ppi = pd.read_csv(os.path.join(ROOT_DIR, 'data', 'cell_line_data','PPI','protein-protein_network.csv'))
+    #     ppi = pd.read_csv(os.path.join(DATA_DIR, 'cell_line_data','PPI','protein-protein_network.csv'))
 
     #     selected_proteins = list(set(ppi['protein_a'])) + list(set(ppi['protein_b']))
         
@@ -469,13 +458,13 @@ def load_drug_features():
 
     # ## for RGCN =============unfinished===============
     def process_hetero_network():
-        ppi_data = pd.read_csv(os.path.join(ROOT_DIR, 'data', 'cell_line_data','PPI','protein-protein_network.csv'))
+        ppi_data = pd.read_csv(os.path.join(DATA_DIR, 'cell_line_data','PPI','protein-protein_network.csv'))
 
         tuples = [tuple(x) for x in ppi_data.values]
         graph = nx.Graph()
         graph.add_edges_from(tuples)
 
-        targets = pd.read_csv(os.path.join(ROOT_DIR, 'data', 'drug_data','all_targets.csv'))
+        targets = pd.read_csv(os.path.join(DATA_DIR, 'drug_data','all.csv'))
         drug_targets = explode_dpi(targets)
         #deplete proteins in dpi, which not in ppi
         selected_proteins = list(set(ppi_data['protein_a'])) + list(set(ppi_data['protein_b']))
@@ -493,9 +482,9 @@ def load_drug_features():
         dpi_dict = get_target_dict(drug_targets_new)
 
         ## cpi
-        cpi_data = pd.read_csv(os.path.join(ROOT_DIR, 'data', 'cell_line_data','CCLE','batchcorr_CCLE_exp.csv'))
+        cpi_data = pd.read_csv(os.path.join(DATA_DIR, 'cell_line_data','CCLE','batchcorr_CCLE_exp.csv'))
         cpi_data.columns = ['Entrezid']+[split_it_cell(_) for _ in list(cpi_data.columns)[1:]]
-
+        #cell的名字需要转换成一个int , 从1到?
         cpi_data['Entrezid'] = [split_it_cellName(_) for _ in list(cpi_data['Entrezid'])]
         # cpi_data['Entrezid'] = [(range(len(cpi_data['Entrezid'])))]
 
@@ -512,7 +501,7 @@ def load_drug_features():
             
             nodes_dict = dict(zip(range(len(cpi_df.columns)),cpi_df.columns))
             
-            #128 high exp protein
+            #选取128 个high exp protein
             for cell in cell_list:
                 cell_df = cpi_df[cpi_df.index==cell]
                 _array = abs(cell_df.values).argsort(axis=1)[:,::-1][0][:128]
@@ -524,7 +513,7 @@ def load_drug_features():
 
         cpi_dict = get_cell_target_dict(cell_targets_new)
         
-        # cpi_data = pd.read_csv(os.path.join(ROOT_DIR, 'data', 'cell_line_data','CCLE','CCLE_mut.csv'))
+        # cpi_data = pd.read_csv(os.path.join(DATA_DIR, 'cell_line_data','CCLE','CCLE_mut.csv'))
         # CCLE_mu = cpi_data[['DepMap_ID', 'Entrez_Gene_Id']]
         # CCLE_mu['DepMap_ID'] = CCLE_mu['DepMap_ID'].apply(lambda x: split_it_cellName(x))
         # cell_targets_new = CCLE_mu[(CCLE_mu['Entrez_Gene_Id'].isin(selected_proteins))]
@@ -597,13 +586,13 @@ def load_drug_features():
 
    # ----------------For transynergy------------------------------- 
     def process_smilesGrover():
-        with open(os.path.join(ROOT_DIR, 'data', 'drug_data', 'smiles.grover'),'rb') as f:
+        with open(os.path.join(DATA_DIR, 'drug_data', 'smiles.grover'),'rb') as f:
             smiles_dict = pickle.load(f)
         return smiles_dict
 
 
 
-    save_path = os.path.join(ROOT_DIR, 'data', 'drug_data')
+    save_path = os.path.join(DATA_DIR, 'drug_data')
     save_path = os.path.join(save_path, 'input_drug_data.npy')
     if not os.path.exists(save_path):
         data_dicts = {}
@@ -616,17 +605,11 @@ def load_drug_features():
         data_dicts['smiles2graph'] = process_smiles2graph()
         data_dicts['smiles2graph_TGSynergy'] = process_smiles2graph_TGSynergy()
         #data_dicts['dpi_network'] = process_dpi_network()
-        # data_dicts['hetero_graph'] = process_hetero_network()
+        data_dicts['hetero_graph'] = process_hetero_network()
         data_dicts['smiles_grover'] = process_smilesGrover()
-        # np.save(save_path, data_dicts)
-        with open(save_path, 'wb') as file:
-            pickle.dump(data_dicts, file)
-
+        np.save(save_path, data_dicts)
     else:
-        # data_dicts = np.load(open(os.path.join(ROOT_DIR, 'data copy', 'drug_data', 'input_drug_data.npy'), 'rb'),allow_pickle=True).item()
-        with open(save_path, 'rb') as file:
-            data_dicts = np.load(file, allow_pickle=True)
-            data_dicts = data_dicts.item()
+        data_dicts = np.load(save_path,allow_pickle=True).item()
         # data_dicts['smiles_grover'] = process_smilesGrover()
         data_dicts['drug_target'] = process_dpi()
         # data_dicts['drug_target_rwr'] = process_dpi_RWR()
@@ -636,7 +619,8 @@ def load_drug_features():
         # a = process_dpi()
         # a = a.loc[a.index.isin(list(selected_genes)), :]
         # data_dicts['drug_target'] = a
-
+       
+        ##hetergnn, 如果已保存data_dicts, 没有必要重新跑下面这两个
         # data_dicts['hetero_graph'] = process_hetero_network()
         
         np.save(save_path, data_dicts)

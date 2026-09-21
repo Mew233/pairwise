@@ -74,8 +74,6 @@ class DeepDDS_Wang(nn.Module):
         x1 = self.dropout(x1)
         x1 = self.drug1_fc_g2(x1)
         x1 = self.dropout(x1)
-        # print('x1.shape', x1.shape)
-        # print('x1', x1[0])
 
 
         # deal drug2
@@ -94,12 +92,13 @@ class DeepDDS_Wang(nn.Module):
         x2 = self.dropout(x2)
         x2 = self.drug1_fc_g2(x2)
         x2 = self.dropout(x2)
-        # print('x2.shape', x2.shape)
-        # print('x', x2[0])
 
         # deal cell
-        cell = np.stack(cell, axis=1)
-        cell = torch.FloatTensor(cell)
+        if isinstance(cell, list):
+            cell = np.stack(cell, axis=1)
+        if not isinstance(cell, torch.Tensor):
+            cell = torch.as_tensor(cell, dtype=torch.float32)
+        cell = cell.to(device=x1.device)
         cell_vector = self.reduction(cell)
 
         # concat

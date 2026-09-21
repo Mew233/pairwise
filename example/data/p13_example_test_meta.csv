@@ -1,0 +1,513 @@
+row_id,p13_index,drug1,drug2,cell,drug1_name,drug2_name,cell_name,tissue_name,sample_id,score,ic_1,ic_2,label
+301490,370102,6626,6772,ACH-000750,Axitinib,CABAZITAXEL,LOX IMVI,skin,Axitinib__CABAZITAXEL__LOX IMVI,-21.60768437,2.67,32.799,0
+17171,19851,11689,675,ACH-000147,Selumetinib,tamoxifen,T-47D,breast,Selumetinib__tamoxifen__T-47D,11.44395501,17.117,19.607,1
+175165,215653,361,1262,ACH-000288,Navelbine ditartrate (TN),NSC-127716,BT-549,breast,Navelbine ditartrate (TN)__NSC-127716__BT-549,6.147618425,33.762,10.308,1
+187193,230937,1268,14031,ACH-000768,Sunitinib,Triethylenemelamine,MDA-MB-231,breast,Sunitinib__Triethylenemelamine__MDA-MB-231,-5.718156261,-5.963,13.938,0
+270357,329817,8828,488,ACH-000425,Vismodegib,altretamine,UACC62,skin,Vismodegib__altretamine__UACC62,-5.07643501,-1.084,-0.872,0
+301310,369874,8881,6772,ACH-000579,Vemurafenib,CABAZITAXEL,UACC-257,skin,Vemurafenib__CABAZITAXEL__UACC-257,12.78454849,32.491,18.841,1
+54908,65702,7101,5482,ACH-000322,391210-10-9,7-Ethyl-10-hydroxycamptothecin,HT144,skin,391210-10-9__7-Ethyl-10-hydroxycamptothecin__HT144,1.893843509,49.573,15.756,1
+190051,234579,322,1177,ACH-000649,5-Fluoro-2'-deoxyuridine,NSC256439,786-0,kidney,5-Fluoro-2'-deoxyuridine__NSC256439__786-0,-2.982769832,33.493,30.284,0
+106393,130562,1590,6813,ACH-000477,NSC733504,Pralatrexate,MALME-3M,skin,NSC733504__Pralatrexate__MALME-3M,0.066242143,5.176,9.669,1
+206742,252705,6999,530,ACH-000644,PLX-4720,Erlotinib,COLO 829,skin,PLX-4720__Erlotinib__COLO 829,-6.762939988,38.965,6.309,0
+18072,21021,444,8865,ACH-000617,teniposide,Crizotinib,OVCAR-4,ovary,teniposide__Crizotinib__OVCAR-4,-1.031401288,3.925,-1.323,0
+158929,195701,6233,398,ACH-000219,Deforolimus,Sorafenib,A375,skin,Deforolimus__Sorafenib__A375,8.048350509,3.271,34.547,1
+62974,75980,5482,530,ACH-000969,7-Ethyl-10-hydroxycamptothecin,Erlotinib hydrochloride,KM12,large_intestine,7-Ethyl-10-hydroxycamptothecin__Erlotinib hydrochloride__KM12,-41.30380549,22.041,1.536,0
+145187,179028,694,1168,ACH-000555,23541-50-6,Procarbazine hydrochloride,A498,kidney,23541-50-6__Procarbazine hydrochloride__A498,-13.47125922,11.392,-1.758,0
+111647,137183,8828,1033,ACH-000900,Vismodegib,6-Mercaptopurine,NCIH23,lung,Vismodegib__6-Mercaptopurine__NCIH23,-19.04296506,-0.164,17.272,0
+116835,143758,791,6810,ACH-000730,Uramustine,MITHRAMYCIN,SK-MEL-5,skin,Uramustine__MITHRAMYCIN__SK-MEL-5,3.038303696,17.726,-1.664,1
+197012,242515,544,11651,ACH-001418,5-Fluorouracil,915019-65-7,UWB1289,ovary,5-Fluorouracil__915019-65-7__UWB1289,4.332435161,25.002,37.661,1
+87225,106318,970,553,ACH-000288,actinomycin D,methoxsalen,BT-549,breast,actinomycin D__methoxsalen__BT-549,-46.54858193,28.684,1.206,0
+65002,78555,1030,530,ACH-000811,TOPOTECAN HYDROCHLORIDE,Erlotinib hydrochloride,SK-OV-3,ovary,TOPOTECAN HYDROCHLORIDE__Erlotinib hydrochloride__SK-OV-3,-0.30155648,8.677,10.047,0
+137956,170102,773,1254,ACH-000219,etoposide,Dasatinib,A375,skin,etoposide__Dasatinib__A375,7.859626187,36.007,15.013,1
+186887,230546,8865,445,ACH-000817,Crizotinib,ADM hydrochloride,RPMI-8226,haematopoietic_and_lymphoid,Crizotinib__ADM hydrochloride__RPMI-8226,-17.61380776,-3.901,37.655,0
+127882,157779,1005,563,ACH-001190,hydroxyurea,methotrexate,SK-MEL-2,skin,hydroxyurea__methotrexate__SK-MEL-2,-11.58124037,-5.251,1.797,0
+116467,143287,5482,6810,ACH-000367,7-Ethyl-10-hydroxycamptothecin,MITHRAMYCIN,NCI-H226,lung,7-Ethyl-10-hydroxycamptothecin__MITHRAMYCIN__NCI-H226,-2.213830599,-0.518,25.75,0
+143896,177393,1041,1168,ACH-000288,thalidomide,Procarbazine hydrochloride,BT-549,breast,thalidomide__Procarbazine hydrochloride__BT-549,-0.353178014,1.919,0.653,0
+23106,26777,445,6233,ACH-000757,doxorubicin,Deforolimus,A427,lung,doxorubicin__Deforolimus__A427,2.576738522,81.431,15.951,1
+47220,56502,6641,7080,ACH-000008,Perifosine,T0901317,A101D,skin,Perifosine__T0901317__A101D,-1.128816174,29.852,23.026,0
+42614,49561,16107,12729,ACH-001190,BI 2536,761439-42-3,SK-MEL-2,skin,BI 2536__761439-42-3__SK-MEL-2,-10.15717516,7.975,5.179,0
+108140,132761,1204,6813,ACH-000681,mitoxantrone,Pralatrexate,A549,lung,mitoxantrone__Pralatrexate__A549,0.970673707,46.022,-0.481,1
+136554,168507,351,1254,ACH-000552,MEGESTROL ACETATE,Dasatinib,HT29,large_intestine,MEGESTROL ACETATE__Dasatinib__HT29,-14.83412938,-1.066,17.234,0
+62470,75340,1229,530,ACH-000825,paclitaxel,Erlotinib hydrochloride,HOP-92,lung,paclitaxel__Erlotinib hydrochloride__HOP-92,5.722316438,13.597,5.891,1
+249878,303838,990,619,ACH-000579,EXEMESTANE,Imatinib,UACC-257,skin,EXEMESTANE__Imatinib__UACC-257,1.033839458,9.99,-0.867,1
+151736,187335,791,428,ACH-000655,Uramustine,Zanosar,SF-268,brain,Uramustine__Zanosar__SF-268,1.301039705,19.332,2.036,1
+144689,178401,1259,1168,ACH-000376,Lapatinib,Procarbazine hydrochloride,SF-295,brain,Lapatinib__Procarbazine hydrochloride__SF-295,-0.012243383,-2.492,-1.533,0
+208551,254592,443,2424,ACH-000348,dexamethasone,geldanamycin,RPMI7951,skin,dexamethasone__geldanamycin__RPMI7951,-35.57346926,-9.651,72.899,0
+99402,121725,1181,14674,ACH-000232,ifosfamide,Emcyt (Pharmacia),U251,brain,ifosfamide__Emcyt (Pharmacia)__U251,-5.454255714,1.703,0.395,0
+27055,31213,5482,188,ACH-000433,7-Ethyl-10-hydroxycamptothecin,Bortezomib,CAKI-1,kidney,7-Ethyl-10-hydroxycamptothecin__Bortezomib__CAKI-1,-9.574834064,20.149,25.487,0
+83185,101188,5294,6769,ACH-001151,Vandetanib,Bendamustine hydrochloride,OVCAR-5,ovary,Vandetanib__Bendamustine hydrochloride__OVCAR-5,-18.7252517,9.869,-1.032,0
+181198,223296,6589,855,ACH-000617,Pazopanib hydrochloride,5-Aminolevulinic acid hydrochloride,OVCAR-4,ovary,Pazopanib hydrochloride__5-Aminolevulinic acid hydrochloride__OVCAR-4,-2.300820383,1.363,5.994,0
+50835,60963,1268,5482,ACH-000788,Sunitinib,7-Ethyl-10-hydroxycamptothecin,A2058,skin,Sunitinib__7-Ethyl-10-hydroxycamptothecin__A2058,0.438138679,30.828,18.586,1
+249617,303505,970,619,ACH-000750,actinomycin D,Imatinib,LOX IMVI,skin,actinomycin D__Imatinib__LOX IMVI,13.63174416,-2.267,0.902,1
+84017,102245,1005,236,ACH-000477,hydroxyurea,pipobroman,MALME-3M,skin,hydroxyurea__pipobroman__MALME-3M,-2.565560023,1.774,3.056,0
+12487,14115,669,853,ACH-000571,SUMATRIPTAN SUCCINATE,temozolomide,T98G,brain,SUMATRIPTAN SUCCINATE__temozolomide__T98G,22.99001504,-17.87324476,17.39258943,1
+165549,203455,1229,262,ACH-000555,paclitaxel,carmustine,A498,kidney,paclitaxel__carmustine__A498,-32.45569379,20.262,-0.219,0
+217931,264349,445,11899,ACH-000811,doxorubicin,891494-63-6,SK-OV-3,ovary,doxorubicin__891494-63-6__SK-OV-3,5.010790012,37.068,23.65,1
+293647,359302,8877,970,ACH-000433,Ruxolitinib,actinomycin D,CAKI-1,kidney,Ruxolitinib__actinomycin D__CAKI-1,19.42829024,7.935,0.531,1
+35343,40523,15029,8899,ACH-000115,AZD8186,Enzalutamide,VCAP,prostate,AZD8186__Enzalutamide__VCAP,-14.1314342,14.018,94.321,0
+164255,201849,570,1259,ACH-000943,vinblastine,Lapatinib,RKO,large_intestine,vinblastine__Lapatinib__RKO,-8.392246749,10.922,11.441,0
+69331,83991,675,1268,ACH-000696,Tamoxifen citrate,Sunitinib,OVCAR-8,ovary,Tamoxifen citrate__Sunitinib__OVCAR-8,0.499843118,1.547,0.351,1
+21929,25564,305,6233,ACH-000425,mitomycin C,Deforolimus,UACC62,skin,mitomycin C__Deforolimus__UACC62,4.315048418,33.966,17.145,1
+262981,320453,990,877,ACH-000655,EXEMESTANE,Antibiotic AY 22989,SF-268,brain,EXEMESTANE__Antibiotic AY 22989__SF-268,2.829929355,13.459,18.215,1
+9425,10696,317,853,ACH-000730,Gefitinib,temozolomide,SK-MEL-5,skin,Gefitinib__temozolomide__SK-MEL-5,-31.89768149,13.781,-7.878,0
+80668,98002,1268,6769,ACH-000817,Sunitinib,Bendamustine hydrochloride,RPMI-8226,haematopoietic_and_lymphoid,Sunitinib__Bendamustine hydrochloride__RPMI-8226,4.960096453,6.776,-0.723,1
+277038,338254,6772,1042,ACH-000971,CABAZITAXEL,Melphalan hydrochloride,HCT116,large_intestine,CABAZITAXEL__Melphalan hydrochloride__HCT116,-2.714587794,55.265,10.753,0
+144577,178255,380,1168,ACH-000817,Dexrazoxane,Procarbazine hydrochloride,RPMI-8226,haematopoietic_and_lymphoid,Dexrazoxane__Procarbazine hydrochloride__RPMI-8226,-8.675710185,29.672,-14.639,0
+88846,108370,6810,553,ACH-000343,MITHRAMYCIN,methoxsalen,NCI-H522,lung,MITHRAMYCIN__methoxsalen__NCI-H522,-2.427439445,34.099,1.906,0
+147583,182068,1103,1030,ACH-000046,Quinacrine hydrochloride,TOPOTECAN HYDROCHLORIDE,ACHN,kidney,Quinacrine hydrochloride__TOPOTECAN HYDROCHLORIDE__ACHN,-17.15101014,18.166,16.507,0
+113931,140082,631,305,ACH-000811,CHEMBL277800,mitomycin C,SK-OV-3,ovary,CHEMBL277800__mitomycin C__SK-OV-3,-8.755189467,-4.097,7.174,0
+177590,218724,480,1590,ACH-000148,Lenalidomide,NSC733504,HS 578T,breast,Lenalidomide__NSC733504__HS 578T,-8.932519529,-1.972,19.539,0
+208562,254603,443,2424,ACH-000573,dexamethasone,geldanamycin,MDAMB436,breast,dexamethasone__geldanamycin__MDAMB436,-28.58181882,-2.329,27.673,0
+12304,13923,11450,853,ACH-000571,pimobendan,temozolomide,T98G,brain,pimobendan__temozolomide__T98G,9.889058635,-14.6779421,17.39258943,1
+294914,360912,694,523,ACH-000817,23541-50-6,Retinoic acid,RPMI-8226,haematopoietic_and_lymphoid,23541-50-6__Retinoic acid__RPMI-8226,-4.797527695,28.628,31.317,0
+266956,325503,6626,441,ACH-000428,Axitinib,122111-05-1,UO-31,kidney,Axitinib__122111-05-1__UO-31,-4.979511225,0.033,2.336,0
+249287,303089,6626,631,ACH-001190,Axitinib,CHEMBL277800,SK-MEL-2,skin,Axitinib__CHEMBL277800__SK-MEL-2,-25.89343432,-1.569,36.259,0
+261242,318246,987,6176,ACH-000433,CYTARABINE HYDROCHLORIDE,Romidepsin,CAKI-1,kidney,CYTARABINE HYDROCHLORIDE__Romidepsin__CAKI-1,-4.156178881,35.595,34.028,0
+221262,267782,530,7101,ACH-000219,Erlotinib,391210-10-9,A375,skin,Erlotinib__391210-10-9__A375,3.128239806,8.775,52.864,1
+217619,264025,11651,11899,ACH-001061,915019-65-7,891494-63-6,DLD1,large_intestine,915019-65-7__891494-63-6__DLD1,-10.08323864,46.007,5.689,0
+55428,66374,12731,14122,ACH-000644,Daporinad,Cardamonin,COLO 829,skin,Daporinad__Cardamonin__COLO 829,-0.397212266,-36.928,1.597,0
+210431,256571,7227,441,ACH-000788,L-778123 free base,gemcitabine,A2058,skin,L-778123 free base__gemcitabine__A2058,5.494492031,15.837,52.158,1
+53576,64298,6626,5482,ACH-000900,Axitinib,7-Ethyl-10-hydroxycamptothecin,NCIH23,lung,Axitinib__7-Ethyl-10-hydroxycamptothecin__NCIH23,-35.10095938,-1.759,19.847,0
+300908,368506,8828,242,ACH-000861,Vismodegib,CHEMBL17639,HOP-62,lung,Vismodegib__CHEMBL17639__HOP-62,-7.391369674,-0.768,4.151,0
+109072,133942,853,1033,ACH-000273,temozolomide,6-Mercaptopurine,SF-539,brain,temozolomide__6-Mercaptopurine__SF-539,-40.18588811,0.223,21.797,0
+63512,76662,1103,530,ACH-001151,Quinacrine hydrochloride,Erlotinib hydrochloride,OVCAR-5,ovary,Quinacrine hydrochloride__Erlotinib hydrochloride__OVCAR-5,-2.93561917,5.672,9.332,0
+280830,343034,990,380,ACH-000463,EXEMESTANE,Dexrazoxane,NCI-H460,lung,EXEMESTANE__Dexrazoxane__NCI-H460,2.392866721,32.256,31.961,1
+228147,275787,12881,665,ACH-000579,Indole-3-carbinol,nilutamide,UACC-257,skin,Indole-3-carbinol__nilutamide__UACC-257,-10.82259438,16.675,8.068,0
+150564,185845,619,428,ACH-000651,Imatinib,Zanosar,SW-620,large_intestine,Imatinib__Zanosar__SW-620,-9.555016768,-7.687,8.272,0
+147205,181587,322,1030,ACH-000552,5-Fluoro-2'-deoxyuridine,TOPOTECAN HYDROCHLORIDE,HT29,large_intestine,5-Fluoro-2'-deoxyuridine__TOPOTECAN HYDROCHLORIDE__HT29,-4.059970258,24.374,19.152,0
+134791,166427,619,1254,ACH-000971,Imatinib,Dasatinib,HCT116,large_intestine,Imatinib__Dasatinib__HCT116,-4.27921501,-7.226,1.432,0
+11258,12795,6589,853,ACH-000571,Pazopanib,temozolomide,T98G,brain,Pazopanib__temozolomide__T98G,50.12612704,37.77523804,17.39258943,1
+166448,204598,523,262,ACH-000148,Retinoic acid,carmustine,HS 578T,breast,Retinoic acid__carmustine__HS 578T,8.675795964,11.124,8.685,1
+116680,143559,1073,6810,ACH-001151,Fludarabine Base,MITHRAMYCIN,OVCAR-5,ovary,Fludarabine Base__MITHRAMYCIN__OVCAR-5,-17.86323557,-2.704,31.92,0
+64595,78040,1143,530,ACH-000969,amifostine,Erlotinib hydrochloride,KM12,large_intestine,amifostine__Erlotinib hydrochloride__KM12,-22.59120215,-29.464,-0.937,0
+180871,222886,291,855,ACH-000343,chlorambucil,5-Aminolevulinic acid hydrochloride,NCI-H522,lung,chlorambucil__5-Aminolevulinic acid hydrochloride__NCI-H522,-6.455781706,20.435,5.309,0
+120502,148411,5294,648,ACH-000273,Vandetanib,mitotane,SF-539,brain,Vandetanib__mitotane__SF-539,-10.21149589,1.254,1.514,0
+265269,323362,482,441,ACH-000681,celecoxib,122111-05-1,A549,lung,celecoxib__122111-05-1__A549,-16.22706022,-6.79,5.707,0
+180768,222757,480,855,ACH-000376,Lenalidomide,5-Aminolevulinic acid hydrochloride,SF-295,brain,Lenalidomide__5-Aminolevulinic acid hydrochloride__SF-295,-3.099038194,5.619,9.397,0
+269476,328703,1206,488,ACH-000825,lomustine,altretamine,HOP-92,lung,lomustine__altretamine__HOP-92,-7.635638857,17.6,-1.216,0
+187719,231605,1101,14031,ACH-000696,158798-73-3,Triethylenemelamine,OVCAR-8,ovary,158798-73-3__Triethylenemelamine__OVCAR-8,-10.62442465,3.246,22.531,0
+70939,85910,791,1268,ACH-000555,Uramustine,Sunitinib,A498,kidney,Uramustine__Sunitinib__A498,-0.481925235,14.845,-0.695,0
+117963,145186,14031,648,ACH-000147,Triethylenemelamine,mitotane,T-47D,breast,Triethylenemelamine__mitotane__T-47D,-32.75254637,19.75,-3.756,0
+138351,170516,11793,1254,ACH-000573,Niraparib,Dasatinib,MDAMB436,breast,Niraparib__Dasatinib__MDAMB436,6.433001611,34.186,12.878,1
+42921,49958,12774,12729,ACH-000730,Ku-0063794,761439-42-3,SK-MEL-5,skin,Ku-0063794__761439-42-3__SK-MEL-5,6.517826253,-50.66,19.671,1
+219522,265984,570,11899,ACH-000311,vinblastine,891494-63-6,NCIH2122,lung,vinblastine__891494-63-6__NCIH2122,-1.900480134,27.388,49.58,0
+53048,63641,188,5482,ACH-001061,Bortezomib,7-Ethyl-10-hydroxycamptothecin,DLD1,large_intestine,Bortezomib__7-Ethyl-10-hydroxycamptothecin__DLD1,-1.440931351,46.676,4.725,0
+127045,156713,6772,724,ACH-000555,CABAZITAXEL,IMIQUIMOD,A498,kidney,CABAZITAXEL__IMIQUIMOD__A498,-16.53455364,34.009,-1.555,0
+256869,312704,1073,1101,ACH-000343,Fludarabine Base,158798-73-3,NCI-H522,lung,Fludarabine Base__158798-73-3__NCI-H522,-8.873439192,-0.831,0.626,0
+153801,189830,1206,398,ACH-000649,lomustine,Sorafenib,786-0,kidney,lomustine__Sorafenib__786-0,-3.433060565,19.534,18.189,0
+285294,348713,380,541,ACH-000681,Dexrazoxane,Vincristine sulfate,A549,lung,Dexrazoxane__Vincristine sulfate__A549,1.069498733,29.162,-1.6,1
+222535,269150,1268,1030,ACH-001418,Sunitinib,topotecan,UWB1289,ovary,Sunitinib__topotecan__UWB1289,-16.21162027,32.536,78.646,0
+79525,96553,553,4845,ACH-000019,methoxsalen,Ixabepilone,MCF7,breast,methoxsalen__Ixabepilone__MCF7,-23.08662643,-2.64,35.749,0
+174164,214378,1280,1262,ACH-000579,7803-88-5,NSC-127716,UACC-257,skin,7803-88-5__NSC-127716__UACC-257,-2.238921749,-1.293,-3.156,0
+123430,152115,8865,1217,ACH-000555,Crizotinib,anastrozole,A498,kidney,Crizotinib__anastrozole__A498,1.571296231,1.353,1.353,1
+185730,229067,1181,445,ACH-000463,ifosfamide,ADM hydrochloride,NCI-H460,lung,ifosfamide__ADM hydrochloride__NCI-H460,-2.831860557,2.562,49.706,0
+173965,214129,523,1262,ACH-000811,Retinoic acid,NSC-127716,SK-OV-3,ovary,Retinoic acid__NSC-127716__SK-OV-3,-6.064434699,5.785,-3.043,0
+82294,100058,380,6769,ACH-000555,Dexrazoxane,Bendamustine hydrochloride,A498,kidney,Dexrazoxane__Bendamustine hydrochloride__A498,-4.495032717,15.589,-0.204,0
+230239,278408,773,307,ACH-000987,etoposide,Bexarotene,MeWo,skin,etoposide__Bexarotene__MeWo,15.07796743,16.189,-23.16,1
+93438,114179,6626,1041,ACH-000651,Axitinib,thalidomide,SW-620,large_intestine,Axitinib__thalidomide__SW-620,-0.57289148,-1.544,0.441,0
+300066,367438,987,242,ACH-000817,CYTARABINE HYDROCHLORIDE,CHEMBL17639,RPMI-8226,haematopoietic_and_lymphoid,CYTARABINE HYDROCHLORIDE__CHEMBL17639__RPMI-8226,0.388728929,14.288,10.766,1
+95351,116602,398,1008,ACH-000428,Sorafenib,busulfan,UO-31,kidney,Sorafenib__busulfan__UO-31,2.089805163,7.809,2.973,1
+128147,158114,928,563,ACH-000655,"Azacytidine, 5-",methotrexate,SF-268,brain,"Azacytidine, 5-__methotrexate__SF-268",-19.37794955,0.679,20.601,0
+117123,144120,361,6810,ACH-000046,Navelbine ditartrate (TN),MITHRAMYCIN,ACHN,kidney,Navelbine ditartrate (TN)__MITHRAMYCIN__ACHN,7.237030416,9.211,0.393,1
+243474,295679,6589,8881,ACH-000730,Pazopanib hydrochloride,Vemurafenib,SK-MEL-5,skin,Pazopanib hydrochloride__Vemurafenib__SK-MEL-5,-14.95585185,-2.279,24.876,0
+214882,261212,441,12556,ACH-000322,gemcitabine,MK-5108,HT144,skin,gemcitabine__MK-5108__HT144,2.80297689,20.956,9.423,1
+246500,299546,188,8877,ACH-000754,Bortezomib,Ruxolitinib,L-428,haematopoietic_and_lymphoid,Bortezomib__Ruxolitinib__L-428,-32.5073487,12.822,0.131,0
+201493,247194,531,12021,ACH-000811,cyclophosphamide,Dinaciclib,SK-OV-3,ovary,cyclophosphamide__Dinaciclib__SK-OV-3,-51.78122166,-5.475,11.68,0
+71611,86737,694,1268,ACH-000428,23541-50-6,Sunitinib,UO-31,kidney,23541-50-6__Sunitinib__UO-31,-2.410376282,6.379,2.89,0
+292473,357818,1206,970,ACH-000343,lomustine,actinomycin D,NCI-H522,lung,lomustine__actinomycin D__NCI-H522,23.65436579,9.997,-0.545,1
+176986,217959,541,1590,ACH-000900,Vincristine sulfate,NSC733504,NCIH23,lung,Vincristine sulfate__NSC733504__NCIH23,-9.729888479,8.674,-0.071,0
+126425,155928,352,724,ACH-000696,6-Thioguanine,IMIQUIMOD,OVCAR-8,ovary,6-Thioguanine__IMIQUIMOD__OVCAR-8,-12.81368357,29.202,-0.512,0
+182678,225179,675,445,ACH-000090,Tamoxifen citrate,ADM hydrochloride,PC-3,prostate,Tamoxifen citrate__ADM hydrochloride__PC-3,-2.795960985,6.704,31.77,0
+145322,179195,8881,1168,ACH-000019,Vemurafenib,Procarbazine hydrochloride,MCF7,breast,Vemurafenib__Procarbazine hydrochloride__MCF7,-4.744457951,-1.244,1.392,0
+219170,265624,7101,11899,ACH-000811,391210-10-9,891494-63-6,SK-OV-3,ovary,391210-10-9__891494-63-6__SK-OV-3,-5.404946471,8.321,23.65,0
+148528,183268,1143,1030,ACH-000433,amifostine,TOPOTECAN HYDROCHLORIDE,CAKI-1,kidney,amifostine__TOPOTECAN HYDROCHLORIDE__CAKI-1,-83.663237,-9.093,28.394,0
+129352,159644,5812,563,ACH-000046,Abiraterone,methotrexate,ACHN,kidney,Abiraterone__methotrexate__ACHN,-54.12066839,0.272,23.623,0
+86940,105954,488,553,ACH-000367,altretamine,methoxsalen,NCI-H226,lung,altretamine__methoxsalen__NCI-H226,4.426967468,-3.013,-3.764,1
+45216,52795,6641,6134,ACH-000615,Perifosine,SNS-314,SK-MEL-28,skin,Perifosine__SNS-314__SK-MEL-28,-32.19443575,10.836,0.236,0
+157018,193662,6772,398,ACH-000969,CABAZITAXEL,Sorafenib,KM12,large_intestine,CABAZITAXEL__Sorafenib__KM12,2.410079407,41.848,35.384,1
+9940,11340,5294,853,ACH-000900,Vandetanib,temozolomide,NCIH23,lung,Vandetanib__temozolomide__NCIH23,-10.69435303,1.425,-2.004,0
+205596,251460,773,530,ACH-001418,etoposide,Erlotinib,UWB1289,ovary,etoposide__Erlotinib__UWB1289,6.378907835,30.232,45.011,1
+55321,66214,4849,14122,ACH-001190,Cediranib,Cardamonin,SK-MEL-2,skin,Cediranib__Cardamonin__SK-MEL-2,-48.89852086,3.936,55.877,0
+14946,17087,1229,947,ACH-000969,paclitaxel,Fulvestrant,KM12,large_intestine,paclitaxel__Fulvestrant__KM12,1.289505743,-2.576,-3.744,1
+140330,172888,1248,399,ACH-000579,docetaxel,Zoledronic acid,UACC-257,skin,docetaxel__Zoledronic acid__UACC-257,-0.317916337,5.454,1.166,0
+182320,224721,1590,445,ACH-000046,NSC733504,ADM hydrochloride,ACHN,kidney,NSC733504__ADM hydrochloride__ACHN,0.335778982,24.444,34.277,1
+259932,316589,6626,1229,ACH-000750,Axitinib,paclitaxel,LOX IMVI,skin,Axitinib__paclitaxel__LOX IMVI,-30.47703399,2.67,15.142,0
+302921,371875,305,7227,ACH-000713,mitomycin C,L-778123 free base,CAOV3,ovary,mitomycin C__L-778123 free base__CAOV3,-36.64620957,71.881,26.873,0
+295524,361686,481,322,ACH-000425,raloxifene,5-Fluoro-2'-deoxyuridine,UACC62,skin,raloxifene__5-Fluoro-2'-deoxyuridine__UACC62,-15.67046816,-2.105,27.21,0
+119152,146705,1006,648,ACH-000969,letrozole,mitotane,KM12,large_intestine,letrozole__mitotane__KM12,0.560950587,11.324,-0.229,1
+196698,242190,1229,11651,ACH-000348,paclitaxel,915019-65-7,RPMI7951,skin,paclitaxel__915019-65-7__RPMI7951,1.390448426,54.169,46.394,1
+238834,289892,6486,12129,ACH-000915,Enzastaurin,Tideglusib,IPC-298,skin,Enzastaurin__Tideglusib__IPC-298,-12.37488797,25.061,26.972,0
+231575,280851,570,1248,ACH-000552,Vinblastine sulfate,docetaxel,HT29,large_intestine,Vinblastine sulfate__docetaxel__HT29,0.302106644,-2.145,0.9,1
+42413,49317,8828,12729,ACH-000348,Vismodegib,761439-42-3,RPMI7951,skin,Vismodegib__761439-42-3__RPMI7951,-2.510572719,30.452,45.182,0
+36803,42280,1073,4849,ACH-000401,Fludarabine,Cediranib,COLO 800,skin,Fludarabine__Cediranib__COLO 800,2.095186419,12.717,-3.293,1
+155191,191499,305,398,ACH-000311,mitomycin C,Sorafenib,NCIH2122,lung,mitomycin C__Sorafenib__NCIH2122,-28.32098906,54.253,45.763,0
+129014,159213,361,563,ACH-000232,Navelbine ditartrate (TN),methotrexate,U251,brain,Navelbine ditartrate (TN)__methotrexate__U251,-5.477581407,15.654,31.077,0
+192461,237652,2546,7232,ACH-000665,Vorinostat,Veliparib,SKMES1,lung,Vorinostat__Veliparib__SKMES1,-25.93088112,13.676,1.544,0
+158685,195449,11793,398,ACH-000115,Niraparib,Sorafenib,VCAP,prostate,Niraparib__Sorafenib__VCAP,-6.329061744,4.603,10.22,0
+137976,170122,773,1254,ACH-001418,etoposide,Dasatinib,UWB1289+BRCA1,ovary,etoposide__Dasatinib__UWB1289+BRCA1,-10.79189897,6.901,70.834,0
+38105,43886,11651,8597,ACH-000987,915019-65-7,dorsomorphin,MeWo,skin,915019-65-7__dorsomorphin__MeWo,11.96046423,11.886,42.781,1
+295046,361079,8881,523,ACH-000552,Vemurafenib,Retinoic acid,HT29,large_intestine,Vemurafenib__Retinoic acid__HT29,4.212408871,33.59,10.785,1
+230530,278762,1268,15408,ACH-000425,Sunitinib,Silmitasertib,UACC62,skin,Sunitinib__Silmitasertib__UACC62,-12.22990028,-7.128,-7.75,0
+197884,243419,11740,11651,ACH-000028,MK-1775,915019-65-7,KPL1,breast,MK-1775__915019-65-7__KPL1,3.531673827,15.884,51.049,1
+289417,353942,990,1073,ACH-000001,EXEMESTANE,Fludarabine Base,OVCAR3,ovary,EXEMESTANE__Fludarabine Base__OVCAR3,-0.102419264,23.468,-0.14,0
+104783,128525,1280,290,ACH-000552,7803-88-5,bleomycin,HT29,large_intestine,7803-88-5__bleomycin__HT29,-0.878594058,2.967,2.381,0
+288486,352761,351,482,ACH-001151,MEGESTROL ACETATE,celecoxib,OVCAR-5,ovary,MEGESTROL ACETATE__celecoxib__OVCAR-5,-5.271594246,-3.568,-0.46,0
+63683,76879,631,530,ACH-000046,CHEMBL277800,Erlotinib hydrochloride,ACHN,kidney,CHEMBL277800__Erlotinib hydrochloride__ACHN,-1.178733976,16.031,23.424,0
+123494,152199,8877,1217,ACH-000811,Ruxolitinib,anastrozole,SK-OV-3,ovary,Ruxolitinib__anastrozole__SK-OV-3,1.189210216,2.663,2.174,1
+186886,230545,8865,445,ACH-000579,Crizotinib,ADM hydrochloride,UACC-257,skin,Crizotinib__ADM hydrochloride__UACC-257,-15.64090676,-0.367,39.417,0
+88495,107923,1073,553,ACH-000343,Fludarabine Base,methoxsalen,NCI-H522,lung,Fludarabine Base__methoxsalen__NCI-H522,-4.408922608,9.435,1.906,0
+176681,217574,1248,1590,ACH-000376,docetaxel,NSC733504,SF-295,brain,docetaxel__NSC733504__SF-295,-2.181059509,3.934,2.782,0
+196660,242149,4868,11651,ACH-000788,Nilotinib,915019-65-7,A2058,skin,Nilotinib__915019-65-7__A2058,-2.940216028,9.575,-0.48,0
+98732,120878,1103,14674,ACH-000425,Quinacrine hydrochloride,Emcyt (Pharmacia),UACC62,skin,Quinacrine hydrochloride__Emcyt (Pharmacia)__UACC62,1.866045457,0.004,3.972,1
+265872,324129,1280,441,ACH-000001,7803-88-5,122111-05-1,OVCAR3,ovary,7803-88-5__122111-05-1__OVCAR3,-24.78978674,-16.907,-1.067,0
+142037,175045,8865,399,ACH-000433,Crizotinib,Zoledronic acid,CAKI-1,kidney,Crizotinib__Zoledronic acid__CAKI-1,0.093981317,6.494,4.917,1
+225088,271958,2546,13978,ACH-000401,Vorinostat,49843-98-3,COLO 800,skin,Vorinostat__49843-98-3__COLO 800,-1.601416595,-26.045,37.486,0
+85134,103661,1103,236,ACH-000579,Quinacrine hydrochloride,pipobroman,UACC-257,skin,Quinacrine hydrochloride__pipobroman__UACC-257,-3.218046887,4.781,7.89,0
+118666,146081,242,648,ACH-000706,CHEMBL17639,mitotane,EKVX,lung,CHEMBL17639__mitotane__EKVX,-3.870686095,-2.649,-0.519,0
+152974,188886,2546,398,ACH-000115,Vorinostat,Sorafenib,VCAP,prostate,Vorinostat__Sorafenib__VCAP,1.912662526,23.671,10.22,1
+238539,289531,12731,12442,ACH-000425,Daporinad,Tanespimycin,UACC62,skin,Daporinad__Tanespimycin__UACC62,-20.87898025,30.451,-13.106,0
+268394,327336,544,928,ACH-000288,5-Fluorouracil,"Azacytidine, 5-",BT-549,breast,"5-Fluorouracil__Azacytidine, 5-__BT-549",-1.986291743,25.664,5.604,0
+283571,346494,480,642,ACH-000651,Lenalidomide,Pemetrexed,SW-620,large_intestine,Lenalidomide__Pemetrexed__SW-620,-1.574748559,5.058,28.146,0
+129870,160304,14031,1143,ACH-000811,Triethylenemelamine,amifostine,SK-OV-3,ovary,Triethylenemelamine__amifostine__SK-OV-3,-57.45793382,20.297,-1.413,0
+77679,94213,4572,4845,ACH-000046,thiotepa,Ixabepilone,ACHN,kidney,thiotepa__Ixabepilone__ACHN,-0.213365336,33.563,35.567,0
+137641,169774,445,1254,ACH-000348,doxorubicin,Dasatinib,RPMI7951,skin,doxorubicin__Dasatinib__RPMI7951,5.409698019,68.457,60.669,1
+56539,67821,242,1005,ACH-001190,CHEMBL17639,hydroxyurea,SK-MEL-2,skin,CHEMBL17639__hydroxyurea__SK-MEL-2,-35.99238934,21.161,0.358,0
+303742,372720,570,7227,ACH-001061,vinblastine,L-778123 free base,DLD1,large_intestine,vinblastine__L-778123 free base__DLD1,3.433777369,9.841,12.069,1
+192588,237787,11689,7232,ACH-000401,Selumetinib,Veliparib,COLO 800,skin,Selumetinib__Veliparib__COLO 800,4.07742542,10.981,-28.98,1
+116948,143899,1204,6810,ACH-000681,mitoxantrone,MITHRAMYCIN,A549,lung,mitoxantrone__MITHRAMYCIN__A549,-15.03487532,46.022,0.086,0
+234423,284457,6469,8868,ACH-000008,Lestaurtinib,Fingolimod,A101D,skin,Lestaurtinib__Fingolimod__A101D,-22.05193997,16.746,71.531,0
+266641,325107,773,441,ACH-000428,Vepesid J,122111-05-1,UO-31,kidney,Vepesid J__122111-05-1__UO-31,0.977885791,9.5,1.005,1
+111458,136941,773,1033,ACH-000849,Vepesid J,6-Mercaptopurine,MDA-MB-468,breast,Vepesid J__6-Mercaptopurine__MDA-MB-468,-20.15600554,15.026,32.679,0
+182143,224497,570,445,ACH-000552,Vinblastine sulfate,ADM hydrochloride,HT29,large_intestine,Vinblastine sulfate__ADM hydrochloride__HT29,-2.473219944,9.223,31.309,0
+301754,370438,5812,6626,ACH-000343,Abiraterone,Axitinib,NCI-H522,lung,Abiraterone__Axitinib__NCI-H522,2.684558319,-0.144,2.369,1
+15446,17715,385,947,ACH-000681,Antibiotic AD 32,Fulvestrant,A549,lung,Antibiotic AD 32__Fulvestrant__A549,-16.26541218,31.355,-1.537,0
+40544,46948,15408,7863,ACH-000614,Silmitasertib,GW9662,RVH-421,skin,Silmitasertib__GW9662__RVH-421,-37.24714914,38.811,-19.185,0
+152862,188763,5294,428,ACH-000681,Vandetanib,Zanosar,A549,lung,Vandetanib__Zanosar__A549,-6.011870549,10.315,1.724,0
+24363,28070,361,6233,ACH-000147,vinorelbine,Deforolimus,T-47D,breast,vinorelbine__Deforolimus__T-47D,9.41752463,20.269,12.963,1
+264433,322299,6772,877,ACH-000273,CABAZITAXEL,Antibiotic AY 22989,SF-539,brain,CABAZITAXEL__Antibiotic AY 22989__SF-539,5.906992464,41.902,14.973,1
+181364,223505,8828,855,ACH-000551,Vismodegib,5-Aminolevulinic acid hydrochloride,K-562,haematopoietic_and_lymphoid,Vismodegib__5-Aminolevulinic acid hydrochloride__K-562,-4.839107255,4.732,2.128,0
+298691,365693,1204,1006,ACH-000579,mitoxantrone,letrozole,UACC-257,skin,mitoxantrone__letrozole__UACC-257,-7.388652773,1.244,-1.252,0
+300297,367736,1204,242,ACH-000730,mitoxantrone,CHEMBL17639,SK-MEL-5,skin,mitoxantrone__CHEMBL17639__SK-MEL-5,-0.224409146,18.851,-1.041,0
+167223,205581,1008,262,ACH-000552,busulfan,carmustine,HT29,large_intestine,busulfan__carmustine__HT29,-0.605590065,-1.142,-2.764,0
+192141,237245,5812,1177,ACH-000849,Abiraterone,NSC256439,MDA-MB-468,breast,Abiraterone__NSC256439__MDA-MB-468,-21.11257125,23.564,32.22,0
+129268,159538,6589,563,ACH-000966,Pazopanib hydrochloride,methotrexate,IGROV1,ovary,Pazopanib hydrochloride__methotrexate__IGROV1,-33.2072145,0.256,16.774,0
+126660,156230,351,724,ACH-000463,MEGESTROL ACETATE,IMIQUIMOD,NCI-H460,lung,MEGESTROL ACETATE__IMIQUIMOD__NCI-H460,0.54353758,-0.015,0.303,1
+1561,1711,1229,2546,ACH-000651,paclitaxel,Vorinostat,SW-620,large_intestine,paclitaxel__Vorinostat__SW-620,-2.981601979,40.074,19.707,0
+175785,216439,8828,1262,ACH-000997,Vismodegib,NSC-127716,HCT-15,large_intestine,Vismodegib__NSC-127716__HCT-15,0.742957015,2.113,8.104,1
+166740,204972,631,262,ACH-001151,CHEMBL277800,carmustine,OVCAR-5,ovary,CHEMBL277800__carmustine__OVCAR-5,1.848160291,0.154,-0.044,1
+50731,60855,2546,5482,ACH-000291,Vorinostat,7-Ethyl-10-hydroxycamptothecin,OV90,ovary,Vorinostat__7-Ethyl-10-hydroxycamptothecin__OV90,3.002988684,11.318,16.567,1
+41540,48210,16107,12774,ACH-000987,BI 2536,Ku-0063794,MeWo,skin,BI 2536__Ku-0063794__MeWo,-8.583881638,14.939,14.638,0
+152847,188745,5294,428,ACH-001190,Vandetanib,Zanosar,SK-MEL-2,skin,Vandetanib__Zanosar__SK-MEL-2,-9.886018898,-2.569,3.493,0
+82886,100807,8881,6769,ACH-000232,Vemurafenib,Bendamustine hydrochloride,U251,brain,Vemurafenib__Bendamustine hydrochloride__U251,1.524911095,1.395,3.113,1
+174523,214834,6813,1262,ACH-000617,Pralatrexate,NSC-127716,OVCAR-4,ovary,Pralatrexate__NSC-127716__OVCAR-4,3.171190053,4.388,16.161,1
+299189,366324,8881,1006,ACH-000148,Vemurafenib,letrozole,HS 578T,breast,Vemurafenib__letrozole__HS 578T,5.401769027,-7.082,-2.791,1
+201871,247584,11651,12021,ACH-000900,915019-65-7,Dinaciclib,NCIH23,lung,915019-65-7__Dinaciclib__NCIH23,3.301056305,41.486,42.984,1
+290510,355329,8865,1073,ACH-000477,Crizotinib,Fludarabine Base,MALME-3M,skin,Crizotinib__Fludarabine Base__MALME-3M,-9.925351483,-0.196,1.952,0
+41947,48727,1132,12774,ACH-000788,Pioglitazone,Ku-0063794,A2058,skin,Pioglitazone__Ku-0063794__A2058,-2.707277206,-35.625,-22.023,0
+12067,13678,1097,853,ACH-000571,leflunomide,temozolomide,T98G,brain,leflunomide__temozolomide__T98G,5.11160862,16.10475757,17.39258943,1
+161294,198428,928,1259,ACH-000428,"Azacytidine, 5-",Lapatinib,UO-31,kidney,"Azacytidine, 5-__Lapatinib__UO-31",-2.583969421,11.482,12.759,0
+89795,109569,6589,553,ACH-000696,Pazopanib hydrochloride,methoxsalen,OVCAR-8,ovary,Pazopanib hydrochloride__methoxsalen__OVCAR-8,-0.495764121,0.65,-0.634,0
+219595,266061,361,11899,ACH-000757,vinorelbine,891494-63-6,A427,lung,vinorelbine__891494-63-6__A427,-0.893183714,49.171,29.495,0
+241232,292868,5470,1073,ACH-000008,VX-702,Fludarabine,A101D,skin,VX-702__Fludarabine__A101D,-6.840959496,16.349,7.722,0
+44111,51450,4144,1132,ACH-000644,Nutlin-3,Pioglitazone,COLO 829,skin,Nutlin-3__Pioglitazone__COLO 829,-14.33735361,27.99,24.786,0
+129875,160310,14031,1143,ACH-000425,Triethylenemelamine,amifostine,UACC62,skin,Triethylenemelamine__amifostine__UACC62,-39.02686294,37.28,-2.318,0
+268411,327354,544,928,ACH-000551,5-Fluorouracil,"Azacytidine, 5-",K-562,haematopoietic_and_lymphoid,"5-Fluorouracil__Azacytidine, 5-__K-562",-11.91471965,39.126,22.966,0
+219470,265932,570,11899,ACH-000219,vinblastine,891494-63-6,A375,skin,vinblastine__891494-63-6__A375,-3.25248002,33.24,15.746,0
+277542,338888,380,1206,ACH-000861,Dexrazoxane,lomustine,HOP-62,lung,Dexrazoxane__lomustine__HOP-62,-1.942298046,6.659,5.278,0
+74666,90391,445,1181,ACH-000232,ADM hydrochloride,ifosfamide,U251,brain,ADM hydrochloride__ifosfamide__U251,-2.511358437,6.275,1.688,0
+191858,236889,531,1177,ACH-000504,cyclophosphamide,NSC256439,SNB-75,brain,cyclophosphamide__NSC256439__SNB-75,-62.29369617,1.834,29.853,0
+129097,159319,351,563,ACH-000552,MEGESTROL ACETATE,methotrexate,HT29,large_intestine,MEGESTROL ACETATE__methotrexate__HT29,-21.80504732,-2.393,43.78,0
+92450,112934,791,1041,ACH-000997,Uramustine,thalidomide,HCT-15,large_intestine,Uramustine__thalidomide__HCT-15,-7.526029662,19.092,-0.318,0
+301729,370409,8881,6626,ACH-000730,Vemurafenib,Axitinib,SK-MEL-5,skin,Vemurafenib__Axitinib__SK-MEL-5,-7.627930499,25.115,-6.607,0
+193126,238349,1229,7232,ACH-000552,paclitaxel,Veliparib,HT29,large_intestine,paclitaxel__Veliparib__HT29,-38.10687049,61.175,-4.166,0
+185805,229159,553,445,ACH-000019,methoxsalen,ADM hydrochloride,MCF7,breast,methoxsalen__ADM hydrochloride__MCF7,-15.33836151,0.443,41.554,0
+33303,38299,8877,11740,ACH-000219,Ruxolitinib,MK-1775,A375,skin,Ruxolitinib__MK-1775__A375,-1.080161927,-46.318,-13.92,0
+28793,33311,1204,188,ACH-000651,mitoxantrone,Bortezomib,SW-620,large_intestine,mitoxantrone__Bortezomib__SW-620,-10.01297078,36.657,5.709,0
+207635,253648,544,2424,ACH-000900,5-Fluorouracil,geldanamycin,NCIH23,lung,5-Fluorouracil__geldanamycin__NCIH23,-3.298381722,29.726,67.183,0
+229384,277337,4868,7159,ACH-000008,Nilotinib,841290-80-0,A101D,skin,Nilotinib__841290-80-0__A101D,-15.59949415,26.818,15.345,0
+265113,323161,947,441,ACH-000849,Fulvestrant,122111-05-1,MDA-MB-468,breast,Fulvestrant__122111-05-1__MDA-MB-468,-21.13493357,-4.912,7.301,0
+255992,311588,675,1101,ACH-000504,Tamoxifen citrate,158798-73-3,SNB-75,brain,Tamoxifen citrate__158798-73-3__SNB-75,-2.619937298,-5.634,1.115,0
+133168,164493,8881,1143,ACH-000579,Vemurafenib,amifostine,UACC-257,skin,Vemurafenib__amifostine__UACC-257,-48.25564528,32.491,0.41,0
+286256,349933,1206,987,ACH-000969,lomustine,CYTARABINE HYDROCHLORIDE,KM12,large_intestine,lomustine__CYTARABINE HYDROCHLORIDE__KM12,-5.811949907,11.871,2.549,0
+281995,344504,8865,990,ACH-000001,Crizotinib,EXEMESTANE,OVCAR3,ovary,Crizotinib__EXEMESTANE__OVCAR3,-2.065003145,-3.077,35.857,0
+168342,206993,6626,262,ACH-000750,Axitinib,carmustine,LOX IMVI,skin,Axitinib__carmustine__LOX IMVI,0.002352261,0.282,16.817,1
+67284,81437,523,888,ACH-000681,Retinoic acid,55-86-7,A549,lung,Retinoic acid__55-86-7__A549,-9.229756961,11.898,22.12,0
+125009,154129,445,724,ACH-000655,ADM hydrochloride,IMIQUIMOD,SF-268,brain,ADM hydrochloride__IMIQUIMOD__SF-268,4.799326994,5.563,-1.768,1
+109847,134920,482,1033,ACH-000681,celecoxib,6-Mercaptopurine,A549,lung,celecoxib__6-Mercaptopurine__A549,-18.04314018,-2.85,16.017,0
+135065,166774,541,1254,ACH-000966,Vincristine sulfate,Dasatinib,IGROV1,ovary,Vincristine sulfate__Dasatinib__IGROV1,-2.75948861,6.116,9.425,0
+95740,117097,6813,1008,ACH-000090,Pralatrexate,busulfan,PC-3,prostate,Pralatrexate__busulfan__PC-3,-28.49102111,27.969,2.213,0
+29448,34115,1030,188,ACH-000900,TOPOTECAN HYDROCHLORIDE,Bortezomib,NCIH23,lung,TOPOTECAN HYDROCHLORIDE__Bortezomib__NCIH23,-3.618375785,23.468,10.758,0
+229437,277404,1259,7159,ACH-000450,Lapatinib,841290-80-0,Mel Ho,skin,Lapatinib__841290-80-0__Mel Ho,6.13670335,29.709,26.143,1
+95586,116899,544,1008,ACH-000001,5-Fluorouracil,busulfan,OVCAR3,ovary,5-Fluorouracil__busulfan__OVCAR3,-18.08193911,48.909,-0.562,0
+125317,154521,305,724,ACH-000649,mitomycin C,IMIQUIMOD,786-0,kidney,mitomycin C__IMIQUIMOD__786-0,-7.296316761,15.967,-0.355,0
+295481,361631,970,322,ACH-000651,actinomycin D,5-Fluoro-2'-deoxyuridine,SW-620,large_intestine,actinomycin D__5-Fluoro-2'-deoxyuridine__SW-620,-3.032604861,14.747,24.358,0
+202521,248254,2424,12021,ACH-000665,geldanamycin,Dinaciclib,SKMES1,lung,geldanamycin__Dinaciclib__SKMES1,-5.224718055,51.51,21.128,0
+249291,303094,6626,631,ACH-000376,Axitinib,CHEMBL277800,SF-295,brain,Axitinib__CHEMBL277800__SF-295,-0.916512152,2.086,2.786,0
+272311,332294,642,351,ACH-000463,Pemetrexed,MEGESTROL ACETATE,NCI-H460,lung,Pemetrexed__MEGESTROL ACETATE__NCI-H460,-21.15961373,43.785,-0.014,0
+74117,89697,1229,1181,ACH-000463,paclitaxel,ifosfamide,NCI-H460,lung,paclitaxel__ifosfamide__NCI-H460,-60.88596958,20.123,-1.065,0
+247971,301422,541,631,ACH-000997,Vincristine sulfate,CHEMBL277800,HCT-15,large_intestine,Vincristine sulfate__CHEMBL277800__HCT-15,-1.892973094,-4.141,0.215,0
+266573,325020,694,441,ACH-000825,23541-50-6,122111-05-1,HOP-92,lung,23541-50-6__122111-05-1__HOP-92,-2.174161975,12.931,1.104,0
+146944,181255,877,1030,ACH-000966,Antibiotic AY 22989,TOPOTECAN HYDROCHLORIDE,IGROV1,ovary,Antibiotic AY 22989__TOPOTECAN HYDROCHLORIDE__IGROV1,-0.379904002,15.235,12.173,0
+62458,75326,1229,530,ACH-000971,paclitaxel,Erlotinib hydrochloride,HCT116,large_intestine,paclitaxel__Erlotinib hydrochloride__HCT116,-19.95135561,21.216,1.706,0
+259095,315530,791,1229,ACH-000552,Uramustine,paclitaxel,HT29,large_intestine,Uramustine__paclitaxel__HT29,-18.67470486,16.653,42.116,0
+166330,204451,1033,262,ACH-000090,6-Mercaptopurine,carmustine,PC-3,prostate,6-Mercaptopurine__carmustine__PC-3,-2.70138786,7.35,2.626,0
+136176,168061,480,1254,ACH-000615,Lenalidomide,Dasatinib,SK-MEL-28,skin,Lenalidomide__Dasatinib__SK-MEL-28,3.778793046,1.153,0.91,1
+143932,177439,1041,1168,ACH-000090,thalidomide,Procarbazine hydrochloride,PC-3,prostate,thalidomide__Procarbazine hydrochloride__PC-3,-2.053304908,0.655,-0.086,0
+37817,43536,2546,8597,ACH-000401,Vorinostat,dorsomorphin,COLO 800,skin,Vorinostat__dorsomorphin__COLO 800,-2.871874727,-26.046,27.709,0
+292976,358454,352,970,ACH-000433,6-Thioguanine,actinomycin D,CAKI-1,kidney,6-Thioguanine__actinomycin D__CAKI-1,-0.319140179,31.2,0.531,0
+238018,288896,12731,6999,ACH-000450,Daporinad,PLX-4720,Mel Ho,skin,Daporinad__PLX-4720__Mel Ho,-4.196200427,32.859,40.79,0
+119141,146687,1006,648,ACH-000768,letrozole,mitotane,MDA-MB-231,breast,letrozole__mitotane__MDA-MB-231,-2.001562731,-2.55,1.466,0
+70584,85522,987,1268,ACH-000825,CYTARABINE HYDROCHLORIDE,Sunitinib,HOP-92,lung,CYTARABINE HYDROCHLORIDE__Sunitinib__HOP-92,-8.768997487,12.18,3.581,0
+204714,250530,563,530,ACH-001418,methotrexate,Erlotinib,UWB1289+BRCA1,ovary,methotrexate__Erlotinib__UWB1289+BRCA1,-6.233812685,61.1,45.917,0
+10218,11642,445,853,ACH-000001,doxorubicin,temozolomide,OVCAR3,ovary,doxorubicin__temozolomide__OVCAR3,-65.66374969,29.916,-4.681,0
+27079,31246,445,188,ACH-001151,ADM hydrochloride,Bortezomib,OVCAR-5,ovary,ADM hydrochloride__Bortezomib__OVCAR-5,-19.59794046,1.853,11.711,0
+183649,226411,1042,445,ACH-000817,Melphalan hydrochloride,ADM hydrochloride,RPMI-8226,haematopoietic_and_lymphoid,Melphalan hydrochloride__ADM hydrochloride__RPMI-8226,-19.19522825,11.115,37.655,0
+65459,79131,6626,530,ACH-000273,Axitinib,Erlotinib hydrochloride,SF-539,brain,Axitinib__Erlotinib hydrochloride__SF-539,-5.303231297,12.282,0.518,0
+173263,213236,619,1262,ACH-000288,Imatinib,NSC-127716,BT-549,breast,Imatinib__NSC-127716__BT-549,-16.16413984,-1.96,11.086,0
+64509,77930,480,530,ACH-000900,Lenalidomide,Erlotinib hydrochloride,NCIH23,lung,Lenalidomide__Erlotinib hydrochloride__NCIH23,9.004646012,2.939,1.616,1
+32568,37517,1229,11740,ACH-000573,paclitaxel,MK-1775,MDAMB436,breast,paclitaxel__MK-1775__MDAMB436,-0.632611473,29.042,17.863,0
+75927,91995,1168,1181,ACH-000148,Procarbazine hydrochloride,ifosfamide,HS 578T,breast,Procarbazine hydrochloride__ifosfamide__HS 578T,0.495169726,6.851,0.15,1
+187150,230882,2546,14031,ACH-000617,Vorinostat,Triethylenemelamine,OVCAR-4,ovary,Vorinostat__Triethylenemelamine__OVCAR-4,-3.687705888,10.164,8.569,0
+231842,281191,481,1248,ACH-000551,raloxifene,docetaxel,K-562,haematopoietic_and_lymphoid,raloxifene__docetaxel__K-562,-25.35294688,-2.682,37.5,0
+98646,120772,398,14674,ACH-000288,Sorafenib,Emcyt (Pharmacia),BT-549,breast,Sorafenib__Emcyt (Pharmacia)__BT-549,-3.676500386,-9.177,10.832,0
+3834,4447,5812,2546,ACH-000651,Abiraterone,Vorinostat,SW-620,large_intestine,Abiraterone__Vorinostat__SW-620,-6.072533764,-1.834,5.625,0
+124339,153273,947,724,ACH-000768,Fulvestrant,IMIQUIMOD,MDA-MB-231,breast,Fulvestrant__IMIQUIMOD__MDA-MB-231,-0.720944215,-0.654,0.447,0
+192775,237982,853,7232,ACH-000573,temozolomide,Veliparib,MDAMB436,breast,temozolomide__Veliparib__MDAMB436,8.618616791,3.668,8.421,1
+260371,317144,481,6176,ACH-000147,raloxifene,Romidepsin,T-47D,breast,raloxifene__Romidepsin__T-47D,-1.805548933,12.511,12.965,0
+119733,147442,480,648,ACH-000463,Lenalidomide,mitotane,NCI-H460,lung,Lenalidomide__mitotane__NCI-H460,3.816286716,4.309,0.264,1
+268382,327318,987,928,ACH-000706,CYTARABINE HYDROCHLORIDE,"Azacytidine, 5-",EKVX,lung,"CYTARABINE HYDROCHLORIDE__Azacytidine, 5-__EKVX",0.277655803,1.212,1.574,1
+49542,59415,12129,4960,ACH-000425,Tideglusib,Tipifarnib,UACC62,skin,Tideglusib__Tipifarnib__UACC62,19.34239828,-78.631,-50.657,1
+112938,138819,242,305,ACH-000649,CHEMBL17639,mitomycin C,786-0,kidney,CHEMBL17639__mitomycin C__786-0,0.739377198,2.521,6.082,1
+291502,356588,791,675,ACH-000147,Uramustine,Tamoxifen citrate,T-47D,breast,Uramustine__Tamoxifen citrate__T-47D,-6.369324253,16.199,5.531,0
+67094,81198,322,888,ACH-000971,5-Fluoro-2'-deoxyuridine,55-86-7,HCT116,large_intestine,5-Fluoro-2'-deoxyuridine__55-86-7__HCT116,-6.401504669,3.195,28.189,0
+1099,1141,570,2546,ACH-001151,Vinblastine sulfate,Vorinostat,OVCAR-5,ovary,Vinblastine sulfate__Vorinostat__OVCAR-5,-7.513643593,5.207,8.118,0
+119579,147244,380,648,ACH-000817,Dexrazoxane,mitotane,RPMI-8226,haematopoietic_and_lymphoid,Dexrazoxane__mitotane__RPMI-8226,-6.095821553,29.672,-1.011,0
+15011,17167,1101,947,ACH-000343,158798-73-3,Fulvestrant,NCI-H522,lung,158798-73-3__Fulvestrant__NCI-H522,-1.500234715,-1.328,0.686,0
+203775,249544,361,12021,ACH-000943,vinorelbine,Dinaciclib,RKO,large_intestine,vinorelbine__Dinaciclib__RKO,0.789658359,50.723,32.649,1
+71822,87000,6772,1268,ACH-000232,CABAZITAXEL,Sunitinib,U251,brain,CABAZITAXEL__Sunitinib__U251,-18.48402999,45.255,1.762,0
+35319,40499,8916,12218,ACH-000573,Afatinib,AZD5363,MDAMB436,breast,Afatinib__AZD5363__MDAMB436,-0.652398176,6.425,8.206,0
+100877,123579,1254,570,ACH-000768,Dasatinib,Vinblastine sulfate,MDA-MB-231,breast,Dasatinib__Vinblastine sulfate__MDA-MB-231,-2.476956697,12.528,4.385,0
+89876,109671,5812,553,ACH-000750,Abiraterone,methoxsalen,LOX IMVI,skin,Abiraterone__methoxsalen__LOX IMVI,-29.84872621,8.514,-0.452,0
+27671,31968,1103,188,ACH-000696,Quinacrine hydrochloride,Bortezomib,OVCAR-8,ovary,Quinacrine hydrochloride__Bortezomib__OVCAR-8,-16.81262246,-0.458,23.447,0
+225268,272177,8828,13978,ACH-000348,Vismodegib,49843-98-3,RPMI7951,skin,Vismodegib__49843-98-3__RPMI7951,2.574193968,30.451,5.778,1
+93397,114128,8865,1041,ACH-000615,Crizotinib,thalidomide,SK-MEL-28,skin,Crizotinib__thalidomide__SK-MEL-28,-1.16724599,-3.536,-0.239,0
+81321,98830,444,6769,ACH-000428,teniposide,Bendamustine hydrochloride,UO-31,kidney,teniposide__Bendamustine hydrochloride__UO-31,-1.070945448,10.026,4.298,0
+200358,246023,1254,12021,ACH-000971,Dasatinib,Dinaciclib,HCT116,large_intestine,Dasatinib__Dinaciclib__HCT116,-48.55042912,-5.32,41.397,0
+171855,211450,6772,531,ACH-000966,CABAZITAXEL,cyclophosphamide,IGROV1,ovary,CABAZITAXEL__cyclophosphamide__IGROV1,-40.97864311,30.105,-2.5,0
+107109,131466,619,6813,ACH-000730,Imatinib,Pralatrexate,SK-MEL-5,skin,Imatinib__Pralatrexate__SK-MEL-5,-24.92133,6.49,44.919,0
+17569,20447,12242,8911,ACH-000019,AZD7762,Trametinib,MCF7,breast,AZD7762__Trametinib__MCF7,-7.47758222,37.052,12.916,0
+187855,231783,619,14031,ACH-000730,Imatinib,Triethylenemelamine,SK-MEL-5,skin,Imatinib__Triethylenemelamine__SK-MEL-5,-15.75341809,3.344,27.936,0
+302417,371279,481,6589,ACH-000681,raloxifene,Pazopanib hydrochloride,A549,lung,raloxifene__Pazopanib hydrochloride__A549,1.358043388,-2.507,-0.122,1
+249085,302833,8881,631,ACH-000861,Vemurafenib,CHEMBL277800,HOP-62,lung,Vemurafenib__CHEMBL277800__HOP-62,-26.35343209,-1.701,37.847,0
+40535,46937,15408,7863,ACH-000304,Silmitasertib,GW9662,WM115,skin,Silmitasertib__GW9662__WM115,9.305833627,19.062,-38.45,1
+148722,183516,642,1030,ACH-000655,Pemetrexed,TOPOTECAN HYDROCHLORIDE,SF-268,brain,Pemetrexed__TOPOTECAN HYDROCHLORIDE__SF-268,-3.875517479,11.789,20.743,0
+210597,256761,6486,441,ACH-000915,Enzastaurin,gemcitabine,IPC-298,skin,Enzastaurin__gemcitabine__IPC-298,-32.58374762,25.061,36.898,0
+90342,110258,6176,1041,ACH-000615,Romidepsin,thalidomide,SK-MEL-28,skin,Romidepsin__thalidomide__SK-MEL-28,-45.64589842,54.705,3.24,0
+81046,98479,1206,6769,ACH-000019,lomustine,Bendamustine hydrochloride,MCF7,breast,lomustine__Bendamustine hydrochloride__MCF7,-1.546910156,8.127,2.849,0
+249454,303297,853,619,ACH-000433,temozolomide,Imatinib,CAKI-1,kidney,temozolomide__Imatinib__CAKI-1,-2.39423674,-5.36,-3.76,0
+51509,61736,970,5482,ACH-000019,actinomycin D,7-Ethyl-10-hydroxycamptothecin,MCF7,breast,actinomycin D__7-Ethyl-10-hydroxycamptothecin__MCF7,-11.38341564,0.414,10.114,0
+28466,32921,1262,188,ACH-000825,NSC-127716,Bortezomib,HOP-92,lung,NSC-127716__Bortezomib__HOP-92,-10.18002693,-3.235,10.494,0
+205529,251392,773,530,ACH-000811,etoposide,Erlotinib,SK-OV-3,ovary,etoposide__Erlotinib__SK-OV-3,2.105983287,14.644,26.852,1
+200040,245693,2546,12021,ACH-000552,Vorinostat,Dinaciclib,HT29,large_intestine,Vorinostat__Dinaciclib__HT29,-6.11033781,34.787,38.464,0
+16410,18936,351,947,ACH-000273,MEGESTROL ACETATE,Fulvestrant,SF-539,brain,MEGESTROL ACETATE__Fulvestrant__SF-539,-0.581864065,-0.055,0.832,0
+57931,69584,6772,1005,ACH-000477,CABAZITAXEL,hydroxyurea,MALME-3M,skin,CABAZITAXEL__hydroxyurea__MALME-3M,-3.938894469,23.239,2.618,0
+254398,309571,322,1280,ACH-000730,5-Fluoro-2'-deoxyuridine,7803-88-5,SK-MEL-5,skin,5-Fluoro-2'-deoxyuridine__7803-88-5__SK-MEL-5,-9.243063666,6.186,-0.488,0
+234314,284323,8828,8868,ACH-000008,Vismodegib,Fingolimod,A101D,skin,Vismodegib__Fingolimod__A101D,-44.8282752,21.866,71.532,0
+265481,323631,1042,441,ACH-000655,Melphalan hydrochloride,122111-05-1,SF-268,brain,Melphalan hydrochloride__122111-05-1__SF-268,0.348314427,9.98,-2.614,1
+54723,65509,12556,5482,ACH-001418,MK-5108,7-Ethyl-10-hydroxycamptothecin,UWB1289,ovary,MK-5108__7-Ethyl-10-hydroxycamptothecin__UWB1289,10.46463646,33.405,45.625,1
+106395,130565,1590,6813,ACH-000971,NSC733504,Pralatrexate,HCT116,large_intestine,NSC733504__Pralatrexate__HCT116,48.44754342,3.149,81.822,1
+117151,144158,361,6810,ACH-000997,Navelbine ditartrate (TN),MITHRAMYCIN,HCT-15,large_intestine,Navelbine ditartrate (TN)__MITHRAMYCIN__HCT-15,-0.835072086,6.092,-2.367,0
+61774,74458,14031,530,ACH-000649,Triethylenemelamine,Erlotinib hydrochloride,786-0,kidney,Triethylenemelamine__Erlotinib hydrochloride__786-0,-13.6820777,20.435,3.301,0
+16250,18732,352,947,ACH-000147,6-Thioguanine,Fulvestrant,T-47D,breast,6-Thioguanine__Fulvestrant__T-47D,-2.06080267,13.796,24.677,0
+200299,245960,853,12021,ACH-000552,temozolomide,Dinaciclib,HT29,large_intestine,temozolomide__Dinaciclib__HT29,-47.84640733,-3.897,38.464,0
+41862,48623,6075,12774,ACH-000644,Linsitinib,Ku-0063794,COLO 829,skin,Linsitinib__Ku-0063794__COLO 829,-14.07283736,-22.541,-23.32,0
+38651,44573,12848,8597,ACH-000572,PF-04217903,dorsomorphin,G-361,skin,PF-04217903__dorsomorphin__G-361,-20.63484666,16.18,25.062,0
+280180,342210,445,361,ACH-000681,ADM hydrochloride,Navelbine ditartrate (TN),A549,lung,ADM hydrochloride__Navelbine ditartrate (TN)__A549,-1.161211119,6.622,46.475,0
+75935,92005,1168,1181,ACH-000433,Procarbazine hydrochloride,ifosfamide,CAKI-1,kidney,Procarbazine hydrochloride__ifosfamide__CAKI-1,-9.903324666,6.153,-2.294,0
+171239,210667,480,531,ACH-000232,Lenalidomide,cyclophosphamide,U251,brain,Lenalidomide__cyclophosphamide__U251,-2.928851592,6.447,-1.836,0
+116041,142750,444,6810,ACH-000288,teniposide,MITHRAMYCIN,BT-549,breast,teniposide__MITHRAMYCIN__BT-549,7.431457689,28.101,-1.718,1
+21620,25243,853,6233,ACH-000421,temozolomide,Deforolimus,SW837,large_intestine,temozolomide__Deforolimus__SW837,-20.70842068,-5.775,9.036,0
+297465,364146,480,4572,ACH-000971,Lenalidomide,thiotepa,HCT116,large_intestine,Lenalidomide__thiotepa__HCT116,2.240335629,3.62,19.173,1
+277466,338791,990,1206,ACH-000696,EXEMESTANE,lomustine,OVCAR-8,ovary,EXEMESTANE__lomustine__OVCAR-8,-12.4384304,36.279,11.113,0
+299510,366730,5294,1006,ACH-000019,Vandetanib,letrozole,MCF7,breast,Vandetanib__letrozole__MCF7,-0.548718924,4.437,0.884,0
+273173,333380,1042,291,ACH-000001,Melphalan hydrochloride,chlorambucil,OVCAR3,ovary,Melphalan hydrochloride__chlorambucil__OVCAR3,8.670108567,6.404,16.745,1
+138967,171156,12340,1254,ACH-000401,Navitoclax,Dasatinib,COLO 800,skin,Navitoclax__Dasatinib__COLO 800,-10.98386769,-4.522,45.341,0
+283358,346224,5294,1204,ACH-001151,Vandetanib,mitoxantrone,OVCAR-5,ovary,Vandetanib__mitoxantrone__OVCAR-5,6.453191132,9.869,20.516,1
+290413,355207,5812,1073,ACH-000969,Abiraterone,Fludarabine Base,KM12,large_intestine,Abiraterone__Fludarabine Base__KM12,-13.1865219,11.285,0.933,0
+208264,254293,531,2424,ACH-000421,cyclophosphamide,geldanamycin,SW837,large_intestine,cyclophosphamide__geldanamycin__SW837,-2.898086576,3.273,35.237,0
+197522,243041,531,11651,ACH-000115,cyclophosphamide,915019-65-7,VCAP,prostate,cyclophosphamide__915019-65-7__VCAP,-32.03245049,-8.422,22.001,0
+236475,287017,773,6469,ACH-000987,etoposide,Lestaurtinib,MeWo,skin,etoposide__Lestaurtinib__MeWo,4.740874425,16.19,15.498,1
+282195,344760,14031,481,ACH-000730,Triethylenemelamine,raloxifene,SK-MEL-5,skin,Triethylenemelamine__raloxifene__SK-MEL-5,1.269846346,29.023,-0.859,1
+159055,195831,7101,398,ACH-000757,391210-10-9,Sorafenib,A427,lung,391210-10-9__Sorafenib__A427,9.268085434,21.221,72.074,1
+136859,168864,6589,1254,ACH-000551,Pazopanib hydrochloride,Dasatinib,K-562,haematopoietic_and_lymphoid,Pazopanib hydrochloride__Dasatinib__K-562,-4.21704257,4.639,92.184,0
+235700,286041,8865,480,ACH-000001,Crizotinib,Lenalidomide,OVCAR3,ovary,Crizotinib__Lenalidomide__OVCAR3,-3.037389985,-3.077,1.6,0
+138734,170911,570,1254,ACH-000573,vinblastine,Dasatinib,MDAMB436,breast,vinblastine__Dasatinib__MDAMB436,7.03006156,13.888,12.878,1
+132498,163647,1204,1143,ACH-000861,mitoxantrone,amifostine,HOP-62,lung,mitoxantrone__amifostine__HOP-62,-61.44990333,34.888,0.959,0
+206002,251885,11793,530,ACH-000115,Niraparib,Erlotinib,VCAP,prostate,Niraparib__Erlotinib__VCAP,2.872810856,4.603,2.729,1
+87256,106359,970,553,ACH-000730,actinomycin D,methoxsalen,SK-MEL-5,skin,actinomycin D__methoxsalen__SK-MEL-5,-34.63439953,13.179,0.358,0
+214285,260595,531,12556,ACH-000425,cyclophosphamide,MK-5108,UACC62,skin,cyclophosphamide__MK-5108__UACC62,-19.47701502,-5.713,9.784,0
+37709,43404,4879,8895,ACH-000572,Vatalanib,racemic-Tasocitinib,G-361,skin,Vatalanib__racemic-Tasocitinib__G-361,2.033931814,-4.518,-16.662,1
+13863,15721,5470,5984,ACH-000750,VX-702,RAF265,LOX IMVI,skin,VX-702__RAF265__LOX IMVI,-1.720239395,-19.665,27.01,0
+290331,355104,8881,1073,ACH-000288,Vemurafenib,Fludarabine Base,BT-549,breast,Vemurafenib__Fludarabine Base__BT-549,-11.66310801,-2.252,1.68,0
+81958,99635,523,6769,ACH-000971,Retinoic acid,Bendamustine hydrochloride,HCT116,large_intestine,Retinoic acid__Bendamustine hydrochloride__HCT116,-4.37494167,-4.131,1.568,0
+106868,131159,1229,6813,ACH-000504,paclitaxel,Pralatrexate,SNB-75,brain,paclitaxel__Pralatrexate__SNB-75,14.77333148,-0.974,36.546,1
+96165,117634,236,1008,ACH-000966,pipobroman,busulfan,IGROV1,ovary,pipobroman__busulfan__IGROV1,-3.219848316,14.133,3.394,0
+195855,241262,6469,7232,ACH-000304,Lestaurtinib,Veliparib,WM115,skin,Lestaurtinib__Veliparib__WM115,-14.16660814,9.407,19.831,0
+39160,45216,188,5416,ACH-000425,Bortezomib,GW0742,UACC62,skin,Bortezomib__GW0742__UACC62,-9.324007149,31.755,32.024,0
+201961,247674,11651,12021,ACH-000552,915019-65-7,Dinaciclib,HT29,large_intestine,915019-65-7__Dinaciclib__HT29,4.884119888,35.101,38.464,1
+159878,196727,2546,1259,ACH-000335,Vorinostat,Lapatinib,MSTO,lung,Vorinostat__Lapatinib__MSTO,8.416202923,54.65,16.789,1
+302330,371169,8877,5812,ACH-000966,Ruxolitinib,Abiraterone,IGROV1,ovary,Ruxolitinib__Abiraterone__IGROV1,3.090867795,2.402,3.4,1
+181233,223341,8881,855,ACH-000551,Vemurafenib,5-Aminolevulinic acid hydrochloride,K-562,haematopoietic_and_lymphoid,Vemurafenib__5-Aminolevulinic acid hydrochloride__K-562,-74.05148451,-3.748,2.128,0
+149627,184661,6176,428,ACH-000232,Romidepsin,Zanosar,U251,brain,Romidepsin__Zanosar__U251,-24.77023943,44.614,4.156,0
+37466,43109,6595,8895,ACH-000614,Midostaurin,racemic-Tasocitinib,RVH-421,skin,Midostaurin__racemic-Tasocitinib__RVH-421,19.54040409,50.85,-4.538,1
+121089,149153,4868,1217,ACH-000232,Nilotinib,anastrozole,U251,brain,Nilotinib__anastrozole__U251,-0.72364317,5.639,-0.401,0
+128080,158026,990,563,ACH-000555,EXEMESTANE,methotrexate,A498,kidney,EXEMESTANE__methotrexate__A498,-4.604487656,20.204,28.504,0
+121400,149549,444,1217,ACH-000019,teniposide,anastrozole,MCF7,breast,teniposide__anastrozole__MCF7,-4.832324394,25.478,2.525,0
+157291,194002,5294,398,ACH-000019,Vandetanib,Sorafenib,MCF7,breast,Vandetanib__Sorafenib__MCF7,-14.9518215,4.437,24.125,0
+42598,49542,307,12729,ACH-000788,Bexarotene,761439-42-3,A2058,skin,Bexarotene__761439-42-3__A2058,-13.36334188,-1.108,31.004,0
+200671,246344,5482,12021,ACH-001061,7-Ethyl-10-hydroxycamptothecin,Dinaciclib,DLD1,large_intestine,7-Ethyl-10-hydroxycamptothecin__Dinaciclib__DLD1,-2.601299222,4.761,25.172,0
+669,672,11663,12247,ACH-000473,957054-30-7,AZD4547,RT-112,urinary_tract,957054-30-7__AZD4547__RT-112,13.72468208,27.477,56.001,1
+22760,26419,7232,6233,ACH-000335,Veliparib,Deforolimus,MSTO,lung,Veliparib__Deforolimus__MSTO,5.99561452,8.511,11.77,1
+152978,188890,2546,398,ACH-001418,Vorinostat,Sorafenib,UWB1289,ovary,Vorinostat__Sorafenib__UWB1289,2.665265992,24.334,67.059,1
+140323,172881,1248,399,ACH-001151,docetaxel,Zoledronic acid,OVCAR-5,ovary,docetaxel__Zoledronic acid__OVCAR-5,5.252155628,1.519,1.115,1
+34708,39849,6999,11740,ACH-000644,PLX-4720,MK-1775,COLO 829,skin,PLX-4720__MK-1775__COLO 829,-3.431159785,38.965,1.296,0
+149044,183923,6589,1030,ACH-000861,Pazopanib hydrochloride,TOPOTECAN HYDROCHLORIDE,HOP-62,lung,Pazopanib hydrochloride__TOPOTECAN HYDROCHLORIDE__HOP-62,-26.11436465,2.547,16.459,0
+7062,7945,11663,11805,ACH-000720,957054-30-7,Saracatinib,TCCSUP,urinary_tract,957054-30-7__Saracatinib__TCCSUP,0.774566759,13.71,14.371,1
+125409,154637,523,724,ACH-000825,Retinoic acid,IMIQUIMOD,HOP-92,lung,Retinoic acid__IMIQUIMOD__HOP-92,-5.630022428,5.703,-0.555,0
+157406,194122,7232,398,ACH-000950,Veliparib,Sorafenib,LOVO,large_intestine,Veliparib__Sorafenib__LOVO,6.164413852,5.13,45.719,1
+122654,151133,1008,1217,ACH-000615,busulfan,anastrozole,SK-MEL-28,skin,busulfan__anastrozole__SK-MEL-28,4.12160738,0.433,-2.029,1
+62531,75416,482,530,ACH-000706,celecoxib,Erlotinib hydrochloride,EKVX,lung,celecoxib__Erlotinib hydrochloride__EKVX,-7.978176261,-5.673,6.194,0
+101095,123859,970,570,ACH-000090,actinomycin D,Vinblastine sulfate,PC-3,prostate,actinomycin D__Vinblastine sulfate__PC-3,-2.92864012,-0.778,-0.968,0
+21202,24817,12183,6233,ACH-000097,Sapitinib,Deforolimus,ZR751,breast,Sapitinib__Deforolimus__ZR751,-6.631110021,0.044,15.039,0
+116791,143702,544,6810,ACH-000997,5-Fluorouracil,MITHRAMYCIN,HCT-15,large_intestine,5-Fluorouracil__MITHRAMYCIN__HCT-15,-6.844982684,51.42,-2.367,0
+287227,351168,773,987,ACH-001190,Vepesid J,CYTARABINE HYDROCHLORIDE,SK-MEL-2,skin,Vepesid J__CYTARABINE HYDROCHLORIDE__SK-MEL-2,0.925932912,21.731,16.933,1
+233158,282863,642,1248,ACH-000579,Pemetrexed,docetaxel,UACC-257,skin,Pemetrexed__docetaxel__UACC-257,-12.10948471,4.437,18.028,0
+198800,244367,7227,11651,ACH-000552,L-778123 free base,915019-65-7,HT29,large_intestine,L-778123 free base__915019-65-7__HT29,18.3124585,35.576,35.101,1
+238897,289967,541,12129,ACH-000219,vincristine,Tideglusib,A375,skin,vincristine__Tideglusib__A375,-11.94597447,-1.936,-8.829,0
+77563,94063,481,4845,ACH-000817,raloxifene,Ixabepilone,RPMI-8226,haematopoietic_and_lymphoid,raloxifene__Ixabepilone__RPMI-8226,-14.38091634,-13.534,-6.074,0
+190969,235752,380,1177,ACH-000428,Dexrazoxane,NSC256439,UO-31,kidney,Dexrazoxane__NSC256439__UO-31,0.556304703,9.375,28.279,1
+58416,70198,6176,1103,ACH-000428,Romidepsin,Quinacrine hydrochloride,UO-31,kidney,Romidepsin__Quinacrine hydrochloride__UO-31,-4.67189987,3.342,10.262,0
+287187,351117,694,987,ACH-000971,23541-50-6,CYTARABINE HYDROCHLORIDE,HCT116,large_intestine,23541-50-6__CYTARABINE HYDROCHLORIDE__HCT116,-0.083430064,24.314,37.071,0
+250672,304846,351,619,ACH-000849,MEGESTROL ACETATE,Imatinib,MDA-MB-468,breast,MEGESTROL ACETATE__Imatinib__MDA-MB-468,-9.107081301,-2.362,0.657,0
+263705,321379,791,877,ACH-001190,Uramustine,Antibiotic AY 22989,SK-MEL-2,skin,Uramustine__Antibiotic AY 22989__SK-MEL-2,-2.071645569,1.522,19.145,0
+232970,282627,480,1248,ACH-001151,Lenalidomide,docetaxel,OVCAR-5,ovary,Lenalidomide__docetaxel__OVCAR-5,-18.00120733,3.429,29.912,0
+209460,255529,12556,2424,ACH-000573,MK-5108,geldanamycin,MDAMB436,breast,MK-5108__geldanamycin__MDAMB436,-2.234302925,6.246,27.673,0
+200493,246162,1229,12021,ACH-000573,paclitaxel,Dinaciclib,MDAMB436,breast,paclitaxel__Dinaciclib__MDAMB436,-3.049625913,29.042,35.289,0
+194235,239524,443,7232,ACH-000348,dexamethasone,Veliparib,RPMI7951,skin,dexamethasone__Veliparib__RPMI7951,-4.567438692,-9.651,-1.339,0
+136801,168792,773,1254,ACH-000655,Vepesid J,Dasatinib,SF-268,brain,Vepesid J__Dasatinib__SF-268,-2.758358254,15.912,-1.319,0
+101399,124244,242,570,ACH-000969,CHEMBL17639,Vinblastine sulfate,KM12,large_intestine,CHEMBL17639__Vinblastine sulfate__KM12,0.457790723,4.504,-3.79,1
+90363,110282,6176,1041,ACH-000617,Romidepsin,thalidomide,OVCAR-4,ovary,Romidepsin__thalidomide__OVCAR-4,-34.6383275,12.907,0.089,0
+190753,235473,563,1177,ACH-000433,methotrexate,NSC256439,CAKI-1,kidney,methotrexate__NSC256439__CAKI-1,-9.670525958,55.566,31.141,0
+133758,165196,1268,1254,ACH-000219,Sunitinib,Dasatinib,A375,skin,Sunitinib__Dasatinib__A375,15.90788528,38.25,15.013,1
+110037,135153,990,1033,ACH-000696,EXEMESTANE,6-Mercaptopurine,OVCAR-8,ovary,EXEMESTANE__6-Mercaptopurine__OVCAR-8,-21.17933145,15.766,19.037,0
+255336,310756,6589,1280,ACH-000651,Pazopanib hydrochloride,7803-88-5,SW-620,large_intestine,Pazopanib hydrochloride__7803-88-5__SW-620,-12.23913645,-13.017,-0.747,0
+164089,201679,7227,1259,ACH-001418,L-778123 free base,Lapatinib,UWB1289+BRCA1,ovary,L-778123 free base__Lapatinib__UWB1289+BRCA1,10.74322902,18.722,23.142,1
+147839,182396,544,1030,ACH-000971,5-Fluorouracil,TOPOTECAN HYDROCHLORIDE,HCT116,large_intestine,5-Fluorouracil__TOPOTECAN HYDROCHLORIDE__HCT116,-2.40555777,59.005,33.9,0
+288216,352419,1204,482,ACH-000649,mitoxantrone,celecoxib,786-0,kidney,mitoxantrone__celecoxib__786-0,-17.13539598,39.325,3.879,0
+158007,194747,530,398,ACH-000651,Erlotinib,Sorafenib,SW-620,large_intestine,Erlotinib__Sorafenib__SW-620,3.409211702,3.419,32.652,1
+53725,64483,7232,5482,ACH-000811,Veliparib,7-Ethyl-10-hydroxycamptothecin,SK-OV-3,ovary,Veliparib__7-Ethyl-10-hydroxycamptothecin__SK-OV-3,-24.45476096,-2.506,2.129,0
+302338,371178,8877,5812,ACH-000367,Ruxolitinib,Abiraterone,NCI-H226,lung,Ruxolitinib__Abiraterone__NCI-H226,1.980884368,4.444,-1.354,1
+68179,82571,642,888,ACH-000750,Pemetrexed,55-86-7,LOX IMVI,skin,Pemetrexed__55-86-7__LOX IMVI,-10.56259747,43.85,5.05,0
+18415,21460,352,8865,ACH-000046,6-Thioguanine,Crizotinib,ACHN,kidney,6-Thioguanine__Crizotinib__ACHN,-3.27097588,33.19,1.102,0
+55587,66587,12848,14122,ACH-000219,PF-04217903,Cardamonin,A375,skin,PF-04217903__Cardamonin__A375,46.34389658,14.827,63.914,1
+75558,91527,791,1181,ACH-000273,Uramustine,ifosfamide,SF-539,brain,Uramustine__ifosfamide__SF-539,-33.06824643,20.343,-0.5,0
+276363,337401,445,1042,ACH-000900,ADM hydrochloride,Melphalan hydrochloride,NCIH23,lung,ADM hydrochloride__Melphalan hydrochloride__NCIH23,-3.099970108,-3.166,18.229,0
+93505,114257,8877,1041,ACH-000019,Ruxolitinib,thalidomide,MCF7,breast,Ruxolitinib__thalidomide__MCF7,6.409283167,-0.959,-0.86,1
+103189,126501,8877,570,ACH-000696,Ruxolitinib,Vinblastine sulfate,OVCAR-8,ovary,Ruxolitinib__Vinblastine sulfate__OVCAR-8,-36.69410867,-1.797,6.748,0
+304172,373225,3044,8361,ACH-000651,Doramapimod,PRT062607,SW-620,large_intestine,Doramapimod__PRT062607__SW-620,-13.5590475,-8.913,2.401,0
+295717,361930,990,322,ACH-000367,EXEMESTANE,5-Fluoro-2'-deoxyuridine,NCI-H226,lung,EXEMESTANE__5-Fluoro-2'-deoxyuridine__NCI-H226,-4.496990751,3.648,0.589,0
+79010,95899,987,4845,ACH-000997,CYTARABINE HYDROCHLORIDE,Ixabepilone,HCT-15,large_intestine,CYTARABINE HYDROCHLORIDE__Ixabepilone__HCT-15,-15.18691185,1.467,30.873,0
+193865,239126,188,7232,ACH-000943,Bortezomib,Veliparib,RKO,large_intestine,Bortezomib__Veliparib__RKO,-3.160179372,39.159,5.639,0
+2383,2719,305,2546,ACH-000115,mitomycin C,Vorinostat,VCAP,prostate,mitomycin C__Vorinostat__VCAP,3.489143718,16.934,23.67,1
+166195,204277,322,262,ACH-000019,5-Fluoro-2'-deoxyuridine,carmustine,MCF7,breast,5-Fluoro-2'-deoxyuridine__carmustine__MCF7,-8.207713835,6.03,0.246,0
+106773,131037,1005,6813,ACH-000019,hydroxyurea,Pralatrexate,MCF7,breast,hydroxyurea__Pralatrexate__MCF7,0.901495522,0.698,-0.235,1
+28858,33391,480,188,ACH-000232,Lenalidomide,Bortezomib,U251,brain,Lenalidomide__Bortezomib__U251,-3.684803117,6.447,7.067,0
+40636,47084,13978,7863,ACH-000730,49843-98-3,GW9662,SK-MEL-5,skin,49843-98-3__GW9662__SK-MEL-5,-5.715180719,35.257,19.713,0
+301013,368638,6626,242,ACH-000433,Axitinib,CHEMBL17639,CAKI-1,kidney,Axitinib__CHEMBL17639__CAKI-1,-1.837277472,1.422,3.692,0
+218400,264830,2424,11899,ACH-000552,geldanamycin,891494-63-6,HT29,large_intestine,geldanamycin__891494-63-6__HT29,-3.165994018,80.509,24.417,0
+50278,60321,12731,12242,ACH-000987,Daporinad,AZD7762,MeWo,skin,Daporinad__AZD7762__MeWo,13.65981389,-28.072,-48.302,1
+182113,224463,399,445,ACH-000730,Zoledronic acid,ADM hydrochloride,SK-MEL-5,skin,Zoledronic acid__ADM hydrochloride__SK-MEL-5,2.421047401,3.329,47.21,1
+188131,232132,1006,14031,ACH-000655,letrozole,Triethylenemelamine,SF-268,brain,letrozole__Triethylenemelamine__SF-268,-0.394521722,-1.503,19.141,0
+303077,372035,544,7227,ACH-000001,5-Fluorouracil,L-778123 free base,OVCAR3,ovary,5-Fluorouracil__L-778123 free base__OVCAR3,-3.474463637,31.89,-8.996,0
+143017,176280,4572,1168,ACH-000148,thiotepa,Procarbazine hydrochloride,HS 578T,breast,thiotepa__Procarbazine hydrochloride__HS 578T,-8.51740575,5.387,-0.906,0
+39772,45982,6589,5416,ACH-000450,Pazopanib,GW0742,Mel Ho,skin,Pazopanib__GW0742__Mel Ho,0.924855447,13.94,26.389,1
+216782,263164,563,11899,ACH-000001,methotrexate,891494-63-6,OVCAR3,ovary,methotrexate__891494-63-6__OVCAR3,4.069078968,31.477,34.525,1
+163653,201227,445,1259,ACH-000425,doxorubicin,Lapatinib,UACC62,skin,doxorubicin__Lapatinib__UACC62,7.538438143,42.41,4.244,1
+109430,134393,6769,1033,ACH-000768,Bendamustine hydrochloride,6-Mercaptopurine,MDA-MB-231,breast,Bendamustine hydrochloride__6-Mercaptopurine__MDA-MB-231,-55.30267852,-3.852,36.784,0
+183925,226763,5482,445,ACH-000861,7-Ethyl-10-hydroxycamptothecin,ADM hydrochloride,HOP-62,lung,7-Ethyl-10-hydroxycamptothecin__ADM hydrochloride__HOP-62,-2.188024585,58.019,38.483,0
+50343,60399,6595,12242,ACH-000219,Midostaurin,AZD7762,A375,skin,Midostaurin__AZD7762__A375,19.35644894,25.993,-5.365,1
+152816,188705,8877,428,ACH-001151,Ruxolitinib,Zanosar,OVCAR-5,ovary,Ruxolitinib__Zanosar__OVCAR-5,-11.37316394,-4.079,1.174,0
+100474,123071,6626,14674,ACH-000861,Axitinib,Emcyt (Pharmacia),HOP-62,lung,Axitinib__Emcyt (Pharmacia)__HOP-62,1.919758191,-3.435,-2.191,1
+72842,88119,570,1268,ACH-001061,vinblastine,Sunitinib,DLD1,large_intestine,vinblastine__Sunitinib__DLD1,-8.089191513,9.841,27.14,0
+114527,140831,1168,305,ACH-000768,Procarbazine hydrochloride,mitomycin C,MDA-MB-231,breast,Procarbazine hydrochloride__mitomycin C__MDA-MB-231,1.332934454,-3.421,-4.112,1
+201231,246924,1259,12021,ACH-000900,Lapatinib,Dinaciclib,NCIH23,lung,Lapatinib__Dinaciclib__NCIH23,-9.645140855,11.675,42.984,0
+85114,103638,1103,236,ACH-000477,Quinacrine hydrochloride,pipobroman,MALME-3M,skin,Quinacrine hydrochloride__pipobroman__MALME-3M,0.726630103,18.05,-0.73,1
+102471,125596,480,570,ACH-000817,Lenalidomide,Vinblastine sulfate,RPMI-8226,haematopoietic_and_lymphoid,Lenalidomide__Vinblastine sulfate__RPMI-8226,8.298554597,12.352,36.659,1
+126128,155554,1181,724,ACH-000811,ifosfamide,IMIQUIMOD,SK-OV-3,ovary,ifosfamide__IMIQUIMOD__SK-OV-3,-0.61919822,-2.729,-1.409,0
+144393,178024,6810,1168,ACH-000343,MITHRAMYCIN,Procarbazine hydrochloride,NCI-H522,lung,MITHRAMYCIN__Procarbazine hydrochloride__NCI-H522,-39.49259788,14.003,-2.057,0
+286466,350197,482,987,ACH-000849,celecoxib,CYTARABINE HYDROCHLORIDE,MDA-MB-468,breast,celecoxib__CYTARABINE HYDROCHLORIDE__MDA-MB-468,-14.23481416,4.254,17.005,0
+169357,208279,444,531,ACH-000817,teniposide,cyclophosphamide,RPMI-8226,haematopoietic_and_lymphoid,teniposide__cyclophosphamide__RPMI-8226,-36.28446858,46.784,0.41,0
+201388,247085,188,12021,ACH-000573,Bortezomib,Dinaciclib,MDAMB436,breast,Bortezomib__Dinaciclib__MDAMB436,-9.507854401,49.232,35.289,0
+77983,94596,619,4845,ACH-000001,Imatinib,Ixabepilone,OVCAR3,ovary,Imatinib__Ixabepilone__OVCAR3,-27.60805796,-5.213,58.769,0
+3552,4101,531,2546,ACH-000395,cyclophosphamide,Vorinostat,NCIH520,lung,cyclophosphamide__Vorinostat__NCIH520,-30.78558671,-3.81,16.995,0
+187516,231350,970,14031,ACH-001190,actinomycin D,Triethylenemelamine,SK-MEL-2,skin,actinomycin D__Triethylenemelamine__SK-MEL-2,1.981822236,-8.831,18.439,1
+195136,240461,11793,7232,ACH-000028,Niraparib,Veliparib,KPL1,breast,Niraparib__Veliparib__KPL1,-5.76382169,20.888,5.58,0
+252787,307530,351,4868,ACH-000477,MEGESTROL ACETATE,Nilotinib,MALME-3M,skin,MEGESTROL ACETATE__Nilotinib__MALME-3M,-6.793749144,-5.363,-2.042,0
+189160,233441,481,1177,ACH-000425,raloxifene,NSC256439,UACC62,skin,raloxifene__NSC256439__UACC62,-1.391566706,-0.396,33.24,0
+83306,101342,853,236,ACH-000811,temozolomide,pipobroman,SK-OV-3,ovary,temozolomide__pipobroman__SK-OV-3,-3.42302376,-0.782,4.0,0
+187299,231075,399,14031,ACH-000288,Zoledronic acid,Triethylenemelamine,BT-549,breast,Zoledronic acid__Triethylenemelamine__BT-549,-7.532242631,-3.705,16.328,0
+111349,136806,317,1033,ACH-001151,Gefitinib,6-Mercaptopurine,OVCAR-5,ovary,Gefitinib__6-Mercaptopurine__OVCAR-5,-3.057177921,32.23,16.536,0
+36897,42395,853,8895,ACH-000348,temozolomide,racemic-Tasocitinib,RPMI7951,skin,temozolomide__racemic-Tasocitinib__RPMI7951,-16.52543704,8.988,-7.101,0
+237356,288082,15408,9073,ACH-000219,Silmitasertib,Palbociclib,A375,skin,Silmitasertib__Palbociclib__A375,22.75636207,5.835,-4.798,1
+7857,8847,1229,853,ACH-000657,paclitaxel,temozolomide,A2780,ovary,paclitaxel__temozolomide__A2780,-22.83218028,57.973,2.338,0
+60442,72771,791,1103,ACH-000343,Uramustine,Quinacrine hydrochloride,NCI-H522,lung,Uramustine__Quinacrine hydrochloride__NCI-H522,8.040780204,21.967,7.519,1
+86550,105456,5294,236,ACH-000817,Vandetanib,pipobroman,RPMI-8226,haematopoietic_and_lymphoid,Vandetanib__pipobroman__RPMI-8226,-6.075225671,-3.766,12.184,0
+232897,282532,380,1248,ACH-000147,Dexrazoxane,docetaxel,T-47D,breast,Dexrazoxane__docetaxel__T-47D,-10.58884521,3.512,15.634,0
+281321,343654,8828,380,ACH-001190,Vismodegib,Dexrazoxane,SK-MEL-2,skin,Vismodegib__Dexrazoxane__SK-MEL-2,-8.121192402,-5.282,14.496,0
+191564,236512,236,1177,ACH-000504,pipobroman,NSC256439,SNB-75,brain,pipobroman__NSC256439__SNB-75,-3.066058322,9.731,29.853,0
+169369,208295,444,531,ACH-000706,teniposide,cyclophosphamide,EKVX,lung,teniposide__cyclophosphamide__EKVX,-28.94517027,10.173,-2.72,0
+9497,10783,773,853,ACH-000551,Vepesid J,temozolomide,K-562,haematopoietic_and_lymphoid,Vepesid J__temozolomide__K-562,-26.47090907,25.842,-3.719,0
+113032,138935,619,305,ACH-000551,Imatinib,mitomycin C,K-562,haematopoietic_and_lymphoid,Imatinib__mitomycin C__K-562,-11.59646419,62.056,26.422,0
+120100,147906,773,648,ACH-000655,Vepesid J,mitotane,SF-268,brain,Vepesid J__mitotane__SF-268,-12.87712495,17.997,0.008,0
+166537,204711,1073,262,ACH-000232,Fludarabine Base,carmustine,U251,brain,Fludarabine Base__carmustine__U251,-9.465722796,1.815,20.022,0
+37426,43060,7217,8895,ACH-000615,TCS JNK 5a,racemic-Tasocitinib,SK-MEL-28,skin,TCS JNK 5a__racemic-Tasocitinib__SK-MEL-28,-12.87189229,34.563,-25.957,0
+38636,44554,12848,8597,ACH-000304,PF-04217903,dorsomorphin,WM115,skin,PF-04217903__dorsomorphin__WM115,-11.84682408,44.489,-28.42,0
+124493,153472,1229,724,ACH-000615,paclitaxel,IMIQUIMOD,SK-MEL-28,skin,paclitaxel__IMIQUIMOD__SK-MEL-28,-10.60536696,26.014,-0.701,0
+131379,162227,1033,1143,ACH-000730,6-Mercaptopurine,amifostine,SK-MEL-5,skin,6-Mercaptopurine__amifostine__SK-MEL-5,-37.74671948,8.048,-1.467,0
+158597,195357,7227,398,ACH-000311,L-778123 free base,Sorafenib,NCIH2122,lung,L-778123 free base__Sorafenib__NCIH2122,-7.888827265,48.573,45.763,0
+275001,335685,8828,791,ACH-000681,Vismodegib,Uramustine,A549,lung,Vismodegib__Uramustine__A549,-5.832506172,-1.024,18.885,0
+215263,261605,570,12556,ACH-000657,vinblastine,MK-5108,A2780,ovary,vinblastine__MK-5108__A2780,8.960094628,35.961,31.982,1
+47459,56815,5984,7080,ACH-000644,RAF265,T0901317,COLO 829,skin,RAF265__T0901317__COLO 829,-7.348853901,12.475,-4.966,0
+163267,200807,8877,1259,ACH-000750,Ruxolitinib,Lapatinib,LOX IMVI,skin,Ruxolitinib__Lapatinib__LOX IMVI,10.06527015,-45.509,-4.362,1
+247604,300951,444,631,ACH-000579,teniposide,CHEMBL277800,UACC-257,skin,teniposide__CHEMBL277800__UACC-257,-8.253924124,5.374,18.086,0
+144253,177846,987,1168,ACH-000046,CYTARABINE HYDROCHLORIDE,Procarbazine hydrochloride,ACHN,kidney,CYTARABINE HYDROCHLORIDE__Procarbazine hydrochloride__ACHN,-37.92394887,44.348,0.476,0
+167666,206142,361,262,ACH-000825,Navelbine ditartrate (TN),carmustine,HOP-92,lung,Navelbine ditartrate (TN)__carmustine__HOP-92,-28.15153033,19.93,2.824,0
+33849,38877,441,11740,ACH-000651,gemcitabine,MK-1775,SW-620,large_intestine,gemcitabine__MK-1775__SW-620,12.31016648,63.354,28.182,1
+144338,177955,563,1168,ACH-000425,methotrexate,Procarbazine hydrochloride,UACC62,skin,methotrexate__Procarbazine hydrochloride__UACC62,-71.01750621,18.338,-0.029,0
+41910,48682,6641,12774,ACH-000425,Perifosine,Ku-0063794,UACC62,skin,Perifosine__Ku-0063794__UACC62,3.102151231,-47.327,-20.119,1
+126491,156014,236,724,ACH-000651,pipobroman,IMIQUIMOD,SW-620,large_intestine,pipobroman__IMIQUIMOD__SW-620,-0.949554325,8.216,-1.623,0
+241991,293791,317,544,ACH-000477,Gefitinib,5-Fluorouracil,MALME-3M,skin,Gefitinib__5-Fluorouracil__MALME-3M,-1.129743936,12.941,22.736,0
+23761,27452,11793,6233,ACH-000348,Niraparib,Deforolimus,RPMI7951,skin,Niraparib__Deforolimus__RPMI7951,3.279480399,6.434,37.037,1
+234166,284140,6075,5928,ACH-000644,Linsitinib,Dovitinib,COLO 829,skin,Linsitinib__Dovitinib__COLO 829,-2.550427492,-22.541,15.892,0
+278667,340302,642,694,ACH-000900,Pemetrexed,23541-50-6,NCIH23,lung,Pemetrexed__23541-50-6__NCIH23,-18.94851723,1.628,19.294,0
+27482,31724,305,188,ACH-000433,mitomycin C,Bortezomib,CAKI-1,kidney,mitomycin C__Bortezomib__CAKI-1,-5.728085972,23.929,12.328,0
+152318,188073,351,428,ACH-000046,MEGESTROL ACETATE,Zanosar,ACHN,kidney,MEGESTROL ACETATE__Zanosar__ACHN,1.687220119,0.915,1.113,1
+154771,191027,877,398,ACH-000969,Antibiotic AY 22989,Sorafenib,KM12,large_intestine,Antibiotic AY 22989__Sorafenib__KM12,4.395159092,-0.016,-0.365,1
+116404,143209,928,6810,ACH-000655,"Azacytidine, 5-",MITHRAMYCIN,SF-268,brain,"Azacytidine, 5-__MITHRAMYCIN__SF-268",-11.40037488,1.498,23.468,0
+216779,263161,563,11899,ACH-000219,methotrexate,891494-63-6,A375,skin,methotrexate__891494-63-6__A375,6.903052021,57.151,15.746,1
+73751,89227,1206,1181,ACH-000148,lomustine,ifosfamide,HS 578T,breast,lomustine__ifosfamide__HS 578T,-17.04172209,12.794,-0.581,0
+60137,72383,888,1103,ACH-000046,55-86-7,Quinacrine hydrochloride,ACHN,kidney,55-86-7__Quinacrine hydrochloride__ACHN,-9.446436891,31.141,21.397,0
+46998,56230,8868,7080,ACH-001190,Fingolimod,T0901317,SK-MEL-2,skin,Fingolimod__T0901317__SK-MEL-2,-26.11074536,56.486,30.434,0
+55380,66310,6486,14122,ACH-000968,Enzastaurin,Cardamonin,COLO 792,skin,Enzastaurin__Cardamonin__COLO 792,-48.37373739,-3.414,68.666,0
+254009,309075,444,1280,ACH-001190,teniposide,7803-88-5,SK-MEL-2,skin,teniposide__7803-88-5__SK-MEL-2,-57.30367386,22.344,-5.761,0
+138479,170648,12556,1254,ACH-000573,MK-5108,Dasatinib,MDAMB436,breast,MK-5108__Dasatinib__MDAMB436,8.396587944,6.246,12.878,1
+239343,290510,4144,4879,ACH-000425,Nutlin-3,Vatalanib,UACC62,skin,Nutlin-3__Vatalanib__UACC62,5.069194742,-7.066,7.635,1
+92796,113369,352,1041,ACH-000232,6-Thioguanine,thalidomide,U251,brain,6-Thioguanine__thalidomide__U251,-15.21894153,23.129,-5.893,0
+243243,295381,642,8881,ACH-000555,Pemetrexed,Vemurafenib,A498,kidney,Pemetrexed__Vemurafenib__A498,-8.20830473,22.339,0.252,0
+36985,42502,1259,8895,ACH-000425,Lapatinib,racemic-Tasocitinib,UACC62,skin,Lapatinib__racemic-Tasocitinib__UACC62,-33.45365036,27.456,-9.673,0
+282603,345270,5294,481,ACH-000425,Vandetanib,raloxifene,UACC62,skin,Vandetanib__raloxifene__UACC62,-0.177315674,4.286,-0.953,0
+186706,230316,6589,445,ACH-000615,Pazopanib hydrochloride,ADM hydrochloride,SK-MEL-28,skin,Pazopanib hydrochloride__ADM hydrochloride__SK-MEL-28,4.286618535,18.154,35.033,1
+80182,97386,773,4845,ACH-000617,Vepesid J,Ixabepilone,OVCAR-4,ovary,Vepesid J__Ixabepilone__OVCAR-4,-0.985624773,4.071,-0.416,0
+188876,233076,1254,1177,ACH-000552,Dasatinib,NSC256439,HT29,large_intestine,Dasatinib__NSC256439__HT29,16.3466692,9.309,23.461,1
+57060,68478,1073,1005,ACH-000768,Fludarabine Base,hydroxyurea,MDA-MB-231,breast,Fludarabine Base__hydroxyurea__MDA-MB-231,-0.645481052,8.187,2.802,0
+120998,149039,6769,1217,ACH-000148,Bendamustine hydrochloride,anastrozole,HS 578T,breast,Bendamustine hydrochloride__anastrozole__HS 578T,-4.460235244,0.531,6.883,0

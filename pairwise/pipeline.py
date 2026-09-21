@@ -1,9 +1,9 @@
 """
     A collection of full training and evaluation pipelines.
 """
-from curses.ascii import DC2
-from logging import raiseExceptions
-from stringprep import in_table_a1
+import os
+from .seeding import get_seed
+from .paths import DATA_DIR, RESULTS_DIR, weights_path
 import numpy as np 
 import pandas as pd
 import torch
@@ -17,15 +17,32 @@ from sklearn.metrics import fbeta_score,accuracy_score,precision_score,recall_sc
 from sklearn.model_selection import train_test_split, KFold
 from sklearn.model_selection import cross_val_score, cross_validate
 
-from prepare_data import *
-from select_features import *
-from get_model import get_model
-from dataloader import dataloader, dataloader_graph, k_fold_trainer, k_fold_trainer_graph, evaluator, evaluator_graph,\
+from .prepare_data import *
+from .select_features import *
+from .get_model import get_model
+from .dataloader import dataloader, dataloader_graph, k_fold_trainer, k_fold_trainer_graph, evaluator, evaluator_graph,\
     k_fold_trainer_graph_TGSynergy,evaluator_graph_TGSynergy, k_fold_trainer_graph_trans, evaluator_graph_trans,\
-        k_fold_trainer_graph_pairwise,evaluator_graph_pairwise
-from dataloader import SHAP
+        k_fold_trainer_graph_combonet,evaluator_graph_combonet, best_model_path, _split_tag, _ckpt_save_path, _ckpt_load_path
+from .dataloader import SHAP
 import torch_geometric.data
-from utilitis import smile_to_graph
+from .utilitis import smile_to_graph
+
+
+def _test_idx_path(args):
+    """Path to test_idx file, suffixed by split tag if present."""
+    split = _split_tag(args)
+    suffix = f'_{split}' if split else ''
+    return os.path.join(RESULTS_DIR, f'test_idx{suffix}.txt')
+
+
+def _lookup_drug_feature(feat_dict, drug_id, feat_type):
+    """Return drug feature; zero-fill missing GROVER embeddings (see survival inference)."""
+    drug_id = int(drug_id)
+    if drug_id in feat_dict:
+        return feat_dict[drug_id]
+    if feat_type == 'smiles_grover':
+        return np.zeros(3285, dtype=np.float32)
+    raise KeyError(f"Drug {drug_id} missing from {feat_type} features")
 
 
 def prepare_data(args):
@@ -45,7 +62,7 @@ def prepare_data(args):
     cellset = synergy_df['cell'].unique().tolist()
 
     # Cleaning synergy data. Drugs not in drug–target interaction(DTI) are removed
-    selected_drugs = get_drug(drugFeature_dicts, drugset)
+    selected_drugs = get_drug(drugset)
     print("\ndrug features contructed")
 
     # Cleaning synergy data. Cells not having top variance genes are removed
@@ -54,19 +71,20 @@ def prepare_data(args):
         cell_feats, selected_cells, selected_genes = get_cell(cellFeatures_dicts, cellset, config['cell_omics'], \
             config['cell_filtered_by'], config['get_cellfeature_concated'])
         ## Save selected genes for SHAPLEY analysis
-        save_path = os.path.join(ROOT_DIR, 'results','selected_genes.txt')
+        save_path = os.path.join(RESULTS_DIR, 'selected_genes.txt')
         np.savetxt(save_path, np.array(selected_genes).astype(int), delimiter=',')
 
     elif args.cell_omics[0] == 'GNN_cell':
         #这里load了更多的cell
         # cell_feats, selected_cells = cellFeatures_dicts, get_GNNCell()
+        #为了与其他模型保持一致, 这里选择的cell只有1000个基因map到的
         cell_feats, selected_cells = cellFeatures_dicts, get_GNNCell(cellFeatures_dicts, cellset)
 
     print("cell line features constructed")
     synergy_df = synergy_df[(synergy_df['drug1'].isin(selected_drugs))\
         &(synergy_df['drug2'].isin(selected_drugs))&(synergy_df['cell'].isin(selected_cells))]
     
-    save_path = os.path.join(ROOT_DIR, 'results','processed_synergydf_%s.csv' % args.synergy_df)
+    save_path = os.path.join(RESULTS_DIR, 'processed_synergydf_%s.csv' % args.synergy_df)
     synergy_df.to_csv(save_path, header=True, index=True, sep=",")
 
     print("\nSynergy triplets are: ")
@@ -130,8 +148,8 @@ def prepare_data(args):
             for i in tqdm(range(synergy_df.shape[0])):
                 row = synergy_df.iloc[i]
                 ## This is graph. append graph object to list
-                temp_X_drug1.append(drugFeature_dicts[feat_type][int(row['drug1'])])
-                temp_X_drug2.append(drugFeature_dicts[feat_type][int(row['drug2'])])
+                temp_X_drug1.append(_lookup_drug_feature(drugFeature_dicts[feat_type], row['drug1'], feat_type))
+                temp_X_drug2.append(_lookup_drug_feature(drugFeature_dicts[feat_type], row['drug2'], feat_type))
 
         elif feat_type =='hetero_graph':
 
@@ -210,7 +228,7 @@ def training_baselines(X_cell, X_drug, Y, args):
     # --------------- baseline  --------------- #
     if args.model in ['LR','XGBOOST','RF','ERT']:
         X = np.concatenate([X_cell,X_drug], axis=1)
-        X_trainval, X_test, Y_trainval, Y_test = train_test_split(X, Y, test_size=test_size, random_state=42)
+        X_trainval, X_test, Y_trainval, Y_test = train_test_split(X, Y, test_size=test_size, random_state=get_seed(args))
         
         # init model
         model = get_model(args.model)
@@ -220,7 +238,7 @@ def training_baselines(X_cell, X_drug, Y, args):
         test_loader['actuals'] = Y_test
 
         # prepare the cross-validation procedure
-        kfold = KFold(n_splits=5, random_state=42, shuffle=True)
+        kfold = KFold(n_splits=5, random_state=get_seed(args), shuffle=True)
         
         # load the best model
         if args.train_test_mode == 'test':
@@ -234,7 +252,7 @@ def training_baselines(X_cell, X_drug, Y, args):
             # select the best
             rfc_fit = rfc_fit[np.argmax(scores)]
             # save it
-            save_path = os.path.join(ROOT_DIR, 'best_model_%s.pth' % args.model)
+            save_path = weights_path('best_model_%s.pth' % args.model)
             joblib.dump(rfc_fit,save_path)
             # should return address at the end
             rfc_fit = 'best_model_%s.pth' % args.model
@@ -248,13 +266,13 @@ def training(X_cell, X_drug, Y, Y_ic1, Y_ic2, args):
     else:
         test_size = 0.2
     
-    save_path = os.path.join(ROOT_DIR, 'results','processed_synergydf_%s.csv' % args.synergy_df)
+    save_path = os.path.join(RESULTS_DIR, 'processed_synergydf_%s.csv' % args.synergy_df)
     processed_synergydf = pd.read_csv(save_path, index_col=0, sep=",")
     dummy = np.array(processed_synergydf.index)
 # --------------- multitask dnn --------------- #
     if args.model == 'multitaskdnn_kim':
         
-        # save_path = os.path.join(ROOT_DIR, 'results','processed_synergydf_%s.csv' % args.synergy_df)
+        # save_path = os.path.join(RESULTS_DIR, 'processed_synergydf_%s.csv' % args.synergy_df)
         # processed_synergydf = pd.read_csv(save_path, index_col=0, sep=",")
         # dummy = np.array(processed_synergydf.index)
 
@@ -265,9 +283,9 @@ def training(X_cell, X_drug, Y, Y_ic1, Y_ic2, args):
         X_tg_drug2_trainval, X_tg_drug2_test,\
         Y_trainval, Y_test,  dummy_trainval, dummy_test = train_test_split(X_cell, X_drug['morgan_fingerprint_1'],X_drug['morgan_fingerprint_2'], \
                                 X_drug['drug_target_1'],X_drug['drug_target_2'],Y, dummy, \
-                                test_size=test_size, random_state=42)
+                                test_size=test_size, random_state=get_seed(args))
 
-        save_path = os.path.join(ROOT_DIR, 'results','test_idx.txt')
+        save_path = _test_idx_path(args)
         np.savetxt(save_path,dummy_test.astype(int), delimiter=',')
 
 
@@ -291,7 +309,7 @@ def training(X_cell, X_drug, Y, Y_ic1, Y_ic2, args):
 
         # load the best model
         if args.train_test_mode == 'test':
-            net_weights = 'best_model_%s.pth' % args.model
+            net_weights = best_model_path(args.model)
         elif args.train_test_mode == 'train':
             net_weights = k_fold_trainer(train_val_dataset,model,args)
    
@@ -300,12 +318,12 @@ def training(X_cell, X_drug, Y, Y_ic1, Y_ic2, args):
         
         X = np.concatenate([X_cell,X_drug], axis=1)
         #X_{}_trainval, X_{}_test, Y_{}_trainval, Y_{}_test, dummy_train, dummy_test(为了shap analysis)
-        # save_path = os.path.join(ROOT_DIR, 'results','processed_synergydf_%s.csv' % args.synergy_df)
+        # save_path = os.path.join(RESULTS_DIR, 'processed_synergydf_%s.csv' % args.synergy_df)
         # processed_synergydf = pd.read_csv(save_path, index_col=0, sep=",")
         # dummy = np.array(processed_synergydf.index)
 
-        X_trainval, X_test, Y_trainval, Y_test, dummy_trainval, dummy_test  = train_test_split(X, Y, dummy, test_size=test_size, random_state=42)
-        save_path = os.path.join(ROOT_DIR, 'results','test_idx.txt')
+        X_trainval, X_test, Y_trainval, Y_test, dummy_trainval, dummy_test  = train_test_split(X, Y, dummy, test_size=test_size, random_state=get_seed(args))
+        save_path = _test_idx_path(args)
         np.savetxt(save_path,dummy_test.astype(int), delimiter=',')
 
         channels = X_trainval.shape[1]
@@ -319,68 +337,79 @@ def training(X_cell, X_drug, Y, Y_ic1, Y_ic2, args):
 
         # load the best model
         if args.train_test_mode == 'test':
-            net_weights = 'best_model_%s.pth' % args.model
+            net_weights = best_model_path(args.model)
         elif args.train_test_mode == 'train':
             net_weights = k_fold_trainer(train_val_dataset,model,args)
 
-# --------------- pairwise --------------- #
-    elif args.model == 'pairwise':
+# --------------- combonet / pairwise --------------- #
+    elif args.model in ['combonet', 'pairwise']:
+        drug_feat = args.drug_omics[0]
+        X, X2, X3 = [],[],[]
+        for index, (d1, d2, cell, fp1, fp2) in enumerate(zip(X_drug[f'{drug_feat}_1'], X_drug[f'{drug_feat}_2'], X_cell,\
+            X_drug['smiles_grover_1'],X_drug['smiles_grover_2'])):
+            t = torch.from_numpy(np.vstack((d1,d2))).float()
+            t2 = torch.from_numpy(np.vstack((fp1,fp2))).float()
+            t3 = torch.from_numpy(np.array(cell)).float()
+            X.append(t.float())
+            X2.append(t2.float())
+            X3.append(t3.float())
+
+        #len(max(smiles_list, key = len)) is 244
+
+        X_trainval, X_test, Y_trainval, Y_test, dummy_trainval, dummy_test, X2_trainval, X2_test,  \
+            X3_trainval, X3_test\
+            = train_test_split(X, Y, dummy, X2, X3,test_size=test_size, random_state=get_seed(args))
+
+        save_path = _test_idx_path(args)
+        np.savetxt(save_path,dummy_test.astype(int), delimiter=',')
+
+        # init model
+        model = get_model(args.model)
+        # train_val set for k-fold, test set for testing
+        train_val_dataset, test_loader = dataloader_graph(X_trainval=X_trainval, X_test=X_test,\
+            Y_trainval=Y_trainval, Y_test=Y_test, dummy_trainval = dummy_trainval, dummy_test=dummy_test, \
+                 X2_trainval=X2_trainval, X2_test=X2_test,X3_trainval=X3_trainval, X3_test=X3_test)
+
+        # load the best model
+        if args.train_test_mode == 'test':
+            net_weights = best_model_path(args.model)
+        elif args.train_test_mode == 'train':
+            net_weights = k_fold_trainer_graph_combonet(train_val_dataset,model,args)
+
+# --------------- transynergy --------------- #
+    elif args.model == 'transynergy_liu':
         X=[]
         X2=[] #additional features
-        C = []
-
+        X_sm1, X_sm2 = [], []
+        
         for index, (d1, d2, cell, fp1, fp2) in enumerate(zip(X_drug['drug_target_1'], X_drug['drug_target_2'], X_cell,\
             X_drug['smiles_grover_1'],X_drug['smiles_grover_2'])):
             array_tuple = (d1, d2)
             array = np.vstack(array_tuple)
             t = torch.from_numpy(array).float()
-            t2 = torch.from_numpy(np.vstack((fp1,fp2))).float()
-            c = torch.from_numpy(cell).float()
 
+            t2 = torch.from_numpy(np.vstack((fp1,fp2))).float()
             X.append(t.float())
             X2.append(t2.float())
-            C.append(c.float())
+
+            ##
+            # padded_sm1 = np.pad(sm1, pad_width=(0, 244-len(sm1)), mode='constant', constant_values=0)
+            # padded_sm2 = np.pad(sm2, pad_width=(0, 244-len(sm2)), mode='constant', constant_values=0)
+            X_sm1.append(torch.from_numpy(np.array(cell)).float())
+            X_sm2.append(torch.from_numpy(np.array(cell)).float())
 
         #len(max(smiles_list, key = len)) is 244
 
         X_trainval, X_test, Y_trainval, Y_test, dummy_trainval, dummy_test, X2_trainval, X2_test,  \
-            X_cell_trainval, X_cell_test,\
-            = train_test_split(X, Y, dummy, X2, C, test_size=test_size, random_state=42)
+            X_sm1_trainval, X_sm1_test, X_sm2_trainval, X_sm2_test,\
+            = train_test_split(X, Y, dummy, X2, X_sm1, X_sm2, test_size=test_size, random_state=get_seed(args))
 
-        save_path = os.path.join(ROOT_DIR, 'results','test_idx.txt')
+        save_path = _test_idx_path(args)
         np.savetxt(save_path,dummy_test.astype(int), delimiter=',')
 
-        # init model
-        model = get_model(args.model)
-
-        # train_val set for k-fold, test set for testing
-        train_val_dataset, test_loader = dataloader_graph(X_trainval=X_trainval, X_test=X_test,\
-            Y_trainval=Y_trainval, Y_test=Y_test, dummy_trainval = dummy_trainval, dummy_test=dummy_test, \
-                 X2_trainval=X2_trainval, X2_test=X2_test, X_cell_trainval=X_cell_trainval, X_cell_test=X_cell_test)
-
-        # load the best model
-        if args.train_test_mode == 'test':
-            net_weights = 'best_model_%s.pth' % args.model
-        elif args.train_test_mode == 'train':
-            net_weights = k_fold_trainer_graph_pairwise(train_val_dataset,model,args)
-        elif args.train_test_mode == 'fine_tune':
-            net_weights = k_fold_trainer_graph_pairwise(test_loader,model,args)
-
-        # --------------- transynergy --------------- #
-    elif args.model == 'transynergy_liu':
-        X = []
-        for index, (d1, d2, cell) in enumerate(
-                zip(X_drug['drug_target_rwr_1'], X_drug['drug_target_rwr_2'], X_cell)):
-            array_tuple = (d1, d2, cell)
-            array = np.vstack(array_tuple)
-            t = torch.from_numpy(array).float()
-            X.append(t.float())
-
-        X_trainval, X_test, Y_trainval, Y_test, _, dummy_test = train_test_split(X, Y, dummy, test_size=test_size,
-                                                                                 random_state=42)
-
-        # init model
-        model = get_model(args.model)
+        # init model — cell_input_dim matches the gene count from cell_filtered_by config
+        cell_input_dim = len(X_sm1[0])
+        model = get_model(args.model, cell_input_dim=cell_input_dim)
         # src = batch.src.transpose(0, 1)
         # trg = batch.trg.transpose(0, 1)
         # trg_input = trg[:, :-1]
@@ -389,14 +418,18 @@ def training(X_cell, X_drug, Y, Y_ic1, Y_ic2, args):
         # ys = trg[:, 1:].contiguous().view(-1)
 
         # train_val set for k-fold, test set for testing
-        train_val_dataset, test_loader = dataloader_graph(X_trainval=X_trainval, X_test=X_test,
-                                                          Y_trainval=Y_trainval, Y_test=Y_test)
+        train_val_dataset, test_loader = dataloader_graph(X_trainval=X_trainval, X_test=X_test,\
+            Y_trainval=Y_trainval, Y_test=Y_test, dummy_trainval = dummy_trainval, dummy_test=dummy_test, \
+                 X2_trainval=X2_trainval, X2_test=X2_test,\
+                    X_sm1_trainval=X_sm1_trainval, X_sm1_test=X_sm1_test, X_sm2_trainval=X_sm2_trainval, X_sm2_test=X_sm2_test)
 
         # load the best model
         if args.train_test_mode == 'test':
-            net_weights = 'best_model_%s.pth' % args.model
+            net_weights = best_model_path(args.model)
         elif args.train_test_mode == 'train':
-            net_weights = k_fold_trainer_graph_trans(train_val_dataset, model, args)
+            net_weights = k_fold_trainer_graph_trans(train_val_dataset,model,args)
+        elif args.train_test_mode == 'fine_tune':
+            net_weights = k_fold_trainer_graph_trans(test_loader,model,args)
 
 # --------------- matchmaker --------------- #
     elif args.model == 'matchmaker_brahim':
@@ -410,9 +443,9 @@ def training(X_cell, X_drug, Y, Y_ic1, Y_ic2, args):
         X_fp_drug2_trainval, X_fp_drug2_test,\
         Y_trainval, Y_test, dummy_trainval, dummy_test\
         = train_test_split(X_cell, X_drug[text+'_1'],X_drug[text+'_2'], Y, dummy,\
-                                test_size=test_size, random_state=42)
+                                test_size=test_size, random_state=get_seed(args))
 
-        save_path = os.path.join(ROOT_DIR, 'results','test_idx.txt')
+        save_path = _test_idx_path(args)
         np.savetxt(save_path,dummy_test.astype(int), delimiter=',')
 
         #morgan_fingerprint_1,morgan_fingerprint_2
@@ -434,7 +467,7 @@ def training(X_cell, X_drug, Y, Y_ic1, Y_ic2, args):
 
         # load the best model
         if args.train_test_mode == 'test':
-            net_weights = 'best_model_%s.pth' % args.model
+            net_weights = best_model_path(args.model)
         elif args.train_test_mode == 'train':
             net_weights = k_fold_trainer(train_val_dataset,model,args)
 
@@ -445,7 +478,7 @@ def training(X_cell, X_drug, Y, Y_ic1, Y_ic2, args):
         X_deepdds_sm_drug2_trainval, X_deepdds_sm_drug2_test,\
         Y_trainval, Y_test, dummy_trainval, dummy_test \
         = train_test_split(X_cell, X_drug['smiles2graph_1'],X_drug['smiles2graph_2'], Y, dummy,\
-                                test_size=test_size, random_state=42)
+                                test_size=test_size, random_state=get_seed(args))
 
 
     
@@ -463,7 +496,7 @@ def training(X_cell, X_drug, Y, Y_ic1, Y_ic2, args):
 
         # load the best model
         if args.train_test_mode == 'test':
-            net_weights = 'best_model_%s.pth' % args.model
+            net_weights = best_model_path(args.model)
         elif args.train_test_mode == 'train':
             net_weights = k_fold_trainer_graph(train_val_dataset,model,args)
 
@@ -475,7 +508,7 @@ def training(X_cell, X_drug, Y, Y_ic1, Y_ic2, args):
         X_deepdds_sm_drug2_trainval, X_deepdds_sm_drug2_test,\
         Y_trainval, Y_test, dummy_trainval, dummy_test \
         = train_test_split(X_cell['GNN_cell'], X_drug['smiles2graph_TGSynergy_1'],X_drug['smiles2graph_TGSynergy_2'], Y, \
-                                 dummy, test_size=test_size, random_state=42)
+                                 dummy, test_size=test_size, random_state=get_seed(args))
 
 
     #     # should be compatible with fp_drug, fp_drug2, cell
@@ -486,18 +519,18 @@ def training(X_cell, X_drug, Y, Y_ic1, Y_ic2, args):
             Y_trainval=Y_trainval, Y_test=Y_test, dummy_trainval=dummy_trainval, dummy_test=dummy_test
                 )
         
-        save_path = os.path.join(ROOT_DIR, 'results','test_idx.txt')
+        save_path = _test_idx_path(args)
         np.savetxt(save_path,dummy_test.astype(int), delimiter=',')
         
     # init model
-        save_path = os.path.join(ROOT_DIR, 'data', 'cell_line_data','CCLE','cluster_predefine_PPI_0.95.npy')
+        save_path = os.path.join(DATA_DIR, 'cell_line_data','CCLE','cluster_predefine_PPI_0.95.npy')
         cluster_predefine = np.load(save_path, allow_pickle=True).item()
         cluster_predefine = {i: j for i, j in cluster_predefine.items()}
         model = get_model(args.model,cluster_predefine)
 
     # load the best model
         if args.train_test_mode == 'test':
-            net_weights = 'best_model_%s.pth' % args.model
+            net_weights = best_model_path(args.model)
         elif args.train_test_mode == 'train':
             net_weights = k_fold_trainer_graph_TGSynergy(train_val_dataset,model,args)
 
@@ -509,7 +542,7 @@ def training(X_cell, X_drug, Y, Y_ic1, Y_ic2, args):
         X_hetero_graph_drug2_trainval, X_hetero_graph_drug2_test,\
         Y_trainval, Y_test, dummy_trainval, dummy_test \
         = train_test_split(X_cell, X_drug['hetero_graph_1'],X_drug['hetero_graph_2'], Y, \
-                                 dummy, test_size=test_size, random_state=42)
+                                 dummy, test_size=test_size, random_state=get_seed(args))
 
         train_val_dataset, test_loader = dataloader(\
             X_hetero_graph_drug1_trainval=X_hetero_graph_drug1_trainval, X_hetero_graph_drug1_test=X_hetero_graph_drug1_test,\
@@ -518,11 +551,11 @@ def training(X_cell, X_drug, Y, Y_ic1, Y_ic2, args):
             Y_trainval=Y_trainval, Y_test=Y_test, dummy_trainval=dummy_trainval, dummy_test=dummy_test
                 )
 
-        save_path = os.path.join(ROOT_DIR, 'results','test_idx.txt')
+        save_path = _test_idx_path(args)
         np.savetxt(save_path,dummy_test.astype(int), delimiter=',')
 
         # init model
-        save_path = os.path.join(ROOT_DIR, 'data', 'drug_data','input_drug_data.npy')
+        save_path = os.path.join(DATA_DIR, 'drug_data','input_drug_data.npy')
         drugFeature_dicts = np.load(save_path, allow_pickle=True).item()
         
 
@@ -530,14 +563,14 @@ def training(X_cell, X_drug, Y, Y_ic1, Y_ic2, args):
         dpi_dict = drugFeature_dicts["hetero_graph"][1]
         cpi_dict = drugFeature_dicts["hetero_graph"][2]
 
-        # save_path = os.path.join(ROOT_DIR, 'results')
+        # save_path = RESULTS_DIR
         # selected_genes = list(np.loadtxt(os.path.join(save_path,'selected_genes.txt'), delimiter=',').astype(int))
 
         model = get_model(args.model,graph,dpi_dict,cpi_dict)
 
         # load the best model
         if args.train_test_mode == 'test':
-            net_weights = 'best_model_%s.pth' % args.model
+            net_weights = best_model_path(args.model)
         elif args.train_test_mode == 'train':
             net_weights = k_fold_trainer(train_val_dataset,model,args)
 
@@ -565,23 +598,25 @@ def evaluate(model, model_weights, test_loader, train_val_dataset, args):
         
         actuals, predictions, shap_df, features_df, expected_value = evaluator_graph_trans(model, model_weights,train_val_dataset, test_loader, args)
     
-    elif args.model in ['pairwise']:
+    elif args.model in ['combonet', 'pairwise']:
 
-        actuals, predictions, shap_df, features_df, expected_value = evaluator_graph_pairwise(model, model_weights,train_val_dataset, test_loader, args)
+        actuals, predictions, shap_df, features_df, expected_value = evaluator_graph_combonet(model, model_weights,train_val_dataset, test_loader, args)
 
     else:
         actuals, predictions, shap_df, features_df, expected_value  = evaluator(model, model_weights,train_val_dataset, test_loader, args)
 
-    # save actuals/predictions
-    test_idx = list(np.loadtxt(os.path.join(ROOT_DIR, 'results','test_idx.txt')).astype(int))
+    # save actuals/predictions (split-suffixed so different splits don't overwrite)
+    test_idx = list(np.loadtxt(_test_idx_path(args)).astype(int))
     predict_df = pd.DataFrame(np.column_stack([test_idx,actuals,predictions]),\
                 columns=['index','actuals','predicts_%s' % args.model])
-    save_path = os.path.join(ROOT_DIR, 'results','predicts_%s_%s.txt' % (args.model, args.synergy_df))
+    split = _split_tag(args)
+    suffix = f'_{split}' if split else ''
+    save_path = os.path.join(RESULTS_DIR, 'predicts_%s_%s%s.txt' % (args.model, args.synergy_df, suffix))
     predict_df.to_csv(save_path, header=True, index=True, sep=",")
 
     # save the shap_df and features_df
-    save_path_shap = os.path.join(ROOT_DIR, 'results','shap_df_%s_%s_%s.txt' % (args.model, str(expected_value), args.synergy_df))
-    save_path_feat = os.path.join(ROOT_DIR, 'results','feat_df_%s_%s_%s.txt' % (args.model, str(expected_value), args.synergy_df))
+    save_path_shap = os.path.join(RESULTS_DIR, 'shap_df_%s_%s_%s.txt' % (args.model, str(expected_value), args.synergy_df))
+    save_path_feat = os.path.join(RESULTS_DIR, 'feat_df_%s_%s_%s.txt' % (args.model, str(expected_value), args.synergy_df))
     try:
         shap_df.to_csv(save_path_shap, header=True, index=True, sep=",")
         features_df.to_csv(save_path_feat, header=True, index=True, sep=",")
